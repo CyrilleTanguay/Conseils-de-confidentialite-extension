@@ -1,0 +1,1 @@
+document.getElementById('applicationsGroup').innerHTML= "Hey";

@@ -1,0 +1,56 @@
+{
+  "manifest_version": 2,
+  "name": "C.C. (Conseils de Confidentialité)",
+  "author": "Cyrille Tanguay",
+  "description": "Vous donne des conseils pour protéger vos données et pour réagir en cas de chantage",
+  "version": "1.0",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+    
+  "permissions": [
+    "activeTab",
+    "browserSettings",
+    "contextMenus",
+    "downloads",
+    "management",
+    "menus",
+    "notifications",
+    "privacy",
+    "scripting",
+    "storage",
+    "unlimitedStorage",
+    "tabs",
+    "webNavigation"
+  ],
+  "background": {
+    "scripts": [
+      "background_script.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.mozilla.org/*"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "64": "icons/icon.png"
+    },
+    "default_popup": "browserAction/MenuPr/index.html",
+    "default_title": "C.C."
+  },
+  "options_ui": {
+    "page": "options/index.html"
+  },
+  "content_security_policy": "script-src 'self' https://fonts.googleapis.com/* https://fonts.gstatic.com/*; object-src 'self';"
+
+
+
+  
+}

@@ -1,0 +1,49 @@
+h1 {
+  font-style: italic;
+}
+body{
+  font-family: 'Oswald', sans-serif;
+  width: 275px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.iconesApps{
+  display: flex;
+  justify-content: center;
+}
+.iconesApps img{
+  /* flex: 1 0 20px; */
+  margin: 0 30px;
+}
+p{
+  line-height: 0.5px;
+}
+hr{
+  border: 1px solid black;
+}
+#myHeading{
+  margin-top: 0px;
+  margin-left: 8px;
+  margin-bottom: 0;
+  text-align: center;
+}
+header{
+  background-color: aqua;
+}
+main{
+  margin-left: 8px;
+}
+.caseRetour{
+  font-size: 10px;
+  text-align: left;
+}
+#Ajust,#Inte,
+#appInte,
+#AppDes,
+#appRet,
+#appEnCas, #confNav, #confExt, #bonMDP, #peutMDP, #pasMDP, #gereMDP{
+  display: none;
+  font-family: K2D, sans-serif;
+}
