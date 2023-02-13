@@ -18,7 +18,7 @@ body{
   margin: 0 30px;
 }
 p{
-  line-height: 0.5px;
+  line-height: 0px;
 }
 hr{
   border: 1px solid black;
@@ -39,11 +39,9 @@ main{
   font-size: 10px;
   text-align: left;
 }
-#Ajust,#Inte,
-#appInte,
-#AppDes,
-#appRet,
-#appEnCas, #confNav, #confExt, #bonMDP, #peutMDP, #pasMDP, #gereMDP{
+#Ajust,#Inte,#appInte,#AppDes,#appRet,
+#appEnCas, #confNav, #confExt, #bonMDP, #peutMDP, #pasMDP, #gereMDP, #reseauGen, #sitesRen, #partagePhoto, #troll, #volDeI, #prevExto, #victExto, #Escrocs, #pred, #compor, #conseilMess, #structure, #contenuEscr, #escrSol, #presArn,#arnNigeria, #phishing, #autresArn, #achatSite, #achatProduit, #achatApp, #AppCom,#verIn,#chevalTroie,#spWare,#rsWare,#mWare,#kLog,#rootkit,#Dos,#intercept,#debo,#faille,#crsSite,#concepteur,#iphone,#android,#deuxTels
+{
   display: none;
   font-family: K2D, sans-serif;
 }
