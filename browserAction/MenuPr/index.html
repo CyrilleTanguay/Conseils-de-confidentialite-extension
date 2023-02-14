@@ -8,37 +8,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet"> 
   </head>
-  <body>
-    <script src="script.js"></script>
-    <script src="ScriptsParSujet/AchatApp.js"></script>
-    <script src="ScriptsParSujet/Achats.js"></script>
-    <script src="ScriptsParSujet/AppRefuse.js"></script>
-    <script src="ScriptsParSujet/AppsPhoneNon.js"></script>
-    <script src="ScriptsParSujet/Arnaques.js"></script>
-    <script src="ScriptsParSujet/Attaques.js"></script>
-    <script src="ScriptsParSujet/Extorsion.js"></script>
-    <script src="ScriptsParSujet/Fiable.js"></script>
-    <script src="ScriptsParSujet/MDP.js"></script>
-    <script src="ScriptsParSujet/Messagerie.js"></script>
-    <script src="ScriptsParSujet/Mobile.js"></script>
-    <script src="ScriptsParSujet/Navig.js"></script>
-    <script src="ScriptsParSujet/Ordi.js"></script>
-    <script src="ScriptsParSujet/Politique.js"></script>
-    <script src="ScriptsParSujet/ReseauxDiffs.js"></script>
-    <script src="ScriptsParSujet/ResauxGroupe.js"></script>    
-    <script src="ScriptsParSujet/RogueApps.js"></script>
-    <script src="ScriptsParSujet/Virus.js"></script>
+   <script src="script.js"></script> 
+  <script src="ScriptsParSujet/AchatApp.js"></script>
+  <script src="ScriptsParSujet/Achats.js"></script>
+  <script src="ScriptsParSujet/AppRefuse.js"></script>
+  <script src="ScriptsParSujet/AppsPhoneNon.js"></script>
+  <script src="ScriptsParSujet/Arnaques.js"></script>
+  <script src="ScriptsParSujet/Attaques.js"></script>
+  <script src="ScriptsParSujet/Extorsion.js"></script>
+  <script src="ScriptsParSujet/Fiable.js"></script>
+  <script src="ScriptsParSujet/MDP.js"></script>
+  <script src="ScriptsParSujet/Messagerie.js"></script>
+  <script src="ScriptsParSujet/Mobile.js"></script>
+  <script src="ScriptsParSujet/Navig.js"></script>
+  <script src="ScriptsParSujet/Ordi.js"></script>
+  <script src="ScriptsParSujet/Politique.js"></script>
+  <script src="ScriptsParSujet/ReseauxDiffs.js"></script>
+  <script src="ScriptsParSujet/ResauxGroupe.js"></script>    
+  <script src="ScriptsParSujet/RogueApps.js"></script>
+  <script src="ScriptsParSujet/Virus.js"></script> 
+  <script>window.onload=startListen();</script>
+  <body> 
+
+
 <header>
  <h3 id="myHeading">Liste des conseils</h3>
   </header>
 <main id="laListe">
-<p id="VotreOrdi" onclick="Ordi()">Votre ordinateur</p>
+<p id="VotreOrdi">Votre ordinateur</p>
 <hr>
-<p onclick="AppNon()"> Applications à ne pas installer (index)</p>
+<p id="indexAppNon"> Applications à ne pas installer (index)</p>
 <hr>
-<p onclick="Navigateur()">Le Navigateur</p>
+<p id="leNav" onclick="Navigateur()">Le Navigateur</p>
 <hr>
-<p onclick="MDP()">Le mot de passe</p>
+<p id="leMDP" onclick="MDP()">Le mot de passe</p>
 <hr>
 <p id="fiable" onclick="Fiable()">La fiabilité d’un site web</p>
 <hr>
@@ -50,7 +53,7 @@
 <hr>
 <p id="achats" onclick="Achats()">Achats en ligne</p>
 <hr>
-<p id="achatApp" onclick="achatApp()">Achat d’application</p>
+<p id="achatDeApp" onclick="achatApp()">Achat d’application</p>
 <hr>
 <p id="politique" onclick="Politique()">La politique de confidentialité</p>
 <hr>
