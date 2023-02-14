@@ -5,5 +5,9 @@ document.querySelector("header").style.backgroundColor="aqua";
 document.querySelector("p").style.lineHeight="inherit";
 document.querySelector("p").style.fontFamily="K2D, sans-serif";
 document.querySelector("main").style.fontFamily="K2D, sans-serif";
-document.getElementById('myHeading').innerHTML="<div class='caseRetour' onclick='RetourPrincipal()'>Retour</div>Logiciels de type Rogue";
+document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Logiciels de type Rogue";
+var BtnReviens= document.getElementById("caseRetour");
+if (BtnReviens){
+  BtnReviens.addEventListener("click", AppNon); 
+}
 }

@@ -3,12 +3,18 @@ h1 {
 }
 body{
   font-family: 'Oswald', sans-serif;
-  width: 275px;
+  min-width: 275px;
+  max-width: 325px;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  overflow-x: hidden;
+max-height: 900px;
 }
-
+ul{
+  padding-left: 20px;
+  padding-left: 20px;
+}
 .iconesApps{
   display: flex;
   justify-content: center;
@@ -17,9 +23,7 @@ body{
   /* flex: 1 0 20px; */
   margin: 0 30px;
 }
-p{
-  line-height: 0px;
-}
+
 hr{
   border: 1px solid black;
 }
@@ -28,19 +32,22 @@ hr{
   margin-left: 8px;
   margin-bottom: 0;
   text-align: center;
+
 }
 header{
   background-color: aqua;
 }
 main{
   margin-left: 8px;
+   overflow-x: hidden;
+
 }
 #caseRetour{
   font-size: 10px;
   text-align: left;
 }
 #Ajust,#Inte,#appInte,#AppDes,#appRet,
-#appEnCas, #confNav, #confExt, #bonMDP, #peutMDP, #pasMDP, #gereMDP, #reseauGen, #sitesRen, #partagePhoto, #troll, #volDeI, #prevExto, #victExto, #Escrocs, #pred, #compor, #conseilMess, #structure, #contenuEscr, #escrSol, #presArn,#arnNigeria, #phishing, #autresArn, #achatSite, #achatProduit, #achatApp, #AppCom,#verIn,#chevalTroie,#spWare,#rsWare,#mWare,#kLog,#rootkit,#Dos,#intercept,#debo,#faille,#crsSite,#concepteur,#iphone,#android,#deuxTels
+#appEnCas, #confNav, #confExt, #bonMDP, #peutMDP, #pasMDP, #gereMDP, #reseauGen, #sitesRen, #partagePhoto, #troll, #volDeI, #prevExto, #victExto, #Escrocs, #pred, #compor, #conseilMess, #structure, #contenuEscr, #escrSol, #presArn,#arnNigeria, #phishing, #autresArn, #achatSite, #achatProduit, #achatApp, #AppCom,#verIn,#chevalTroie,#spWare,#rsWare,#mWare,#kLog,#rootkit,#Dos,#intercept,#debo,#faille,#crsSite,#concepteur,#iphone,#android,#deuxTels, #appAppleNon, #appAndNon, #siteFiable, #infoFiable, #siteInf, #siteSante
 {
   display: none;
   font-family: K2D, sans-serif;
