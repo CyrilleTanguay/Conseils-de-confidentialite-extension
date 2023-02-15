@@ -9,11 +9,11 @@ body{
   margin-left: 0px;
   margin-right: 0px;
   overflow-x: hidden;
-max-height: 900px;
+/* max-height: 900px; */
 }
 ul{
   padding-left: 20px;
-  padding-left: 20px;
+  padding-right: 20px;
 }
 .iconesApps{
   display: flex;

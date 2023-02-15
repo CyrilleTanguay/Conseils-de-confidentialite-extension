@@ -2,9 +2,7 @@ function Deez(){
     document.getElementById('laListe').innerHTML='<ul><li>Économisez de l’espace en réduisant le débit ou mettant les données sur une carte mémoire.</li></ul>';
     
     document.querySelector("header").style.backgroundColor="aqua";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
-    document.querySelector("main").style.fontFamily="K2D, sans-serif";
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Deezer";
     var BtnReviens= document.getElementById("caseRetour");
     if (BtnReviens){
@@ -16,9 +14,7 @@ function Edge(){
     document.getElementById('laListe').innerHTML='<ul><li>Supprimez l’extension Rédacteur Microsoft. Elle envoie à Microsoft tout ce que vous tapez sur votre ordi.</li></ul>';
     
     document.querySelector("header").style.backgroundColor="blue";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
-    document.querySelector("main").style.fontFamily="K2D, sans-serif";
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Edge";
     var BtnReviens= document.getElementById("caseRetour");
     if (BtnReviens){
@@ -42,8 +38,7 @@ function Google(){
     document.getElementById('laListe').innerHTML='<ul><li>Désactivez l’historique OK Google</li><li>Méfiez-vous des Google Docs publics (comme les formulaires) qui vous sont inconnus.</li><li>Assurez-vous que Google Agenda soit privé, sinon quelqu’un pourrait en tirer des informations</li><li>Nettoyez l’historique de Chrome</li><li>Si vous avez installé Google Chrome, désactivez l’option « Vérifier l’orthographe du texte saisi sur les pages Web » ou choisissez l’option « Correcteur orthographique de base », car tout ce que vous tapez sera parvenu à Google!</li></ul>';
     
     document.querySelector("header").style.backgroundColor="aqua";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Google";
     var BtnReviens= document.getElementById("caseRetour");
@@ -56,8 +51,7 @@ function Insta(){
     document.getElementById('laListe').innerHTML='<ul><li>N’utilisez pas le navigateur interne d’Instagram, il collecte des données. À la place, copiez le lien en question et collez-le dans votre navigateur.</li><li>Ne divulguez pas votre adresse (surtout si votre compte est public)</li><li>Si vous recevez un courriel de certification de profil, c’est un faux.</li></ul>';
     
     document.querySelector("header").style.backgroundColor="purple";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Instagram";
     var BtnReviens= document.getElementById("caseRetour");
@@ -70,8 +64,7 @@ function Messng(){
     document.getElementById('laListe').innerHTML='<ul><li>N’intégrez pas les mêmes photos sur vos réseaux privés et professionnels.</li><li>Ne publiez pas votre visage (du moins sur votre photo de profil)</li><li>Changez la visibilité de votre numéro de téléphone</li><li>Facebook et Messenger vident le contenu de la batterie de votre téléphone pour faire des tests négatifs. Un test négatif fait des essais sur des nouvelles fonctionnalités ou sur les performances d’une application en puisant directement dans les ressources de votre téléphone. Un ex-employé, qui a été renvoyé car il avait refusé de participer à ces tests, est présentement en poursuite judiciaire contre Meta.</li><li>Faites attention avec les liens que vous partagez, car Messenger les vérifie. N’envoyez pas de liens concernant des données personnelles.</li><li>N’utilisez pas le navigateur interne de Messenger, il collecte des données. À la place, copiez le lien en question et collez-le dans votre navigateur.</li></ul>';
     
     document.querySelector("header").style.backgroundColor="blue";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Messenger";
     var BtnReviens= document.getElementById("caseRetour");
@@ -98,8 +91,7 @@ function Sig(){
     document.getElementById('laListe').innerHTML='<ul><li>Désactivez les indicateurs de saisie</li><li>Désactivez les accusés de lecture</li><li>Empêchez les captures d’écran. Cette fonction vous servira si votre téléphone tombe dans des mauvaises mains.</li><li>Utilisez le clavier incognito. Il vous permet de ne pas voir des mots précédemment tapés sur l’application.</li><li>Vérifiez le numéro de sécurité de votre contact pour vous assurer que la conversation est bien chiffrée.</li><li>Utilisez la fonction NIP.</li><li>Considérez la fonction « messages éphémères ». Elle permet d’envoyer un message qui s’effacera un certain temps après sa lecture.</li><li>N’oubliez pas que vous pouvez faire flouter automatiquement les visages dans les photos envoyées.</li></ul>';
     
     document.querySelector("header").style.backgroundColor="blue";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Signal";
     var BtnReviens= document.getElementById("caseRetour");
@@ -112,8 +104,7 @@ function Skype(){
     document.getElementById('laListe').innerHTML='<ul><li>Vous pouvez choisir d’apparaître dans les résultats de recherche de Skype si vous ne tenez pas à être trouvé(e).</li><li>Utilisez la fonction « Conversation privée ». Ses notifications sont masquées et les conversations ne sont accessibles que sur un périphérique à la fois.</li><li>Désactivez le téléchargement de photos.</li></ul>';
     
     document.querySelector("header").style.backgroundColor="skyblue";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Skype";
     var BtnReviens= document.getElementById("caseRetour");
@@ -125,8 +116,7 @@ function Skype(){
     document.getElementById('laListe').innerHTML='<ul><li>Vous pouvez utiliser la fonction « économiseur de données » pour consommer moins de données cellulaires/Wifi. Cependant, cela a pour conséquence d’affaiblir la qualité audio...</li><li>Videz le cache.</li><li>Désactivez les publicités ciblées (nécessite un compte premium)</li></ul>';
     
     document.querySelector("header").style.backgroundColor="green";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Spotify";
     var BtnReviens= document.getElementById("caseRetour");
@@ -139,8 +129,8 @@ function Telegram(){
     document.getElementById('laListe').innerHTML="<ul><li>Choisissez les informations qui peuvent être vues par certains.</li><li>Évitez d'utiliser son nom et prénom comme nom d'utilisateur</li><li>Utilisez une photo de profil qui ne permet pas aux inconnus de vous retrouver</li><li>Masquez votre numéro de téléphone pour ne pas que des inconnus le voient.</li><li>Ne pas trop en dire sur sa biographie. Cet élément ne pouvant être masqué par l’utilisateur, n’en dites pas trop.</li><li>Ne pas échanger avec nimporte qui</li><li>Modifier le numéro de téléphone inscrit dans le compte en cas de changement de numéro pour garder l’accès à votre compte.</li></ul>";
     
     document.querySelector("header").style.backgroundColor="skyblue";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
+    document.querySelector("header").style.color="white";
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Telegram";
     var BtnReviens= document.getElementById("caseRetour");
@@ -153,9 +143,7 @@ function TikTok(){
     document.getElementById('laListe').innerHTML='<ul><li>N’utilisez pas le navigateur interne de TikTok, il collecte des données. À la place, copiez le lien en question et collez-le dans votre navigateur.</li><li>Méfiez-vous de cette application, car elle utilise vos données sans votre consentement.</li><li>Utilisez le mode privé si vous voulez être plus discret.</li></ul>';
     
     document.querySelector("header").style.backgroundColor="red";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
-    document.querySelector("main").style.fontFamily="K2D, sans-serif";
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>TikTok";
     var BtnReviens= document.getElementById("caseRetour");
     if (BtnReviens){
@@ -181,9 +169,9 @@ function Zoom(){
     document.getElementById('laListe').innerHTML='<ul><li>Méfiez-vous des liens qui commencent par le nom d’une entreprise. Il est possible pour n’importe qui de modifier le sous-domaine de l’URL ou de le rediriger vers une autre adresse. </li></ul>';
     
     document.querySelector("header").style.backgroundColor="blue";
-    document.querySelector("p").style.lineHeight="inherit";
-    document.querySelector("p").style.fontFamily="K2D, sans-serif";
-    document.querySelector("main").style.fontFamily="K2D, sans-serif";
+    document.querySelector("header").style.color="white";
+
+    document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Zoom";
     var BtnReviens= document.getElementById("caseRetour");
     if (BtnReviens){

@@ -1,3 +1,4 @@
+//Ajout d'écouteurs dès que le menu est chargé pour exécuter une fonction en cliquant sur une catégorie pour accéder à ses sous-catégories
 window.onload = function startListen() {
 
     var BtnNav= document.getElementById("leNav");
@@ -57,12 +58,11 @@ window.onload = function startListen() {
   var BtnMobile = document.getElementById("mobiles");
   if(BtnMobile){
     BtnMobile.addEventListener("click", Mobiles);
-
   }
 
 
 }  
-
+//Cette fonction permet de retourner au menu principal
 function RetourPrincipal(){
     document.getElementById('laListe').innerHTML='<p id="VotreOrdi">Votre ordinateur</p><hr><p id="indexAppNon"> Applications à ne pas installer (index)</p><hr><p id="leNav">Le navigateur</p><hr><p id="leMDP">Le mot de passe</p><hr><p id="fiable">La fiabilité d’un site web</p><hr><p id="reseau">Réseaux sociaux</p><hr><p id="extorsion">Extorsion / Sextorsion / Chantage</p><hr><p id="sms">Messagerie</p><hr><p id="achats">Achats en ligne</p><hr><p id="achatDeApp">Achat d’application</p><hr><p id="politique">La politique de confidentialité</p><hr><p id="virus">Virus</p><hr><p id="attaques">Attaques</p><hr><p id="mobiles">Conseils pour les téléphones mobiles</p>';
     document.getElementById('myHeading').innerHTML="Liste des conseils";
@@ -105,7 +105,6 @@ function RetourPrincipal(){
   var BtnAchatsApp = document.getElementById("achatDeApp");
   if(BtnAchatsApp){
     BtnAchatsApp.addEventListener("click", achatApp);
-
   }
   var BtnSMS = document.getElementById("sms");
   if(BtnSMS){
