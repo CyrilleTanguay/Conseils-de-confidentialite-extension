@@ -59,7 +59,14 @@ window.onload = function startListen() {
   if(BtnMobile){
     BtnMobile.addEventListener("click", Mobiles);
   }
-
+  var BtnReviens= document.getElementById("caseRetour");
+  if (BtnReviens){
+    BtnReviens.addEventListener("click", RetourPrincipal); 
+  }
+  else{
+    document.getElementById("myHeading").style.textAlign="center";
+    document.getElementById("myHeading").style.display="block";
+  }
 
 }  
 //Cette fonction permet de retourner au menu principal
@@ -128,6 +135,12 @@ function RetourPrincipal(){
     BtnMobile.addEventListener("click", Mobiles);
 
   }
-
-
+  var BtnReviens= document.getElementById("caseRetour");
+  if (BtnReviens){
+    BtnReviens.addEventListener("click", RetourPrincipal); 
+  }
+  else{
+    document.getElementById("myHeading").style.textAlign="center";
+    document.getElementById("myHeading").style.display="block";
+  }
 } 

@@ -5,7 +5,10 @@ function autresAppNon(){
     document.querySelector("p").style.lineHeight="inherit";
     document.querySelector("p").style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Les deux";  
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Les deux";  
+    document.getElementById("myHeading").style.textAlign="right";
+    document.getElementById("myHeading").style.display="grid";
+    document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
     var BtnReviens= document.getElementById("caseRetour");
 if (BtnReviens){
   BtnReviens.addEventListener("click", ouvrirAppNon); 

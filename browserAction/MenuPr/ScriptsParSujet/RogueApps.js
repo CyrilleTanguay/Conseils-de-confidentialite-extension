@@ -5,7 +5,10 @@ document.querySelector("header").style.backgroundColor="aqua";
 document.querySelector("p").style.lineHeight="inherit";
 document.querySelector("p").style.fontFamily="K2D, sans-serif";
 document.querySelector("main").style.fontFamily="K2D, sans-serif";
-document.getElementById('myHeading').innerHTML="<div id='caseRetour'>Retour</div>Logiciels de type Rogue";
+document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Logiciels de type Rogue";
+document.getElementById("myHeading").style.textAlign="right";
+document.getElementById("myHeading").style.display="grid";
+document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
 var BtnReviens= document.getElementById("caseRetour");
 if (BtnReviens){
   BtnReviens.addEventListener("click", AppNon); 
