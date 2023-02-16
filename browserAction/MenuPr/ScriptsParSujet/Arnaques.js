@@ -4,6 +4,7 @@ function Arnaques(){
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Arnaques";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
+    document.getElementById('myHeading').style.color="white";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
     var BtnReviens= document.getElementById("caseRetour");
 if (BtnReviens){

@@ -5,7 +5,7 @@ function Ordi(){
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Votre ordinateur";
  document.getElementById("myHeading").style.textAlign="right";
 document.getElementById("myHeading").style.display="grid";
-document.getElementById("myHeading").style.gridTemplateColumns="auto 150px auto";   
+document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";   
 console.log("oui");
 var BtnAjust= document.getElementById("ouvrirAjust");
 if (BtnAjust){

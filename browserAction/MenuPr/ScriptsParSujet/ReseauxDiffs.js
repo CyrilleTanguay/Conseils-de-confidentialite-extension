@@ -3,7 +3,7 @@ function Deez(){
     
     document.querySelector("header").style.backgroundColor="aqua";
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Deezer";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Deezer";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -18,7 +18,7 @@ function Edge(){
     
     document.querySelector("header").style.backgroundColor="blue";
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Edge";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Edge";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -33,7 +33,7 @@ function Fb(){
     document.querySelector("p").style.lineHeight="inherit";
     document.querySelector("p").style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Facebook";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Facebook";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -49,7 +49,7 @@ function Google(){
     document.querySelector("header").style.backgroundColor="aqua";
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Google";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Google";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -65,7 +65,7 @@ function Insta(){
     document.querySelector("header").style.backgroundColor="purple";
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Instagram";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Instagram";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto"; 
@@ -84,7 +84,7 @@ function Messng(){
     document.querySelector("header").style.backgroundColor="blue";
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Messenger";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Messenger";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -101,7 +101,7 @@ function Nint(){
     document.querySelector("p").style.lineHeight="inherit";
     document.querySelector("p").style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Compte Nintendo";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Compte Nintendo";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -117,7 +117,7 @@ function Sig(){
     document.querySelector("header").style.backgroundColor="blue";
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Signal";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Signal";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -133,7 +133,7 @@ function Skype(){
     document.querySelector("header").style.backgroundColor="skyblue";
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Skype";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Skype";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -148,7 +148,7 @@ function Skype(){
     document.querySelector("header").style.backgroundColor="green";
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Spotify";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Spotify";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -165,7 +165,7 @@ function Telegram(){
     document.querySelector("header").style.color="white";
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Telegram";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Telegram";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -180,7 +180,7 @@ function TikTok(){
     
     document.querySelector("header").style.backgroundColor="red";
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>TikTok";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>TikTok";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -197,7 +197,7 @@ function YTube(){
     document.querySelector("p").style.lineHeight="inherit";
     document.querySelector("p").style.fontFamily="K2D, sans-serif";
     document.querySelector("main").style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>YouTube";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>YouTube";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
@@ -214,7 +214,7 @@ function Zoom(){
     document.querySelector("header").style.color="white";
 
     document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div>Zoom";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>Zoom";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
