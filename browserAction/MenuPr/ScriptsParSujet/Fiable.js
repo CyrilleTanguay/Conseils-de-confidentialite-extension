@@ -1,11 +1,48 @@
 function Fiable(){
-    document.getElementById('laListe').innerHTML="<p>Si vous voulez aller sur un site, n’acceptez que les cookies essentiels</p><p id='saFiabilite'>Fiabilité du site</p><div id='siteFiable'><ul><li>Qui est l’auteur(e)?</li><li>Quelles sont sa profession, son expérience, et sa formation?</li><li>A-t-il/elle de l’expérience sur le sujet?</li><li>Peut-on contacter cette personne?</li><li>Le site est-il affilié à une organisation/association/institution connue?</li><li>Peut-on s’informer sur cette organisation?</li><li>Y’a-t-il une section « mentions légales »?</li><li>Est-il possible de savoir quelle est la mission/objectif du site?</li><li>Quel est l’objectif de cette page (actualité, publicité, éducation, divertissement)?</li><li>Quel est son public-cible (spécialistes, profanes, étudiant(e)s, enfants, public général...)?</li><li>Est-ce que les dates de création et de mise à jour du site sont présentes sur le site?</li><li>À quand remonte sa dernière mise à jour? Si elle remonte à longtemps, son information peut être désuète...</li><li>L’information est-elle sourcée?</li><li>Est-ce que le texte est bien orthographié?</li></ul></div><hr><p id='infoFi'>Fiabilité de l'information</p><div id='infoFiable'><ul><li>Entrez l’information dans la barre de recherche et ajoutez « faux ».</li><li>Comparer son point de vue local et international</li><li>Vérifiez sa date de publication pour la mettre dans son contexte.</li><li>Renseignez-vous sur la source d’information</li><li>A-t-il un titre douteux? </li></ul></div><hr><p id='InflS'>Influenceur</p><div id='siteInf'><ul><li>Vérifiez leur authenticité (attention à l’achat de vues)</li><li>Vérifiez leur pertinence et leur expertise à aborder un sujet</li><li>Demandez-vous si l’influenceur reparle des produits dans les semaines/mois suivants.</li><li>Est-ce qu’il est disposé à discuter avec ses internautes sur les produits en question?</li><li>Est-ce qu’il mentionne qu’il s’agit d’une publicité ou d’un sponsor si le contenu est visiblement promotionnel?</li></ul></div><hr><p id='santSite'>Sites de santé</p><div id='siteSante'><ul><li>Est-ce que l’auteur du site vend son propre produit médical?</li><li>Est-ce le site d’une institution médicale connue?</li><li>Quel est son suffixe?</li><li>A-t-il des références médicales fiables?</li><li>Méfiez-vous des forums. En toute logique, vous ne devriez pas mourir d’un rhume.</li><li>Les cas les plus mentionnés (et souvent faux) se retrouvent en première position sur Google, donc prudence.</li><li>Méfiez-vous des formulaires automatisés, ils ne sont fiables qu’à 34%.</li><li>Utilisez des sites fiables comme Patientslikeme, Doctissimo, Sante.Journaldesfemmes.com, Maladiesrares.info, Santé Canada</li></ul></div>";
+  indexation[0]="<p id='introP'>Si vous voulez aller sur un site, n’acceptez que les cookies essentiels</p>"
+  indexation[1]="<p id='saFiabilite'>Fiabilité du site</p><div id='siteFiable'><ul>"
+  indexation[2]="<li>Qui est l’auteur(e)?</li><li>Quelles sont sa profession, son expérience, et sa formation?</li><li>A-t-il/elle de l’expérience sur le sujet?</li>"
+  indexation[3]="<li>Peut-on contacter cette personne?</li>"
+  indexation[4]="<li>Le site est-il affilié à une organisation/association/institution connue?</li>"
+  indexation[5]="<li>Peut-on s’informer sur cette organisation?</li>"
+  indexation[6]="<li>Y’a-t-il une section « mentions légales »?</li>"
+  indexation[7]="<li>Est-il possible de savoir quelle est la mission/objectif du site?</li>"
+  indexation[8]="<li>Quel est l’objectif de cette page (actualité, publicité, éducation, divertissement)?</li>"
+  indexation[9]="<li>Quel est son public-cible (spécialistes, profanes, étudiant(e)s, enfants, public général...)?</li>"
+  indexation[10]="<li>Est-ce que les dates de création et de mise à jour du site sont présentes sur le site?</li>"
+  indexation[11]="<li>À quand remonte sa dernière mise à jour? Si elle remonte à longtemps, son information peut être désuète...</li>"
+  indexation[12]="<li>L’information est-elle sourcée?</li>"
+  indexation[13]="<li>Est-ce que le texte est bien orthographié?</li></ul></div><hr>"
+  indexation[14]="<p id='infoFi'>Fiabilité de l'information</p><div id='infoFiable'><ul>"
+  indexation[15]="<li>Entrez l’information dans la barre de recherche et ajoutez « faux ».</li>"
+  indexation[16]="<li>Comparer son point de vue local et international</li>"
+  indexation[17]="<li>Vérifiez sa date de publication pour la mettre dans son contexte.</li>"
+  indexation[18]="<li>Renseignez-vous sur la source d’information</li>"
+  indexation[19]="<li>A-t-il un titre douteux? </li></ul></div><hr>"
+  indexation[20]="<p id='InflS'>Influenceur</p><div id='siteInf'><ul>"
+  indexation[21]="<li>Vérifiez leur authenticité (attention à l’achat de vues)</li>"
+  indexation[22]="<li>Vérifiez leur pertinence et leur expertise à aborder un sujet</li>"
+  indexation[23]="<li>Demandez-vous si l’influenceur reparle des produits dans les semaines/mois suivants.</li>"
+  indexation[24]="<li>Est-ce qu’il est disposé à discuter avec ses internautes sur les produits en question?</li>"
+  indexation[25]="<li>Est-ce qu’il mentionne qu’il s’agit d’une publicité ou d’un sponsor si le contenu est visiblement promotionnel?</li></ul></div><hr>"
+  indexation[26]="<p id='santSite'>Sites de santé</p><div id='siteSante'><ul>"
+  indexation[27]="<li>Est-ce que l’auteur du site vend son propre produit médical?</li>"
+  indexation[28]="<li>Est-ce le site d’une institution médicale connue?</li>"
+  indexation[29]="<li>Quel est son suffixe?</li>"
+  indexation[30]="<li>A-t-il des références médicales fiables?</li>"
+  indexation[31]="<li>Méfiez-vous des forums. En toute logique, vous ne devriez pas mourir d’un rhume.</li>"
+  indexation[32]="<li>Les cas les plus mentionnés (et souvent faux) se retrouvent en première position sur Google, donc prudence.</li>"
+  indexation[33]="<li>Méfiez-vous des formulaires automatisés, ils ne sont fiables qu’à 34%.</li>"
+  indexation[34]="<li>Utilisez des sites fiables comme Patientslikeme, Doctissimo, Sante.Journaldesfemmes.com, Maladiesrares.info, Santé Canada</li></ul></div>"
+  const text = indexation.join(''); 
+  document.getElementById('laListe').innerHTML=text;
     document.querySelector("header").style.backgroundColor="red";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀ Retour</div><div></div>La fiabilité d'un site web";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>La fiabilité d'un site web";
     var BtnReviens= document.getElementById("caseRetour");
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
+
     if (BtnReviens){
       BtnReviens.addEventListener("click", RetourPrincipal); 
     }

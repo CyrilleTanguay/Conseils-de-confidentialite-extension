@@ -1,1 +1,23 @@
 // Put all the javascript code here, that you want to execute after page load.
+/*
+If the click was on a link, send a message to the background page.
+The message contains the link's URL.
+*/
+function notifyExtension(e) {
+  let target = e.target;
+//   while ((target.tagName != "A" || !target.href) && target.parentNode) {
+//     target = target.parentNode;
+//   }
+  if (target.tagName != "A")
+    return;
+   // title="Facebook";
+  console.log("content script sending message");
+  browser.runtime.sendMessage({"url": target.href});
+}
+
+/*
+Add notifyExtension() as a listener to click events.
+*/
+window.addEventListener("click", notifyExtension);
+
+

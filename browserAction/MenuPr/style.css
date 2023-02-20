@@ -14,6 +14,7 @@ body{
 ul{
   padding-left: 20px;
   padding-right: 20px;
+  line-height: initial;
 }
 .iconesApps{
   display: flex;
@@ -22,31 +23,33 @@ ul{
 .iconesApps img{
   /* flex: 1 0 20px; */
   margin: 0 30px;
+}#introP{
+  line-height: initial;
+  font-family: K2D, sans-serif;
 }
-
 hr{
   border: 1px solid black;
 }
 #myHeading{
-  margin-top: 0px;
-  margin-left: 8px;
-  margin-right: 8px;
-
-  margin-bottom: 0;
+margin: 0 8px;
   text-align: center;
   align-items: center;
-
+font-weight: 400;
+height: 100%;
 }
 header{
   background-color: aqua;
+  height: 40px;
 }
 main{
   margin-left: 8px;
-   overflow-x: hidden;
-
+  overflow-x: hidden;
+  line-height: 0.5;
+  /* font-weight: 300;
+letter-spacing: 0.5px; */
 }
 #caseRetour{
-  font-size: 10px;
+  font-size: 18px;
   text-align: left;
 }
 #Ajust,#Inte,#appInte,#AppDes,#appRet,
