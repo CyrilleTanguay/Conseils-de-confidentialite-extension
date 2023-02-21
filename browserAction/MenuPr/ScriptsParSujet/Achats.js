@@ -15,7 +15,7 @@ indexation[11]="<li>Lisez les infos sur les frais de livraison, de douane et de 
 indexation[12]="<li>Faire des captures d’écrans de chaque transaction, avec l’heure, le numéro de l’achat et la date et imprimez-les. Cela pourra servir de preuve en cas de litige.</li>"
 indexation[13]="    <li>Achetez local. Si vous avez une plainte à faire à la compagnie, il sera plus facile d’aller directement à une compagnie qui habite près de chez vous.</li></ul></div>"
 const text = indexation.join(''); 
-document.querySelector("main").style.lineHeight="inherit";
+// document.querySelector("main").style.lineHeight="inherit";
     document.getElementById('laListe').innerHTML=text;
     document.querySelector("header").style.backgroundColor="red";
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Achats en ligne";

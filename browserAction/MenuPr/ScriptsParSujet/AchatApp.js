@@ -1,4 +1,5 @@
-function achatApp(){
+function achatApp(){ 
+
   indexation[0]="<p id='introP'>Les applications peuvent nous simplifier la vie, tandis que d’autres peuvent être des arnaques.</p>"
   indexation[1]="<p id='ouvrirAchatApp'>Application</p><div id='achatApp'><ul>"
   indexation[2]="<li>Demandez-vous si l’application vaut le type de données qui ont besoin d’être partagées, que ce soit gratuit ou nom.</li>"
@@ -21,7 +22,6 @@ function achatApp(){
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";
-
     var BtnAchatdeApp= document.getElementById("ouvrirAchatApp");
 if (BtnAchatdeApp){
   BtnAchatdeApp.addEventListener("click", ouvrirAchatApp); 

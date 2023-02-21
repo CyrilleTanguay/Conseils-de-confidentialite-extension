@@ -171,6 +171,10 @@ indexation[52]="<li>Limitez l’audience de vos publications pour ne pas que des
     if (BtnReviens){
       BtnReviens.addEventListener("click", TikTok); 
     }
+    var BtnReviens= document.getElementById("Twitter");
+    if (BtnReviens){
+      BtnReviens.addEventListener("click", Twitter); 
+    }
     var BtnReviens= document.getElementById("YTube");
     if (BtnReviens){
       BtnReviens.addEventListener("click", YTube); 

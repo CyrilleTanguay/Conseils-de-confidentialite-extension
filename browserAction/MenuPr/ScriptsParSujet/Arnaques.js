@@ -4,7 +4,7 @@ indexation[1]="<p id='ouvrirStrcArn'>Structure</p><div id='structure' style='dis
 indexation[2]="<p id='ouvrirEscSol'>Que faire?</p><div id='escrSol' style='display: none'><ul><li>Toujours vérifier l’adresse courriel.</li><li>Prenez le temps de lire le courriel et ne vous pressez pas. Les auteurs de ces courriels veulent que vous fassiez le contraire pour pouvoir arriver à leurs fins.</li><li><b><u><i>Ne répondez jamais à ces courriels.</i></u></b></li><li><b><u><i>Ne cliquez jamais sur les liens, même s’il y a un lien vous invitant à vous désabonner d’une infolettre.</i></u></b> Cela prouvera simplement au destinataire que votre adresse courriel est active, et vous recevrez encore plus de pourriels. Aussi, placez le curseur de votre souris sur le lien pour voir si l’adresse est fiable.</li><li><b><u><i>N’ouvrez pas les fichiers joints.</i></u></b></li><li>Avant de supprimer le courriel, vérifiez le type d’arnaque.</li><li>En cas de fuite, bloquez les comptes bancaires.</li></ul></div><hr>"
 indexation[3]="<p id='arnPres'>Arnaques au président</p><hr>"
 indexation[4]="<p id='arnNiger'>Arnaque nigériane (alias 4-1-9)</p><hr>"
-indexation[5]="<p id='phish'>Ingénierie sociale (ou phishing)</p><div id='phishing' style='display: none'><p>Il s’agit probablement du type d’arnaque le plus populaire. Elle peut être:</p><ul><li>Une carte de vœux</li><li>Un contact institutionnel</li><li>Un site de rencontre (« Rencontrez ces filles célibataires dans votre région »)</li><li>Un message indiquant que vous avez gagné un prix</li><li>Une arnaque au tueur (un tueur à gage a été engagé pour vous assassiner, mais est prêt à vous oublier en échange d’une somme)</li><li>Un message indiquant que vous avez été piraté et qui vous demande de vous connecter à un site pour estimer les dégâts</li><li>Un message de l’équipe de support Microsoft, qui vous propose des conseils payants </li><li>Une fausse institution financière qui vous presse de transférer vos fonds.</li><li>Une urgence médicale d’un de vos contacts</li><li>Des dettes</li><li>Un message de la compagnie de téléphone</li><li>Un message avec une annonce trop belle pour être vraie</li><li>De la police (la police ne vous demandera jamais des infos sur votre carte de crédit)</li></ul></div><hr>"
+indexation[5]="<p id='phish'>Ingénierie sociale (ou phishing)</p><div id='phishing' style='display: none'><p id='introP'>Il s’agit probablement du type d’arnaque le plus populaire. Elle peut être:</p><ul><li>Une carte de vœux</li><li>Un contact institutionnel</li><li>Un site de rencontre (« Rencontrez ces filles célibataires dans votre région »)</li><li>Un message indiquant que vous avez gagné un prix</li><li>Une arnaque au tueur (un tueur à gage a été engagé pour vous assassiner, mais est prêt à vous oublier en échange d’une somme)</li><li>Un message indiquant que vous avez été piraté et qui vous demande de vous connecter à un site pour estimer les dégâts</li><li>Un message de l’équipe de support Microsoft, qui vous propose des conseils payants </li><li>Une fausse institution financière qui vous presse de transférer vos fonds.</li><li>Une urgence médicale d’un de vos contacts</li><li>Des dettes</li><li>Un message de la compagnie de téléphone</li><li>Un message avec une annonce trop belle pour être vraie</li><li>De la police (la police ne vous demandera jamais des infos sur votre carte de crédit)</li></ul></div><hr>"
 indexation[6]="<p id='autArn'>Autres</p><div id='autresArn' style='display: none'>"
 indexation[7]="<ul><li>On vous demande de faire un paiement via des moyens qui ne sont pas sécuritaires</li><li>Un contact vous demande de payer vers un nouveau compte</li><li>Un vendeur que vous avez déjà payé vous demande plus d'argent en raison de circonstances imprévues</li><li>L’arnaque « Hi mum » (littéralement « allô maman »): Quelqu’un se fait passer pour un de vos contacts et vous fait croire qu’il a perdu son téléphone. Ce message peut contenir un soi-disant « nouveau numéro de téléphone ». En cas de doute, appelez votre ami avec le numéro de téléphone d’origine et non celui du courriel.</li><li>*Un ami prétendument atteint d’un cancer vous demande d’acheter des cartes Google Play et dit qu’il va vous rembourser bientôt. Bien que l'adresse courriel correspond à celle de votre ami, elle reste une arnaque, <b><i><u>mais ne supprimez pas le message.</u></i></b> Cela signifie surtout que son compte a été piraté, alors appelez-la par téléphone pour l’avertir.</li><li>Quelqu’un vous envoie un message avec votre propre adresse courriel, prétendant qu’il a pris le contrôle de votre compte et vous demande de l’argent. Cette personne vous ment: tout le monde peut écrire un courriel à partir de l’adresse de n’importe qui. Si vous avez des doutes, regardez s’il y a des connections inconnues dans les paramètres.</li><li>Il peut s’agir d’une fausse commande, d’un faux prélèvement ou d’un faux concours.</li><li>Il s’agit d’une prescription de médicaments, de méthodes d’enrichissement, de services financiers/réduction de dettes, diplômes à acheter ou de jeux d’argent</li></ul></div>";
 for(let i = 8; i < 14; i++) {
@@ -18,6 +18,7 @@ const text = indexation.join('');
     document.getElementById("myHeading").style.display="grid";
     document.getElementById('myHeading').style.color="white";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
+
     var BtnReviens= document.getElementById("caseRetour");
 if (BtnReviens){
   BtnReviens.addEventListener("click", SMS); 
@@ -63,7 +64,7 @@ if (BtnouvrirEscSol){
     }
 }); 
 }
-var BtnouvrirPhish= document.getElementById("ouvrirPhish");
+var BtnouvrirPhish= document.getElementById("phish");
 if (BtnouvrirPhish){
   BtnouvrirPhish.addEventListener("click", function ouvrirPhish(){
       var x = document.getElementById("phishing");
@@ -74,7 +75,7 @@ if (BtnouvrirPhish){
       }
   }); 
 }
-var BtnouvrirAutArn= document.getElementById("ouvrirAutArn");
+var BtnouvrirAutArn= document.getElementById("autArn");
 if (BtnouvrirAutArn){
   BtnouvrirAutArn.addEventListener("click", function ouvrirAutArn(){
     var x = document.getElementById("autresArn");

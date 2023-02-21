@@ -10,6 +10,7 @@
     
   "permissions": [
     "activeTab",
+    "alarms",
     "browserSettings",
     "contextMenus",
     "downloads",
@@ -31,10 +32,10 @@
   "content_scripts": [
     {
       "matches":[
-        "*://*.mozilla.org/*"
+        "https://www.facebook.com/settings*"
       ],
       "js":[
-        "NotifsReseaux/facebook.js"
+        "content_script.js", "liensBouton.js"
       ]
     }
   ],
@@ -44,6 +45,11 @@
     },
     "default_popup": "browserAction/MenuPr/index.html",
     "default_title": "C.C."
+  },
+  "page_action":{
+    "default_icon": "icons/icon19.png",
+    "default_popup":"pageAction/index.html",
+    "show_matches":["https://www.facebook.com/", "https://twitter.com/*", "https://*.instagram.com/*", "https://www.youtube.com/*", "https://*.google.com/*"]
   },
   "options_ui": {
     "page": "options/index.html"
