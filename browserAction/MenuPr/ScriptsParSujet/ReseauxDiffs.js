@@ -262,9 +262,8 @@ if (BtnReviens){
   BtnReviens.addEventListener("click", unReseau); 
 }
 }
-
 function Twitter(){
-indexation[0]="<ul><li>Pour plus de protection, rendez votre page privée</li><li>Décochez la case « Recevoir des messages privés de n’importe qui ».</li><p>Quelques moyens de récupération du mot de passe Twitter:</p>"
+  indexation[0]="<ul><li>Pour plus de protection, rendez votre page privée</li><li>Décochez la case « Recevoir des messages privés de n’importe qui ».</li><p>Quelques moyens de récupération du mot de passe Twitter:</p>"
 indexation[1]="  <p>À utiliser:</p><ul><li>La double authentification</li><li>Une application externe (Google)</li><li>Une clé physique</li><li>Un code de récupération</li></ul>"
 indexation[2]="  <p>À ne pas utiliser</p><ul><li>Les messages textes</li></ul></ul>"
 for(let i = 3; i < 55; i++) {
@@ -285,6 +284,7 @@ document.getElementById('laListe').innerHTML=text;
   }
 
 function YTube(){
+
 indexation[0]="<ul><li>Vérifiez le check-up de sécurité Google</li>"
 indexation[1]="<li>Activez la protection du compte contre les attaques ciblées. Cela ne s’applique qu’aux profils plus à risque d’être exposés que d’autres (journalistes, personnalités publiques...).</li>"
 indexation[2]="<li>Utilisez les fonctionnalités avertissant les internautes d’une attaque</li>"

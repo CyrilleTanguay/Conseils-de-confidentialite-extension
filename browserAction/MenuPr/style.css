@@ -58,3 +58,16 @@ letter-spacing: 0.5px; */
   display: none;
   font-family: K2D, sans-serif;
 }
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+#VotreOrdi, #indexAppNon, #leNav, #leMDP, #fiable, #reseau, #extorsion, #sms, #achats, #achatsDeApp, #politique, #virus, #attaques, #mobiles{
+  display: grid;
+  grid-template-columns: 1.2em auto;
+  align-items: center;
+}
