@@ -44,3 +44,5 @@ which we read from the message.
 
 // console.log("yes");
 console.log(location.href);
+
+//let id="firefox-compact-dark@mozilla.org"

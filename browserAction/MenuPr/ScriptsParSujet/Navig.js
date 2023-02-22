@@ -9,12 +9,13 @@ indexation[6]=  " <li>Faites un ménage de vos cookies. Enlevez ceux qui peuvent
 indexation[7]=  " <li>Bloquez les permissions.</li>"
 indexation[8]=  " <li>Activez les options de sécurité.</li></ul></div><hr>"
 indexation[9]=  " <p id='ouvrirConfExt'>Extensions</p><div id='confExt'><ul>"
-indexation[10] ="    <li>Disconnect: permet de vous protéger de cookies tiers</li>"
-indexation[11] ="    <li>Privacy Badger</li>"
-indexation[12]= "    <li>Ghostery: Enlève les publicités</li>"
-indexation[13] ="   <li>Facebook Container: Empêche Meta (Facebook, Instagram) de vous traquer même en dehors de Facebook.</li>"
-indexation[14]= "<li>Return Youtube Dislike : Une extension qui, comme son nom l’indique, affiche les pouces rouges de Youtube.</li>"
-indexation[15] ="<li>NoScript: Gère les scripts JavaScript (Attention: il vous faudra souvent faire le tri des scripts pour qu'un site fonctionne.)</li></ul></div>"
+indexation[10] ="    <li>Disconnect: permet de vous protéger de cookies tiers<div id='Disconnect'></div></li>"
+indexation[11] ="    <li>Don't track me Google: simplifie les liens dans les recherches Google<div id='DTM'></div></li>"
+indexation[12] ="    <li>Privacy Badger<div id='PRBdg'></div></li>"
+indexation[13]= "    <li>Ghostery: Enlève les publicités<div id='Ghst'></div></li>"
+indexation[14] ="   <li>Facebook Container: Empêche Meta (Facebook, Instagram) de vous traquer même en dehors de Facebook.<div id='FbCo'></div></li>"
+indexation[15]= "<li>Return Youtube Dislike : Une extension qui, comme son nom l’indique, affiche les pouces rouges de Youtube.<div id='RYD'></div></li>"
+indexation[16] ="<li>NoScript: Gère les scripts JavaScript (Attention: il vous faudra souvent faire le tri des scripts pour qu'un site fonctionne.)<div id='NSc'></div></li></ul></div>"
 const text = indexation.join(''); 
     document.getElementById('laListe').innerHTML=text;
     document.querySelector("header").style.backgroundColor="orange";
@@ -25,6 +26,51 @@ const text = indexation.join('');
     var BtnReviens= document.getElementById("caseRetour");
 if (BtnReviens){
   BtnReviens.addEventListener("click", RetourPrincipal); 
+}
+
+
+if ((browser.management.get('jid1-ZAdIEUB7XOzOJw@jetpack'))){
+  console.log("installée")
+}
+else{
+  document.getElementById("Disconnect").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>"
+}
+console.log(browser.management.get('dont-track-me-google@robwu.nl'))
+if (!(browser.management.get('dont-track-me-google@robwu.nl'))){
+  console.log("installée")
+}
+else{
+  document.getElementById("DTM").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>"
+}
+if (!(browser.management.get('jid1-MnnxcxisBPnSXQ@jetpack'))){
+  console.log("installée")
+}
+else{
+  document.getElementById("PRBdg").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/privacy-badger17/'>Installer</a>"
+}
+if (!(browser.management.get('firefox@ghostery.com'))){
+  console.log("installée")
+}
+else{
+  document.getElementById("Ghst").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/ghostery/'>Installer</a>"
+}
+if (!(browser.management.get("@contain-facebook"))){
+  console.log("installée")
+}
+else{
+  document.getElementById("FbCo").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>"
+}
+if (!(browser.management.get("@contain-facebook"))){
+  console.log("installée")
+}
+else{
+  document.getElementById("RYD").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>"
+}
+if (!(browser.management.get("{73a6fe31-595d-460b-a920-fcc0f8843232}"))){
+  console.log("installée")
+}
+else{
+  document.getElementById("NSc").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/noscript/'>Installer</a>"
 }
 var BtnConfNav = document.getElementById("ouvrirConfNav");
 
