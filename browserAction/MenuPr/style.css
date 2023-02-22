@@ -10,6 +10,7 @@ body{
   margin-right: 0px;
   overflow-x: hidden;
 /* max-height: 900px; */
+height: max-content;
 }
 ul{
   padding-left: 20px;
@@ -45,6 +46,7 @@ main{
   margin-left: 8px;
   overflow-x: hidden;
   line-height: 0.5;
+  color:midnightblue;
   /* font-weight: 300;
 letter-spacing: 0.5px; */
 }
@@ -66,8 +68,9 @@ letter-spacing: 0.5px; */
   stroke: currentColor;
   fill: currentColor;
 }
-#VotreOrdi, #indexAppNon, #leNav, #leMDP, #fiable, #reseau, #extorsion, #sms, #achats, #achatsDeApp, #politique, #virus, #attaques, #mobiles{
+#VotreOrdi, #indexAppNon, #leNav, #leMDP, #fiable, #reseau, #extorsion, #sms, #achats, #achatDeApp, #politique, #virus, #attaques, #mobiles{
   display: grid;
   grid-template-columns: 1.2em auto;
   align-items: center;
+  letter-spacing: 0.3pt;
 }

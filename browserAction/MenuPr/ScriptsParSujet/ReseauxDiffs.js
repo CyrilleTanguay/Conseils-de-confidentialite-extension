@@ -282,9 +282,13 @@ document.getElementById('laListe').innerHTML=text;
     BtnReviens.addEventListener("click", unReseau); 
   }
   }
+  if(window.location.href=="https://www.youtube.com/account"){
+YTube();
+console.log("etoui")
+}
 
 function YTube(){
-
+console.log("mais oui!!!")
 indexation[0]="<ul><li>Vérifiez le check-up de sécurité Google</li>"
 indexation[1]="<li>Activez la protection du compte contre les attaques ciblées. Cela ne s’applique qu’aux profils plus à risque d’être exposés que d’autres (journalistes, personnalités publiques...).</li>"
 indexation[2]="<li>Utilisez les fonctionnalités avertissant les internautes d’une attaque</li>"
