@@ -1,5 +1,5 @@
 function Mobiles(){
-  indexation[0]="<p id='ouvririPhone'>iPhone</p><div id='iphone'><ul>"
+  indexation[0]="<p id='ouvririPhone' class='iconeOui'><span class='icon-logo-ios'></span>iPhone</p><div id='iphone'><ul>"
   indexation[1]="<li>Désactivez Siri</li>"
   indexation[2]="<li>Désactivez « Services système »</li>"
   indexation[3]="<li>Installez Lockdown</li>"
@@ -12,7 +12,7 @@ function Mobiles(){
   indexation[10]="<li>Faites le contrôle de sécurité</li>"
   indexation[11]="<li>Désactivez la collecte d’analyses</li>"
   indexation[12]="<li>Installez un navigateur sécuritaire (Brave, OnionRouter)</li></ul></div><hr>"
-  indexation[13]="<p id='ouvrirAndroid'>Android</p><div id='android'><ul>"
+  indexation[13]="<p id='ouvrirAndroid' class='iconeOui'><span class='icon-logo-android'></span>Android</p><div id='android'><ul>"
   indexation[14]="  <li>Recherchez le mot « cryptage » ou « chiffrement » et activez l’option. Définissez un mot de passe</li>"
   indexation[15]="  <li>Installez NetGuard et/ou Blokada</li>"
   indexation[16]="  <li>LineageOS: une ROM alternative pour Android (À INSTALLER À VOS RISQUES ET PÉRILS. DEMANDE DES COMPÉTENCES TECHNIQUES)</li>"

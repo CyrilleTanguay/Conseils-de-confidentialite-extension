@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'icomoon_logos';
+  src:  url('fonts/icomoon_logos.eot?uamafp');
+  src:  url('fonts/icomoon_logos.eot?uamafp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon_logos.ttf?uamafp') format('truetype'),
+    url('fonts/icomoon_logos.woff?uamafp') format('woff'),
+    url('fonts/icomoon_logos.svg?uamafp#icomoon_logos') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-logo-"], [class*=" icon-logo-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon_logos' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /*line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo-android:before {
+  content: "\e900";
+  color: #3ddc84;
+}
+.icon-logo-brave:before {
+  content: "\e901";
+  color: #fb542b;
+}
+.icon-logo-deezer:before {
+  content: "\e902";
+  color: #feaa2d;
+}
+.icon-logo-duckduckgo:before {
+  content: "\e903";
+  color: #de5833;
+}
+.icon-logo-facebook:before {
+  content: "\e904";
+  color: #1877f2;
+}
+.icon-logo-google:before {
+  content: "\e905";
+  color: #4285f4;
+}
+.icon-logo-googlechrome:before {
+  content: "\e906";
+  color: #4285f4;
+}
+.icon-logo-googleplay:before {
+  content: "\e907";
+  color: #607d8b;
+}
+.icon-logo-icloud:before {
+  content: "\e908";
+  color: #3693f3;
+}
+.icon-logo-instagram:before {
+  content: "\e909";
+  color: #e4405f;
+}
+.icon-logo-internetexplorer:before {
+  content: "\e90a";
+  color: #0076d6;
+}
+.icon-logo-ios:before {
+  content: "\e90b";
+}
+.icon-logo-messenger:before {
+  content: "\e90c";
+  color: #00b2ff;
+}
+.icon-logo-microsoftedge:before {
+  content: "\e90d";
+  color: #0078d7;
+}
+.icon-logo-microsoftoutlook:before {
+  content: "\e90e";
+  color: #0072c6;
+}
+.icon-logo-mozillafirefox:before {
+  content: "\e90f";
+  color: #ff7139;
+}
+.icon-logo-nintendo:before {
+  content: "\e910";
+  color: #8f8f8f;
+}
+.icon-logo-paypal:before {
+  content: "\e911";
+  color: #00457c;
+}
+.icon-logo-riot:before {
+  content: "\e912";
+  color: #368bd6;
+}
+.icon-logo-safari:before {
+  content: "\e913";
+}
+.icon-logo-signal:before {
+  content: "\e914";
+  color: #2592e9;
+}
+.icon-logo-skype:before {
+  content: "\e915";
+  color: #00aff0;
+}
+.icon-logo-snapchat:before {
+  content: "\e916";
+  color: #fcf700;
+}
+.icon-logo-spotify:before {
+  content: "\e917";
+  color: #1ed760;
+}
+.icon-logo-telegram:before {
+  content: "\e918";
+  color: #2ca5e0;
+}
+.icon-logo-tiktok:before {
+  content: "\e919";
+}
+.icon-logo-tor:before {
+  content: "\e91a";
+  color: #7e4798;
+}
+.icon-logo-twitter:before {
+  content: "\e91b";
+  color: #1da1f2;
+}
+.icon-logo-visa:before {
+  content: "\e91c";
+  color: #142787;
+}
+.icon-logo-whatsapp:before {
+  content: "\e91d";
+  color: #25d366;
+}
+.icon-logo-windows:before {
+  content: "\e91e";
+  color: #0078d6;
+}
+.icon-logo-wire:before {
+  content: "\e91f";
+}
+.icon-logo-youtube:before {
+  content: "\e920";
+  color: #f00;
+}
+.icon-logo-zoom:before {
+  content: "\e921";
+  color: #2d8cff;
+}
