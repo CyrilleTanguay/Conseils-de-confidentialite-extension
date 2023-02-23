@@ -36,25 +36,25 @@ else{
   document.getElementById("Disconnect").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>"
 }
 console.log(browser.management.get('dont-track-me-google@robwu.nl'))
-if (!(browser.management.get('dont-track-me-google@robwu.nl'))){
+if ((browser.management.get('dont-track-me-google@robwu.nl'))){
   console.log("installée")
 }
 else{
   document.getElementById("DTM").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>"
 }
-if (!(browser.management.get('jid1-MnnxcxisBPnSXQ@jetpack'))){
+if ((browser.management.get('jid1-MnnxcxisBPnSXQ@jetpack'))){
   console.log("installée")
 }
 else{
   document.getElementById("PRBdg").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/privacy-badger17/'>Installer</a>"
 }
-if (!(browser.management.get('firefox@ghostery.com'))){
+if ((browser.management.get('firefox@ghostery.com'))){
   console.log("installée")
 }
 else{
   document.getElementById("Ghst").innerHTML="<a href='https://addons.mozilla.org/fr/firefox/addon/ghostery/'>Installer</a>"
 }
-if (!(browser.management.get("@contain-facebook"))){
+if ((browser.management.get("@contain-facebook"))){
   console.log("installée")
 }
 else{
