@@ -68,7 +68,7 @@ letter-spacing: 0.5px; */
   stroke: currentColor;
   fill: currentColor;
 }
-#VotreOrdi, #indexAppNon, #leNav, #leMDP, #fiable, #reseau, #extorsion, #sms, #achats, #achatDeApp, #politique, #virus, #attaques, #mobiles{
+.iconeOui{
   display: grid;
   grid-template-columns: 1.2em auto;
   align-items: center;

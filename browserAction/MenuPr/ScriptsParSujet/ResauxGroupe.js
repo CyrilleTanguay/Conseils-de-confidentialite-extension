@@ -8,22 +8,22 @@ indexation[5]="<li>Privilégiez les publications entièrement assumées.</li>"
 indexation[6]="<li>Vérifiez régulièrement qui est connecté. S’il y a des personnes suspectes, déconnectez-les et changez votre mot de passe.</li>"
 indexation[7]="<li>Ne partagez pas de données trop privées (ses enfants, son domicile, des objets précieux...)</li>"
 indexation[8]="<li>Désactivez le pistage via les publicités et la localisation.</li></ul></div><hr>"
-indexation[9]="<p id='Deez'>Deezer</p><hr>"
-indexation[10]="<p id='Edge'>Edge</p><hr>"
-indexation[11]="<p id='Fb'>Facebook</p><hr>"
-indexation[12]="<p id='Google'>Google</p><hr>"
-indexation[13]="<p id='Insta'>Instagram</p><hr>"
-indexation[14]="<p id='Messng'>Messenger</p><hr>"
-indexation[15]="<p id='Nint'>Nintendo</p><hr>"
-indexation[16]="<p id='Sig'>Signal</p><hr>"
-indexation[17]="<p id='Skype'>Skype</p><hr>"
-indexation[18]="<p id='Snapchat'>Snapchat</p><hr>"
-indexation[19]="<p id='Spotify'>Spotify</p><hr>"
-indexation[20]="<p id='Telegram'>Telegram</p><hr>"
-indexation[21]="<p id='TikTok'>TikTok</p><hr>"
-indexation[22]="<p id='Twitter'>Twitter</p><hr>"
-indexation[23]="<p id='YTube'>YouTube</p><hr>"
-indexation[24]="<p id='Zoom'>Zoom</p><hr>"
+indexation[9]="<p id='Deez' class='iconeOui'><span class='icon-logo-deezer'></span>Deezer</p><hr>"
+indexation[10]="<p id='Edge' class='iconeOui'><span class='icon-logo-microsoftedge'></span>Edge</p><hr>"
+indexation[11]="<p id='Fb' class='iconeOui'><span class='icon-logo-facebook'></span>Facebook</p><hr>"
+indexation[12]="<p id='Google' class='iconeOui'><span class='icon-logo-google'></span>Google</p><hr>"
+indexation[13]="<p id='Insta' class='iconeOui'><span class='icon-logo-instagram'></span>Instagram</p><hr>"
+indexation[14]="<p id='Messng' class='iconeOui'><span class='icon-logo-messenger'></span>Messenger</p><hr>"
+indexation[15]="<p id='Nint' class='iconeOui'><span class='icon-logo-nintendo'></span>Nintendo</p><hr>"
+indexation[16]="<p id='Sig' class='iconeOui'><span class='icon-logo-signal'></span>Signal</p><hr>"
+indexation[17]="<p id='Skype' class='iconeOui'><span class='icon-logo-skype'></span>Skype</p><hr>"
+indexation[18]="<p id='Snapchat' class='iconeOui'><span class='icon-logo-snapchat'></span>Snapchat</p><hr>"
+indexation[19]="<p id='Spotify' class='iconeOui'><span class='icon-logo-spotify'></span>Spotify</p><hr>"
+indexation[20]="<p id='Telegram' class='iconeOui'><span class='icon-logo-telegram'></span>Telegram</p><hr>"
+indexation[21]="<p id='TikTok' class='iconeOui'><span class='icon-logo-tiktok'></span>TikTok</p><hr>"
+indexation[22]="<p id='Twitter' class='iconeOui'><span class='icon-logo-twitter'></span>Twitter</p><hr>"
+indexation[23]="<p id='YTube' class='iconeOui'><span class='icon-logo-youtube'></span>YouTube</p><hr>"
+indexation[24]="<p id='Zoom' class='iconeOui'><span class='icon-logo-zoom'></span>Zoom</p><hr>"
 indexation[25]="<p id='ouvrirSitesRencontre'>Les sites de rencontre</p><div id='sitesRen'><ul>"
 indexation[26]="<li>Ne mettez jamais votre adresse, lieu de travail, numéro fixe, ou le nom de votre école dans votre description.</li>"
 indexation[27]="<li>Soyez honnête mais pas déplacé</li>"
@@ -61,6 +61,8 @@ indexation[52]="<li>Limitez l’audience de vos publications pour ne pas que des
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
+    document.getElementById("myHeading").style.color="white";
+
 
     var BtnReviens= document.getElementById("caseRetour");
     if (BtnReviens){
@@ -158,6 +160,10 @@ indexation[52]="<li>Limitez l’audience de vos publications pour ne pas que des
     var BtnReviens= document.getElementById("Skype");
     if (BtnReviens){
       BtnReviens.addEventListener("click", Skype); 
+    }
+    var BtnReviens= document.getElementById("Snapchat");
+    if (BtnReviens){
+      BtnReviens.addEventListener("click", Snapchat); 
     }
     var BtnReviens= document.getElementById("Spotify");
     if (BtnReviens){
