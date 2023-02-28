@@ -31,7 +31,7 @@ function ArnPres(){
   }
   var BtnReviens= document.getElementById("caseRetour");
   if (BtnReviens){
-    BtnReviens.addEventListener("click", RetourPrincipal); 
+    BtnReviens.addEventListener("click", Arnaques); 
   }
   
   

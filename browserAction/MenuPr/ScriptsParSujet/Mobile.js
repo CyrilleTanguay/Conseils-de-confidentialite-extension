@@ -18,7 +18,7 @@ function Mobiles(){
   indexation[16]="  <li>LineageOS: une ROM alternative pour Android (À INSTALLER À VOS RISQUES ET PÉRILS. DEMANDE DES COMPÉTENCES TECHNIQUES)</li>"
   indexation[17]="  <li>Désactivez l’assistant Google </li>"
   indexation[18]="  <li>Installez un navigateur sécuritaire (Firefox, Bromite, Tor)</li><li>Autre messagerie chiffrée: Silence</li></ul></div><hr>"
-  indexation[19]="<p id='ouvrir2Cels'>Pour tout téléphone cellulaire</p><div id='deuxTels'><ul>"
+  indexation[19]="<p id='ouvrir2Cels' class='iconeOui'><span class='icon-FA-columns'></span>Pour tout téléphone cellulaire<span class='icon-circle-down'></span></p><div id='deuxTels'><ul>"
   indexation[20]="  <li>Les iPhones et les téléphones Android n'autorisent pas les applications de solutions VPN à couper les connexions en cours le temps que l'attribution du serveur soit faite</li>"
   indexation[21]="  <li>Ne répondez pas à un appel s’il commence par +41 (Suisse), +678 (Vanuatu, Mélanésie) ou +738 (Hong Kong) si vous vivez au Québec. C’est une fraude</li>"
   indexation[22]="  <li>En fait, quand vous recevez un appel, ne dites rien et attendez que l’interlocuteur parle. S’il raccroche, vous venez sûrement d’éviter un vol de votre numéro.</li>"
@@ -30,11 +30,16 @@ function Mobiles(){
   indexation[28]="  <li>Désactivez les publicités ciblées</li><li>Vérifiez les permissions (appareil photo, géolocalisation)</li>"
   indexation[29]="  <li>Personnalisez votre code PIN, qui protège de l’usage de votre carte SIM. Évitez les codes trop simples.</li>"
   indexation[30]="<li>Supprimez des cookies.</li></ul></div><hr>"
-  indexation[31]="<p id='ouvrirAppNon'>Applications à ne pas installer</p>"
+  indexation[31]="<p id='ouvrirAppNon' class='iconeOui'><span class='icon-FA-warning'></span>Applications à ne pas installer<span class='icon-FA-chevron-right'></span></p>"
   const text = indexation.join(''); 
   document.getElementById('laListe').innerHTML=text;
     document.querySelector("header").style.backgroundColor="red";
+      
+    for (let i = 0; i < document.querySelectorAll("div").length; i++) {
+      document.querySelectorAll("div")[i].style.display="none";
+    }
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Conseils pour les téléphones mobiles";
+     document.getElementById("caseRetour").style.display="initial";   
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  

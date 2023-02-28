@@ -14,7 +14,12 @@ function Virus(){
     const text = indexation.join(''); 
       document.getElementById('laListe').innerHTML=text;
     document.querySelector("header").style.backgroundColor="red";
+      
+    for (let i = 0; i < document.querySelectorAll("div").length; i++) {
+      document.querySelectorAll("div")[i].style.display="none";
+    }
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Virus";
+        document.getElementById("caseRetour").style.display="initial";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  

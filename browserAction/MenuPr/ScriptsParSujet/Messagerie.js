@@ -1,19 +1,24 @@
 function SMS(){
-indexation[0]="<p id='ouvrirConseils'>Conseils</p><div id='conseilMess'><ul>"
+indexation[0]="<p id='ouvrirConseils' class='iconeOui'><span class='icon-FA-book'></span>Conseils<span class='icon-circle-down'></span></p><div id='conseilMess'><ul>"
 indexation[1]="<li>Si vous avez un compte Vidéotron, sachez que les messages présents dans la boîte de réception sont automatiquement supprimés après 1 an. Pour empêcher cela, créez une autre boîte ou, si vous utilisez l’application Mail sur Mac, placer vos messages dans la boîte « archive » fera l’affaire.</li>"
 indexation[2]="  <li>Utilisez deux adresses courriel: une privée pour vos proches, une publique pour les forums.</li>"
 indexation[3]="  <li>Activez la double authentification</li>"
 indexation[4]="  <li>Déconnectez-vous lors d’une session publique</li>"
 indexation[5]="  <li>N’oubliez pas que la fonction répondre à tous existe. </li>"
 indexation[6]="  <li>Vérifiez les paramètres de sécurité de votre boîte mail.</li></ul></div><hr>"
-indexation[7]="  <p id='Arnaques'>Arnaques/pourriel</p>"
+indexation[7]="  <p id='Arnaques' class='iconeOui'><span class='icon-FA-flag'></span>Arnaques/pourriel<span class='icon-FA-chevron-right'></span></p>"
 for(let i = 8; i < 14; i++) {
   indexation[i] = '';
 };
 const text = indexation.join(''); 
   document.getElementById('laListe').innerHTML=text;
     document.querySelector("header").style.backgroundColor="red";
+  
+    for (let i = 0; i < document.querySelectorAll("div").length; i++) {
+      document.querySelectorAll("div")[i].style.display="none";
+    }
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Messagerie";
+     document.getElementById("caseRetour").style.display="initial";   
     document.getElementById('myHeading').style.color="black";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";

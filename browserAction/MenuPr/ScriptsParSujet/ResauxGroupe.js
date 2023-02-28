@@ -34,7 +34,7 @@ indexation[31]="<div id='partagePhoto'><ul>"
 indexation[32]="<li><b><i><u>Rien ne vous oblige à envoyer des photos osées, alors n’en envoyez que si vous le voulez vraiment.</u></i></b></li>"
 indexation[33]="<li>Ne montrez jamais votre visage ou un signe distinctif (piercing, tatouage...) sur ces photos.</li> "
 indexation[34]="<li>Faites en sorte que le décor ne puisse vous identifier.</li><li>N’envoyez rien à quelqu’un en qui vous n’avez pas totalement confiance.</li></ul></div><hr>"
-indexation[35]="<p id='ouvrirTrolls'>Trolls</p><div id='troll'><ul>"
+indexation[35]="<p id='ouvrirTrolls' class='iconeOui'><span class='icon-FA-flag'></span>Trolls<span class='icon-circle-down'></span></p><div id='troll'><ul>"
 indexation[36]="<li>Ne lui répondez pas. Les trolls veulent avoir de l’attention, donc, n’entrez pas dans son jeu.</li>"
 indexation[37]="<li>Prenez du recul.</li>"
 indexation[38]="<li>Ne prenez pas son commentaire de manière personnelle.</li>"
@@ -55,7 +55,12 @@ indexation[52]="<li>Limitez l’audience de vos publications pour ne pas que des
  const text = indexation.join(''); 
  document.getElementById('laListe').innerHTML=text;
     document.querySelector("header").style.backgroundColor="red";
+      
+    for (let i = 0; i < document.querySelectorAll("div").length; i++) {
+      document.querySelectorAll("div")[i].style.display="none";
+    }
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Réseaux sociaux";
+        document.getElementById("caseRetour").style.display="initial";
     document.getElementById("laListe").style.fontFamily="Oswald, sans-serif";
     document.querySelector("p").style.fontFamily="K2D, sans-serif";
     document.getElementById("myHeading").style.textAlign="right";

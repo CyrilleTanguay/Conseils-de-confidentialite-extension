@@ -76,11 +76,12 @@ for(let i = 5; i < 55; i++) {
 const text = indexation.join(''); 
   document.getElementById('laListe').innerHTML=text;
 
-document.querySelector("header").style.backgroundColor="aqua";
+document.querySelector("header").style.backgroundColor="grey";
 document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
 document.querySelector("main").style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Google";
 document.getElementById("myHeading").style.textAlign="right";
+document.getElementById("myHeading").style.color="white";
 document.getElementById("myHeading").style.display="grid";
 document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
 var BtnReviens= document.getElementById("caseRetour");

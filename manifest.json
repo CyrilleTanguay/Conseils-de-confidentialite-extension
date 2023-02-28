@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "C.C. (Conseils de Confidentialité)",
+  "name": "CoSeCo",
   "author": "Cyrille Tanguay",
   "description": "Vous donne des conseils pour protéger vos données et pour réagir en cas de chantage",
   "version": "1.0",
@@ -10,11 +10,8 @@
     
   "permissions": [
     "activeTab",
-    "alarms",
     "browserSettings",
     "contextMenus",
-    "downloads",
-    "find",
     "management",
     "menus",
     "notifications",
@@ -45,7 +42,7 @@
       "64": "icons/icon.png"
     },
     "default_popup": "browserAction/MenuPr/index.html",
-    "default_title": "C.C."
+    "default_title": "CoSeCo"
   },
   "page_action":{
     "default_icon": "icons/icon19.png",

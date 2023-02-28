@@ -1,6 +1,6 @@
 function Fiable(){
   indexation[0]="<p id='introP'>Si vous voulez aller sur un site, n’acceptez que les cookies essentiels</p>"
-  indexation[1]="<p id='saFiabilite'>Fiabilité du site</p><div id='siteFiable'><ul>"
+  indexation[1]="<p id='saFiabilite' class='iconeOui'><span class='icon-FA-list-alt'></span>Fiabilité du site<span class='icon-circle-down'></span></p><div id='siteFiable'><ul>"
   indexation[2]="<li>Qui est l’auteur(e)?</li><li>Quelles sont sa profession, son expérience, et sa formation?</li><li>A-t-il/elle de l’expérience sur le sujet?</li>"
   indexation[3]="<li>Peut-on contacter cette personne?</li>"
   indexation[4]="<li>Le site est-il affilié à une organisation/association/institution connue?</li>"
@@ -19,7 +19,7 @@ function Fiable(){
   indexation[17]="<li>Vérifiez sa date de publication pour la mettre dans son contexte.</li>"
   indexation[18]="<li>Renseignez-vous sur la source d’information</li>"
   indexation[19]="<li>A-t-il un titre douteux? </li></ul></div><hr>"
-  indexation[20]="<p id='InflS'>Influenceur</p><div id='siteInf'><ul>"
+  indexation[20]="<p id='InflS' class='iconeOui'><span class='icon-FA-eye'></span>Influenceur<span class='icon-circle-down'></span></p><div id='siteInf'><ul>"
   indexation[21]="<li>Vérifiez leur authenticité (attention à l’achat de vues)</li>"
   indexation[22]="<li>Vérifiez leur pertinence et leur expertise à aborder un sujet</li>"
   indexation[23]="<li>Demandez-vous si l’influenceur reparle des produits dans les semaines/mois suivants.</li>"
@@ -37,7 +37,12 @@ function Fiable(){
   const text = indexation.join(''); 
   document.getElementById('laListe').innerHTML=text;
     document.querySelector("header").style.backgroundColor="red";
+      
+    for (let i = 0; i < document.querySelectorAll("div").length; i++) {
+      document.querySelectorAll("div")[i].style.display="none";
+    }
     document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Fiabilité d'un site web";
+        document.getElementById("caseRetour").style.display="initial";
     var BtnReviens= document.getElementById("caseRetour");
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";

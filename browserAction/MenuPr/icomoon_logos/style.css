@@ -114,6 +114,7 @@
 .icon-logo-snapchat:before {
   content: "\e916";
   color: #fcf700;
+  background-color: black;
 }
 .icon-logo-spotify:before {
   content: "\e917";

@@ -26,13 +26,14 @@ function autresAppNon(){
   indexation[24]="<h4>X</h4><ul><li>Xnspy</li></ul>"
   indexation[25]="<h4>Y</h4><ul><li>Yoga for Beginner to Advanced</li><li>YouToon AI Cartoon Effects</li></ul>"
   indexation[26]="<h4>Z</h4><ul><li>Ztime:Earn cash rewards easily</li></ul>"
+  for(let i = 27; i < 100; i++) {
+    indexation[i] = '';
+ };
   const text = indexation.join(''); 
 document.getElementById('laListe').innerHTML=text;
 document.querySelector("header").style.backgroundColor="aqua";
-document.querySelector("p").style.lineHeight="inherit";
-document.querySelector("p").style.fontFamily="K2D, sans-serif";
-document.querySelector("main").style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Les deux";  
+document.querySelector("main").style.fontFamily="K2D, sans-serif";
 document.getElementById("myHeading").style.textAlign="right";
 document.getElementById("myHeading").style.display="grid";
 document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  

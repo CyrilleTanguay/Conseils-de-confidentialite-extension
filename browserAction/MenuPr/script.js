@@ -97,7 +97,7 @@ const indexation = [
   '<p id="politique" class="iconeOui"><span class="icon-file-text"></span>Politique de confidentialité<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="virus" class="iconeOui"><span class="icon-bug"></span>Virus<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span class="icon-FA-chevron-right"></span></p><hr>',
-  '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Conseils pour les téléphones mobiles<span class="icon-FA-chevron-right"></span></p>'
+  '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Téléphones mobiles<span class="icon-FA-chevron-right"></span></p>'
 ];
 
 function allerPr(){
@@ -105,20 +105,20 @@ function allerPr(){
 }
 //Cette fonction permet de retourner au menu principal
 function RetourPrincipal(){
-  indexation[0]= '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[1]= '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[2]= '<p id="leNav" class="iconeOui"><span class="icon-firefox"></span>Navigateur<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[3]= '<p id="leMDP" class="iconeOui"><span class="icon-key"></span>Mot de passe<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[4]= '<p id="fiable" class="iconeOui"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[5]= '<p id="reseau" class="iconeOui"><span class="icon-users"></span>Réseaux sociaux<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[6]= '<p id="extorsion" class="iconeOui"><span class="icon-evil2"></span>Extorsion / Sextorsion / Chantage<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[7]= '<p id="sms" class="iconeOui"><span class="icon-mail"></span>Messagerie<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[8]= '<p id="achats" class="iconeOui"><span class="icon-cart"></span>Achats en ligne<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[9]= '<p id="achatDeApp" class="iconeOui"><span class="icon-download2"></span>Achat d’application<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[10]='<p id="politique" class="iconeOui"><span class="icon-file-text"></span>Politique de confidentialité<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[11]='<p id="virus" class="iconeOui"><span class="icon-bug"></span>Virus<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[12]='<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span class="icon-FA-chevron-right"></p><hr>';
-  indexation[13]='<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Conseils pour les téléphones mobiles<span class="icon-FA-chevron-right"></p>';
+  indexation[0]= '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[1]= '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[2]= '<p id="leNav" class="iconeOui"><span class="icon-firefox"></span>Navigateur<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[3]= '<p id="leMDP" class="iconeOui"><span class="icon-key"></span>Mot de passe<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[4]= '<p id="fiable" class="iconeOui"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[5]= '<p id="reseau" class="iconeOui"><span class="icon-users"></span>Réseaux sociaux<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[6]= '<p id="extorsion" class="iconeOui"><span class="icon-evil2"></span>Extorsion / Sextorsion / Chantage<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[7]= '<p id="sms" class="iconeOui"><span class="icon-mail"></span>Messagerie<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[8]= '<p id="achats" class="iconeOui"><span class="icon-cart"></span>Achats en ligne<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[9]= '<p id="achatDeApp" class="iconeOui"><span class="icon-download2"></span>Achat d’application<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[10]='<p id="politique" class="iconeOui"><span class="icon-file-text"></span>Politique de confidentialité<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[11]='<p id="virus" class="iconeOui"><span class="icon-bug"></span>Virus<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[12]='<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[13]='<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Téléphones mobiles<span class="icon-FA-chevron-right"></span></p>';
   for(let i = 14; i < 100; i++) {
     indexation[i] = '';
  };
@@ -128,7 +128,7 @@ function RetourPrincipal(){
     document.getElementById('myHeading').style.color="black";
     document.querySelector("header").style.backgroundColor="aqua";
     document.querySelector("main").style.fontFamily="Oswald, sans-serif";
-    document.querySelector("main").style.lineHeight="0.5";
+    document.querySelector("main").style.lineHeight="0.3";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.textAlign="center";

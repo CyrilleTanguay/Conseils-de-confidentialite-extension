@@ -1,8 +1,8 @@
 function ouvrirAppNon(){
-    indexation[0]="<p id='autresAppNon'>Les deux</p><hr>"
-    indexation[1]="<p id='ouvrirAppAppleNon'>iPhone</p><div id='appAppleNon'><ul>"
+    indexation[0]="<p id='autresAppNon' class='iconeOui'><span class='icon-FA-columns'></span>Les deux<span class='icon-FA-chevron-right'></span></p><hr>"
+    indexation[1]="<p id='ouvrirAppAppleNon' class='iconeOui'><span class='icon-logo-ios'></span>iPhone<span class='icon-circle-down'></span></p><div id='appAppleNon'><ul>"
     indexation[2]="<li>Calories Tracker</li><li>Fitness Balance</li></ul></div><hr>"
-    indexation[3]="<p id='ouvrirAppAndNon'>Android</p><div id='appAndNon'><ul>"
+    indexation[3]="<p id='ouvrirAppAndNon' class='iconeOui'><span class='icon-logo-android'></span>Android<span class='icon-circle-down'></span></p><div id='appAndNon'><ul>"
     indexation[4]="  <li>Big Decisions</li>"
     indexation[5]="  <li>Document PDF Scanner</li>"
     indexation[6]="  <li>FITSTAR</li"
@@ -25,15 +25,19 @@ function ouvrirAppNon(){
     indexation[23]="  <li>Wonder Time</li>"
     indexation[24]="  <li>X-File Manager</li></ul></div>"
 
-    for(let i = 25; i < 31; i++) {
+    for(let i = 25; i < 35; i++) {
       indexation[i] = '';
     };    const text = indexation.join('');
       document.getElementById('laListe').innerHTML=text;
       document.querySelector("header").style.backgroundColor="aqua";
-      document.querySelector("p").style.lineHeight="inherit";
-      document.querySelector("p").style.fontFamily="K2D, sans-serif";
-      document.querySelector("main").style.fontFamily="K2D, sans-serif";
-      document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Applications à ne pas installer";    
+      document.querySelector("main").style.fontFamily="Oswald, sans-serif";
+      document.querySelector("li").style.fontFamily="K2D, sans-serif";
+      
+    for (let i = 0; i < document.querySelectorAll("div").length; i++) {
+      document.querySelectorAll("div")[i].style.display="none";
+    }
+      document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Applications à ne pas installer"; 
+       document.getElementById("caseRetour").style.display="initial";      
       document.getElementById("myHeading").style.textAlign="right";
       document.getElementById("myHeading").style.display="grid";
       document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto"; 
