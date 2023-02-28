@@ -72,57 +72,66 @@ window.onload = function startListen() {
   else{
     document.getElementById("myHeading").style.textAlign="center";
     document.getElementById("myHeading").style.display="grid";
-    document.getElementById("myHeading").style.gridTemplateColumns="auto"; 
+    document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto"; 
   }
-
+var BtnParams=document.getElementById('btmParam');
+if(BtnParams){
+BtnParams.addEventListener("click", allerPr)
+}
 
 
 }  
 
-  
+
 const indexation = [
-  '<p id="VotreOrdi"><span class="icon-display"></span>Votre ordinateur</p><hr>',
-  '<p id="indexAppNon"><span class="icon-bin"></span>Applications à ne pas installer</p><hr>',
-  '<p id="leNav"><span class="icon-firefox"></span>Navigateur</p><hr>',
-  '<p id="leMDP"><span class="icon-key"></span>Mot de passe</p><hr>',
-  '<p id="fiable"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté</p><hr>',
-  '<p id="reseau"><span class="icon-users"></span>Réseaux sociaux</p><hr>',
-  '<p id="extorsion"><span class="icon-evil2"></span>Extorsion / Sextorsion / Chantage</p><hr>',
-  '<p id="sms"><span class="icon-mail"></span>Messagerie</p><hr>',
-  '<p id="achats"><span class="icon-cart"></span>Achats en ligne</p><hr>',
-  '<p id="achatDeApp"><span class="icon-download2"></span>Achat d’application</p><hr>',
-  '<p id="politique"><span class="icon-file-text"></span>Politique de confidentialité</p><hr>',
-  '<p id="virus"><span class="icon-bug"></span>Virus</p><hr>',
-  '<p id="attaques"><span class="icon-target"></span>Attaques</p><hr>',
-  '<p id="mobiles"><span class="icon-mobile"></span>Conseils pour les téléphones mobiles</p>'
+  '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="leNav" class="iconeOui"><span class="icon-firefox"></span>Navigateur<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="leMDP" class="iconeOui"><span class="icon-key"></span>Mot de passe<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="fiable" class="iconeOui"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="reseau" class="iconeOui"><span class="icon-users"></span>Réseaux sociaux<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="extorsion" class="iconeOui"><span class="icon-evil2"></span>Extorsion / Sextorsion / Chantage<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="sms" class="iconeOui"><span class="icon-mail"></span>Messagerie<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="achats" class="iconeOui"><span class="icon-cart"></span>Achats en ligne<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="achatDeApp" class="iconeOui"><span class="icon-download2"></span>Achat d’application<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="politique" class="iconeOui"><span class="icon-file-text"></span>Politique de confidentialité<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="virus" class="iconeOui"><span class="icon-bug"></span>Virus<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Conseils pour les téléphones mobiles<span class="icon-FA-chevron-right"></span></p>'
 ];
+
+function allerPr(){
+  document.addEventListener("load", browser.runtime.openOptionsPage())
+}
 //Cette fonction permet de retourner au menu principal
 function RetourPrincipal(){
-  indexation[0]= '<p id="VotreOrdi"><span class="icon-display"></span>Votre ordinateur</p><hr>';
-  indexation[1]= '<p id="indexAppNon"><span class="icon-bin"></span>Applications à ne pas installer</p><hr>';
-  indexation[2]= '<p id="leNav"><span class="icon-firefox"></span>Navigateur</p><hr>';
-  indexation[3]= '<p id="leMDP"><span class="icon-key"></span>Mot de passe</p><hr>';
-  indexation[4]= '<p id="fiable"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté</p><hr>';
-  indexation[5]= '<p id="reseau"><span class="icon-users"></span>Réseaux sociaux</p><hr>';
-  indexation[6]= '<p id="extorsion"><span class="icon-evil2"></span>Extorsion / Sextorsion / Chantage</p><hr>';
-  indexation[7]= '<p id="sms"><span class="icon-mail"></span>Messagerie</p><hr>';
-  indexation[8]= '<p id="achats"><span class="icon-cart"></span>Achats en ligne</p><hr>';
-  indexation[9]= '<p id="achatDeApp"><span class="icon-download2"></span>Achat d’application</p><hr>';
-  indexation[10]='<p id="politique"><span class="icon-file-text"></span>Politique de confidentialité</p><hr>';
-  indexation[11]='<p id="virus"><span class="icon-bug"></span>Virus</p><hr>';
-  indexation[12]='<p id="attaques"><span class="icon-target"></span>Attaques</p><hr>';
-  indexation[13]='<p id="mobiles"><span class="icon-mobile"></span>Conseils pour les téléphones mobiles</p>';
+  indexation[0]= '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[1]= '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[2]= '<p id="leNav" class="iconeOui"><span class="icon-firefox"></span>Navigateur<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[3]= '<p id="leMDP" class="iconeOui"><span class="icon-key"></span>Mot de passe<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[4]= '<p id="fiable" class="iconeOui"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[5]= '<p id="reseau" class="iconeOui"><span class="icon-users"></span>Réseaux sociaux<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[6]= '<p id="extorsion" class="iconeOui"><span class="icon-evil2"></span>Extorsion / Sextorsion / Chantage<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[7]= '<p id="sms" class="iconeOui"><span class="icon-mail"></span>Messagerie<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[8]= '<p id="achats" class="iconeOui"><span class="icon-cart"></span>Achats en ligne<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[9]= '<p id="achatDeApp" class="iconeOui"><span class="icon-download2"></span>Achat d’application<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[10]='<p id="politique" class="iconeOui"><span class="icon-file-text"></span>Politique de confidentialité<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[11]='<p id="virus" class="iconeOui"><span class="icon-bug"></span>Virus<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[12]='<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span class="icon-FA-chevron-right"></p><hr>';
+  indexation[13]='<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Conseils pour les téléphones mobiles<span class="icon-FA-chevron-right"></p>';
   for(let i = 14; i < 100; i++) {
     indexation[i] = '';
  };
     const text = indexation.join(''); 
     document.getElementById('laListe').innerHTML=text;
-    document.getElementById('myHeading').innerHTML="Conseils";
+    document.getElementById('myHeading').innerHTML="<span class='icon-cogs' id='btmParam'></span>Conseils<span class='icon-info'></span>";
     document.getElementById('myHeading').style.color="black";
     document.querySelector("header").style.backgroundColor="aqua";
     document.querySelector("main").style.fontFamily="Oswald, sans-serif";
     document.querySelector("main").style.lineHeight="0.5";
-
+    document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
+    document.getElementById("myHeading").style.display="grid";
+    document.getElementById("myHeading").style.textAlign="center";
         var BtnNav= document.getElementById("leNav");
     if (BtnNav){
       BtnNav.addEventListener("click", Navigateur); 
@@ -186,9 +195,13 @@ function RetourPrincipal(){
   if (BtnReviens){
     BtnReviens.addEventListener("click", RetourPrincipal); 
   }
+  var BtnParams=document.getElementById('btmParam');
+  if(BtnParams){
+  BtnParams.addEventListener("click", allerPr)
+  }
   else{
     document.getElementById("myHeading").style.textAlign="center";
     document.getElementById("myHeading").style.display="grid";
-    document.getElementById("myHeading").style.gridTemplateColumns="auto"; 
+    document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto"; 
   }
 } 

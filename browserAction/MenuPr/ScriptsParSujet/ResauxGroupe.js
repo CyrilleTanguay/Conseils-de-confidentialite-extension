@@ -1,6 +1,6 @@
 function unReseau(){
 indexation[0]="<p id='introP'>Êtes-vous sur un réseau social? Si oui, vous n’êtes sûrement pas sans savoir qu’ils ne sont pas très respectueux en matière de vie privée.</p>"
-indexation[1]="<p id='ouvrirGenRes'>Général</p><div id='reseauGen'><ul>"
+indexation[1]="<p id='ouvrirGenRes' class='iconeOui'><span class='icon-FA-book'></span>Général<span class='icon-circle-down'></span></p><div id='reseauGen'><ul>"
 indexation[2]="<li>Utilisez un pseudonyme sur les forums et les sites marchands</li><li>Désactivez la géolocalisation</li>"
 indexation[3]="<li>Activez l’authentification à deux facteurs.</li>"
 indexation[4]="<li>Désactivez le ciblage publicitaire</li>"
@@ -8,28 +8,28 @@ indexation[5]="<li>Privilégiez les publications entièrement assumées.</li>"
 indexation[6]="<li>Vérifiez régulièrement qui est connecté. S’il y a des personnes suspectes, déconnectez-les et changez votre mot de passe.</li>"
 indexation[7]="<li>Ne partagez pas de données trop privées (ses enfants, son domicile, des objets précieux...)</li>"
 indexation[8]="<li>Désactivez le pistage via les publicités et la localisation.</li></ul></div><hr>"
-indexation[9]="<p id='Deez'>Deezer</p><hr>"
-indexation[10]="<p id='Edge'>Edge</p><hr>"
-indexation[11]="<p id='Fb'>Facebook</p><hr>"
-indexation[12]="<p id='Google'>Google</p><hr>"
-indexation[13]="<p id='Insta'>Instagram</p><hr>"
-indexation[14]="<p id='Messng'>Messenger</p><hr>"
-indexation[15]="<p id='Nint'>Nintendo</p><hr>"
-indexation[16]="<p id='Sig'>Signal</p><hr>"
-indexation[17]="<p id='Skype'>Skype</p><hr>"
-indexation[18]="<p id='Snapchat'>Snapchat</p><hr>"
-indexation[19]="<p id='Spotify'>Spotify</p><hr>"
-indexation[20]="<p id='Telegram'>Telegram</p><hr>"
-indexation[21]="<p id='TikTok'>TikTok</p><hr>"
-indexation[22]="<p id='Twitter'>Twitter</p><hr>"
-indexation[23]="<p id='YTube'>YouTube</p><hr>"
-indexation[24]="<p id='Zoom'>Zoom</p><hr>"
-indexation[25]="<p id='ouvrirSitesRencontre'>Les sites de rencontre</p><div id='sitesRen'><ul>"
+indexation[9]="<p id='Deez' class='iconeOui'><span class='icon-logo-deezer'></span>Deezer<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[10]="<p id='Edge' class='iconeOui'><span class='icon-logo-microsoftedge'></span>Edge<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[11]="<p id='Fb' class='iconeOui'><span class='icon-logo-facebook'></span>Facebook<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[12]="<p id='Google' class='iconeOui'><span class='icon-logo-google'></span>Google<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[13]="<p id='Insta' class='iconeOui'><span class='icon-logo-instagram'></span>Instagram<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[14]="<p id='Messng' class='iconeOui'><span class='icon-logo-messenger'></span>Messenger<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[15]="<p id='Nint' class='iconeOui'><span class='icon-logo-nintendo'></span>Nintendo<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[16]="<p id='Sig' class='iconeOui'><span class='icon-logo-signal'></span>Signal<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[17]="<p id='Skype' class='iconeOui'><span class='icon-logo-skype'></span>Skype<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[18]="<p id='Snapchat' class='iconeOui'><span class='icon-logo-snapchat'></span>Snapchat<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[19]="<p id='Spotify' class='iconeOui'><span class='icon-logo-spotify'></span>Spotify<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[20]="<p id='Telegram' class='iconeOui'><span class='icon-logo-telegram'></span>Telegram<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[21]="<p id='TikTok' class='iconeOui'><span class='icon-logo-tiktok'></span>TikTok<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[22]="<p id='Twitter' class='iconeOui'><span class='icon-logo-twitter'></span>Twitter<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[23]="<p id='YTube' class='iconeOui'><span class='icon-logo-youtube'></span>YouTube<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[24]="<p id='Zoom' class='iconeOui'><span class='icon-logo-zoom'></span>Zoom<span class='icon-FA-chevron-right'></span></p><hr>"
+indexation[25]="<p id='ouvrirSitesRencontre' class='iconeOui'><span class='icon-FA-heart'></span>Les sites de rencontre<span class='icon-circle-down'></span></p><div id='sitesRen'><ul>"
 indexation[26]="<li>Ne mettez jamais votre adresse, lieu de travail, numéro fixe, ou le nom de votre école dans votre description.</li>"
 indexation[27]="<li>Soyez honnête mais pas déplacé</li>"
 indexation[28]="<li>Utilisez une adresse courriel distincte sans info personnelle</li>"
 indexation[29]="<li>Méfiez-vous si vous recevez des photos osées, car si vous leur rendez la pareille, vous deviendrez une victime d’extorsion. Cela se passe surtout sur des applications visant la communauté LGBTQ+.</li></ul></div><hr>"
-indexation[30]="<p id='ouvrirPartage'>Partage de photos osées</p>"
+indexation[30]="<p id='ouvrirPartage' class='iconeOui'><span class='icon-FA-photo'></span>Partage de photos osées<span class='icon-circle-down'></span></p>"
 indexation[31]="<div id='partagePhoto'><ul>"
 indexation[32]="<li><b><i><u>Rien ne vous oblige à envoyer des photos osées, alors n’en envoyez que si vous le voulez vraiment.</u></i></b></li>"
 indexation[33]="<li>Ne montrez jamais votre visage ou un signe distinctif (piercing, tatouage...) sur ces photos.</li> "
@@ -39,8 +39,8 @@ indexation[36]="<li>Ne lui répondez pas. Les trolls veulent avoir de l’attent
 indexation[37]="<li>Prenez du recul.</li>"
 indexation[38]="<li>Ne prenez pas son commentaire de manière personnelle.</li>"
 indexation[39]="<li>S’il est haineux, bannissez-le.</li></ul></div><hr>"
-indexation[40]="<p id='ouvrirVolI'>Vol d'identité</p><div id='volDeI'>"
-indexation[41]="<p>Prévention</p><ul><li>Faites très attention à vos relevés bancaires.</li>"
+indexation[40]="<p id='ouvrirVolI' class='iconeOui'><span class='icon-FA-id-card-o'></span>Vol d'identité<span class='icon-circle-down'></span></p>"
+indexation[41]="<div id='volDeI'><p>Prévention</p><ul><li>Faites très attention à vos relevés bancaires.</li>"
 indexation[42]="<li>Procédez immédiatement à la suspension de votre carte de crédit si vous pensez qu’elle a été corrompue.</li><li>Ne partagez pas vos coordonnées bancaires à des sites non fiables</li></ul>"
 indexation[43]="<p>Signes</p><ul>"
 indexation[44]="<li>Vos relevés contiennent des faux renseignements, y compris votre adresse, votre nom ou celui de l’employeur</li>"
@@ -61,6 +61,8 @@ indexation[52]="<li>Limitez l’audience de vos publications pour ne pas que des
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
+    document.getElementById("myHeading").style.color="white";
+
 
     var BtnReviens= document.getElementById("caseRetour");
     if (BtnReviens){
@@ -158,6 +160,10 @@ indexation[52]="<li>Limitez l’audience de vos publications pour ne pas que des
     var BtnReviens= document.getElementById("Skype");
     if (BtnReviens){
       BtnReviens.addEventListener("click", Skype); 
+    }
+    var BtnReviens= document.getElementById("Snapchat");
+    if (BtnReviens){
+      BtnReviens.addEventListener("click", Snapchat); 
     }
     var BtnReviens= document.getElementById("Spotify");
     if (BtnReviens){

@@ -3,14 +3,13 @@ h1 {
 }
 body{
   font-family: 'Oswald', sans-serif;
-  min-width: 275px;
-  max-width: 325px;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  overflow-x: hidden;
+  min-width: 285px;
+  max-width: 400px;
+  margin:0;
+  /* overflow-x: hidden; */
 /* max-height: 900px; */
 height: max-content;
+overflow-y:auto;
 }
 ul{
   padding-left: 20px;
@@ -37,6 +36,8 @@ margin: 0 8px;
   align-items: center;
 font-weight: 400;
 height: 100%;
+display: grid;
+grid-template-columns: auto auto auto;
 }
 header{
   background-color: aqua;
@@ -44,7 +45,8 @@ header{
 }
 main{
   margin-left: 8px;
-  overflow-x: hidden;
+  margin-right: 8px;
+  /* overflow-x: hidden; */
   line-height: 0.5;
   color:midnightblue;
   /* font-weight: 300;
@@ -60,7 +62,7 @@ letter-spacing: 0.5px; */
   display: none;
   font-family: K2D, sans-serif;
 }
-.icon {
+.icon{
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -68,9 +70,17 @@ letter-spacing: 0.5px; */
   stroke: currentColor;
   fill: currentColor;
 }
-#VotreOrdi, #indexAppNon, #leNav, #leMDP, #fiable, #reseau, #extorsion, #sms, #achats, #achatDeApp, #politique, #virus, #attaques, #mobiles{
+.iconeOui{
   display: grid;
-  grid-template-columns: 1.2em auto;
+  grid-template-columns: 20px auto 20px;
   align-items: center;
   letter-spacing: 0.3pt;
+  white-space: nowrap;
+}
+
+.icon-cogs{
+  text-align: left;
+}
+.icon-info{
+  text-align: right;
 }

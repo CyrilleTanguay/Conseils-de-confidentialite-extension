@@ -2,7 +2,7 @@ function AppNon(){
 
 indexation[0]="<p id='ouvrirAppDes'>Applications à désinstaller</p><div id='AppDes'><ul>"
 indexation[1]=" <li>Adware Doctor</li><li>ChatGPT Chat GPT AI With GPT-3. Il s’agit d’une version illégale de ChatGPT.</li><li>Codice Fiscale 2022</li><li>Dr. Antivirus</li><li>Dr. Battery</li><li>Dr. Cleaner Disk</li><li>Dr. Cleaner Pro</li><li>Dr.Unarchiver</li><li>Duplicate Finder</li><li>FakeSpy</li><li>File Manager Small, Lite</li><li>GodFather (malware)</li><li>Internet Explorer.</li><li>Open Any Files</li> <li>Pokemon-go.io (malware)</li><li>QuickTime (uniquement si vous êtes sur Windows). Des failles ont été découvertes et Apple a abandonné cette version du logiciel.</li><li>Vex Editor</li></ul></div><hr>"
-indexation[2]=" <p id='RogueApp'>Logiciels de type Rogue</p><hr>"
+indexation[2]=" <p id='RogueApp' class='iconeOui'><span class='icon-FA-clone'></span>Logiciels de type Rogue<span class='icon-FA-chevron-right'></span></p><hr>"
 indexation[3]=" <p id='ouvrirAppRet'>Applications néfastes retirées</p><div id='appRet'><ul>"
 indexation[4]="   <li>AVG Antivirus 2011 – Imite AVG.</li><li>ContraVirus – Utilise une base de signatures dépassée.</li><li>Defense Center</li><li>Microsoft Security Essentials – Se fait passer pour le programme légitime éponyme.</li><li>MS AntiSpyware 2009 – Exploite le nom de Microsoft Antispyware, aujourd’hui WindowDefender.</li><li>PCSecureSystem</li><li>PerfectCleaner</li><li>Spydawn</li><li>SpyLax – Anciennement connu sous le nom de SpyDoctor,se fait passer pour Spyware Doctor. li><li>SpywareBot – Imite Spybot - Search & Destroy.</li><li>Winpc Defender – Imite Windows Defender.</li></ul></div><hr>"
 indexation[5]="   <p id='ouvrirAppEnCas'>Si vous avez un logiciel malveillant</p><div id='appEnCas'><ul>"

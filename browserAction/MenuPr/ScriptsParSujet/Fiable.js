@@ -13,7 +13,7 @@ function Fiable(){
   indexation[11]="<li>À quand remonte sa dernière mise à jour? Si elle remonte à longtemps, son information peut être désuète...</li>"
   indexation[12]="<li>L’information est-elle sourcée?</li>"
   indexation[13]="<li>Est-ce que le texte est bien orthographié?</li></ul></div><hr>"
-  indexation[14]="<p id='infoFi'>Fiabilité de l'information</p><div id='infoFiable'><ul>"
+  indexation[14]="<p id='infoFi' class='iconeOui'><span class='icon-FA-newspaper-o'></span>Fiabilité de l'information<span class='icon-circle-down'></span></p><div id='infoFiable'><ul>"
   indexation[15]="<li>Entrez l’information dans la barre de recherche et ajoutez « faux ».</li>"
   indexation[16]="<li>Comparer son point de vue local et international</li>"
   indexation[17]="<li>Vérifiez sa date de publication pour la mettre dans son contexte.</li>"
@@ -25,7 +25,7 @@ function Fiable(){
   indexation[23]="<li>Demandez-vous si l’influenceur reparle des produits dans les semaines/mois suivants.</li>"
   indexation[24]="<li>Est-ce qu’il est disposé à discuter avec ses internautes sur les produits en question?</li>"
   indexation[25]="<li>Est-ce qu’il mentionne qu’il s’agit d’une publicité ou d’un sponsor si le contenu est visiblement promotionnel?</li></ul></div><hr>"
-  indexation[26]="<p id='santSite'>Sites de santé</p><div id='siteSante'><ul>"
+  indexation[26]="<p id='santSite' class='iconeOui'><span class='icon-FA-stethoscope'></span>Sites de santé<span class='icon-circle-down'></span></p><div id='siteSante'><ul>"
   indexation[27]="<li>Est-ce que l’auteur du site vend son propre produit médical?</li>"
   indexation[28]="<li>Est-ce le site d’une institution médicale connue?</li>"
   indexation[29]="<li>Quel est son suffixe?</li>"
@@ -37,7 +37,7 @@ function Fiable(){
   const text = indexation.join(''); 
   document.getElementById('laListe').innerHTML=text;
     document.querySelector("header").style.backgroundColor="red";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>La fiabilité d'un site web";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Fiabilité d'un site web";
     var BtnReviens= document.getElementById("caseRetour");
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";

@@ -1,5 +1,5 @@
 function Extorsion(){
-  indexation[0]="<p id='ouvprevExto'>Prévention:</p><div id='prevExto'><ul>"
+  indexation[0]="<p id='ouvprevExto'>Prévention</p><div id='prevExto'><ul>"
   indexation[1]="<li>N’affichez pas trop de détails sur les médias sociaux. Plus de la moitié des victimes de sextorsion connaissaient l’harceleur.</li>"
   indexation[2]="<li>Évitez de mettre des photos compromettantes dans un service d’archivage ou de stockage en ligne, car elles pourraient être piratées.</li></ul></div><hr>"
   indexation[3]="<p id='ouvvictExto'>Si vous êtes victime</p><div id='victExto'><ul>"

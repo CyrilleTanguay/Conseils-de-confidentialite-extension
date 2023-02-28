@@ -1,13 +1,13 @@
 function Achats(){
 
   indexation[0]="<p id='introP'>Les achats en ligne peuvent faciliter notre vie, mais aussi celle de certains voleurs!</p>"
-indexation[1]="<p id='ouvrirAchatSite'>Concernant le site</p><div id='achatSite' style='display: none'><ul>"
+indexation[1]="<p id='ouvrirAchatSite' class='iconeOui'><span class='icon-terminal'></span>Concernant le site<span class='icon-circle-down'></span></p><div id='achatSite' style='display: none'><ul>"
 indexation[2]="  <li>Vérifiez le nom de domaine avec cet outil. Si son acquisition est récente, cela est suspect</li>"
 indexation[3]="  <li>Vérifiez l’adresse de la boutique en ligne. Le fait qu’il soit situé dans un bloc-appartement ou au milieu de nulle part est suspicieux.</li>"
 indexation[4]="  <li>Téléphonez à l’entreprise pour vous assurer que le numéro est bel et bien lié à l’entreprise.</li>"
 indexation[5]="  <li>Pour le cas de boutiques québécoises, consultez le registraire des entreprises du Québec. Toutes les compagnies du Québec sont obligées de s’inscrire à ce registraire.</li><li>Vérifiez les conditions générales de vente</li>"
 indexation[6]="  <li>Assurez-vous que le site soit sécurisé. Vous pouvez utiliser un scanner.</li><li>Ne faites pas d’achat sur un ordinateur infecté ou public</li></ul></div><hr>"
-indexation[7]="  <p id='ouvrirAchatProd'>Concernant le produit</p><div id='achatProduit' style='display: none'><ul>"
+indexation[7]="  <p id='ouvrirAchatProd' class='iconeOui'><span class='icon-gift'></span>Concernant le produit<span class='icon-circle-down'></span></p><div id='achatProduit' style='display: none'><ul>"
 indexation[8]="<li>Vérifiez les commentaires d’un produit</li>"
 indexation[9]="<li>Méfiez-vous si quelqu’un nous offre plus que le prix de vente d’un objet que vous vendez, surtout si cette personne offre de payer par PayPal. Vous recevrez un faux courriel de PayPal mentionnant le dépôt d’un montant plus élevé que prévu, puis l’acheteur va vous réécrire pour récupérer l’argent en trop. En vérifiant votre compte PayPal, vous verrez que le supposé transfert de fonds n’a jamais eu lieu.</li>"
 indexation[10]="<li>Méfiez-vous de la fonction de demande de fonds d’Interac, surtout si l’adresse n’est pas « notify@payments.interac.ca ». Elle n’est accessible que pour Scotia, Royale, CIBC et TD. Les autres peuvent cependant accepter le don.</li>"

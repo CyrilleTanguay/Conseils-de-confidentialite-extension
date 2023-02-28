@@ -11,7 +11,7 @@ for(let i = 6; i < 14; i++) {
 const text = indexation.join(''); 
   document.getElementById('laListe').innerHTML=text;
     document.querySelector("header").style.backgroundColor="red";
-    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>La politique de confidentialité";
+    document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Politique de confidentialité";
     document.getElementById('laListe').style.fontFamily="K2D";
     document.getElementById("myHeading").style.textAlign="right";
     document.getElementById("myHeading").style.display="grid";

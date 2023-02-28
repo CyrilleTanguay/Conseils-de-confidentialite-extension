@@ -1,7 +1,8 @@
 function Deez(){
 document.getElementById('laListe').innerHTML='<ul><li>Économisez de l’espace en réduisant le débit ou mettant les données sur une carte mémoire.</li></ul>';
 
-document.querySelector("header").style.backgroundColor="aqua";
+document.querySelector("header").style.backgroundColor="#feaa2d";
+document.getElementById("myHeading").style.color="black";
 document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Deezer";
 document.getElementById("myHeading").style.textAlign="right";
@@ -15,8 +16,8 @@ if (BtnReviens){
 
 function Edge(){
 document.getElementById('laListe').innerHTML='<ul><li>Supprimez l’extension Rédacteur Microsoft. Elle envoie à Microsoft tout ce que vous tapez sur votre ordi.</li></ul>';
-
-document.querySelector("header").style.backgroundColor="blue";
+document.getElementById("myHeading").style.color="white";
+document.querySelector("header").style.backgroundColor="#0078d7";
 document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Edge";
 document.getElementById("myHeading").style.textAlign="right";
@@ -48,7 +49,7 @@ indexation[16]="  <li>Méfiez-vous des courriels qui disent que notre compte ser
 indexation[17]="<li>Ne jouez pas aux quiz.</li></ul></ul>"
 const text = indexation.join(''); 
 document.getElementById('laListe').innerHTML=text;
-document.querySelector("header").style.backgroundColor="blue";
+document.querySelector("header").style.backgroundColor="#1877f2";
 document.querySelector("p").style.lineHeight="inherit";
 document.querySelector("p").style.fontFamily="K2D, sans-serif";
 document.querySelector("main").style.fontFamily="K2D, sans-serif";
@@ -91,7 +92,7 @@ if (BtnReviens){
 function Insta(){
 document.getElementById('laListe').innerHTML='<ul><li>N’utilisez pas le navigateur interne d’Instagram, il collecte des données. À la place, copiez le lien en question et collez-le dans votre navigateur.</li><li>Ne divulguez pas votre adresse (surtout si votre compte est public)</li><li>Si vous recevez un courriel de certification de profil, c’est un faux.</li></ul>';
 
-document.querySelector("header").style.backgroundColor="purple";
+document.querySelector("header").style.backgroundColor="#e4405f";
 document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
 document.querySelector("main").style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Instagram";
@@ -119,8 +120,9 @@ for(let i = 6; i < 55; i++) {
 };
 const text = indexation.join(''); 
   document.getElementById('laListe').innerHTML=text;
+  document.getElementById("myHeading").style.color="white";
 
-document.querySelector("header").style.backgroundColor="blue";
+document.querySelector("header").style.backgroundColor="#00b2ff";
 document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
 document.querySelector("main").style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Messenger";
@@ -176,7 +178,8 @@ for(let i = 8; i < 55; i++) {
 const text = indexation.join(''); 
   document.getElementById('laListe').innerHTML=text;
 
-document.querySelector("header").style.backgroundColor="blue";
+document.querySelector("header").style.backgroundColor="#2592e9";
+document.querySelector("header").style.color="white";
 document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
 document.querySelector("main").style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Signal";
@@ -191,8 +194,8 @@ if (BtnReviens){
 
 function Skype(){
 document.getElementById('laListe').innerHTML='<ul><li>Vous pouvez choisir d’apparaître dans les résultats de recherche de Skype si vous ne tenez pas à être trouvé(e).</li><li>Utilisez la fonction « Conversation privée ». Ses notifications sont masquées et les conversations ne sont accessibles que sur un périphérique à la fois.</li><li>Désactivez le téléchargement de photos.</li></ul>';
-
-document.querySelector("header").style.backgroundColor="skyblue";
+document.querySelector("header").style.color="white";
+document.querySelector("header").style.backgroundColor="#00aff0";
 document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
 document.querySelector("main").style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Skype";
@@ -204,10 +207,26 @@ if (BtnReviens){
   BtnReviens.addEventListener("click", unReseau); 
 }
 }
+function Snapchat(){
+  document.getElementById('laListe').innerHTML='<ul><li>Snapchat est un média qui sera toujours gratuit, donc si on vous demande de payer, c’est une arnaque.</li> <li>Lors de votre inscription, entrez votre vrai nom et votre vrai prénom, mais ne l’utilisez pas dans votre nom d’utilisateur</li><li>Ne divulguez pas votre numéro de téléphone à n’importe qui, car c’est ce qui vous permet d’avoir accès à votre profil.</li></ul>';
+  document.getElementById("myHeading").style.color="black";
+  document.querySelector("header").style.backgroundColor="#fcf700";
+  document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
+  document.querySelector("main").style.fontFamily="K2D, sans-serif";
+  document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>SnapChat";
+  document.getElementById("myHeading").style.textAlign="right";
+  document.getElementById("myHeading").style.display="grid";
+  document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
+  var BtnReviens= document.getElementById("caseRetour");
+  if (BtnReviens){
+    BtnReviens.addEventListener("click", unReseau); 
+  }
+  }
 function Spotify(){
 document.getElementById('laListe').innerHTML='<ul><li>Vous pouvez utiliser la fonction « économiseur de données » pour consommer moins de données cellulaires/Wifi. Cependant, cela a pour conséquence d’affaiblir la qualité audio...</li><li>Videz le cache.</li><li>Désactivez les publicités ciblées (nécessite un compte premium)</li></ul>';
+document.getElementById("myHeading").style.color="white";
 
-document.querySelector("header").style.backgroundColor="green";
+document.querySelector("header").style.backgroundColor="#1ed760";
 document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
 document.querySelector("main").style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Spotify";
@@ -234,13 +253,15 @@ for(let i = 7; i < 55; i++) {
 const text = indexation.join(''); 
   document.getElementById('laListe').innerHTML=text;
 
-document.querySelector("header").style.backgroundColor="skyblue";
+document.querySelector("header").style.backgroundColor="#2ca5e0";
 document.querySelector("header").style.color="white";
 document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
 document.querySelector("main").style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Telegram";
 document.getElementById("myHeading").style.textAlign="right";
 document.getElementById("myHeading").style.display="grid";
+document.getElementById("myHeading").style.color="white";
+
 document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
 var BtnReviens= document.getElementById("caseRetour");
 if (BtnReviens){
@@ -271,11 +292,13 @@ for(let i = 3; i < 55; i++) {
 };
 const text = indexation.join('');   
 document.getElementById('laListe').innerHTML=text;
-  document.querySelector("header").style.backgroundColor="skyblue";
+  document.querySelector("header").style.backgroundColor="#1da1f2";
   document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
   document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Twitter";
   document.getElementById("myHeading").style.textAlign="right";
   document.getElementById("myHeading").style.display="grid";
+  document.getElementById("myHeading").style.color="white";
+
   document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
   var BtnReviens= document.getElementById("caseRetour");
   if (BtnReviens){
@@ -305,6 +328,7 @@ for(let i = 11; i < 55; i++) {
 };
 const text = indexation.join(''); 
   document.getElementById('laListe').innerHTML=text;
+  document.getElementById("myHeading").style.color="white";
 
 document.querySelector("header").style.backgroundColor="red";
 document.querySelector("p").style.lineHeight="inherit";
@@ -323,8 +347,8 @@ if (BtnReviens){
 function Zoom(){
 document.getElementById('laListe').innerHTML='<ul><li>Méfiez-vous des liens qui commencent par le nom d’une entreprise. Il est possible pour n’importe qui de modifier le sous-domaine de l’URL ou de le rediriger vers une autre adresse. </li></ul>';
 
-document.querySelector("header").style.backgroundColor="blue";
-document.querySelector("header").style.color="white";
+document.querySelector("header").style.backgroundColor="#2d8cff";
+document.getElementById("myHeading").style.color="white";
 
 document.getElementById('laListe').style.fontFamily="K2D, sans-serif";
 document.getElementById('myHeading').innerHTML="<div id='caseRetour'>◀</div><div></div>Zoom";
