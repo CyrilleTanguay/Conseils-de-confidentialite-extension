@@ -1,11 +1,10 @@
 //Ajout d'écouteurs dès que le menu est chargé pour exécuter une fonction en cliquant sur une catégorie pour accéder à ses sous-catégories
 window.onload = function startListen() {
-
+//On s'assure que les variables ne soient pas séparées par une virgule
     const text = indexation.join(''); 
-    // for(let i = 1; i < 14; i++) {
-    //   text += indexation + [i];
-    // };
+//On remplit la fenêtre avec ces catégories
     document.getElementById('laListe').innerHTML=text;
+    //On ajoute un écouteur à un élément id s'il est présent, ce qui va exécuter une fonction au clic
     var BtnNav= document.getElementById("leNav");
     if (BtnNav){
       BtnNav.addEventListener("click", Navigateur); 
@@ -14,7 +13,6 @@ window.onload = function startListen() {
     if (BtnOrdi){
     BtnOrdi.addEventListener("click", Ordi); 
   }
-
   var BtnAppNon = document.getElementById('indexAppNon');
   if (BtnAppNon) {
     BtnAppNon.addEventListener('click', AppNon);
@@ -42,7 +40,6 @@ window.onload = function startListen() {
   var BtnAchatsApp = document.getElementById("achatDeApp");
   if(BtnAchatsApp){
     BtnAchatsApp.addEventListener("click", achatApp);
-
   }
   var BtnSMS = document.getElementById("sms");
   if(BtnSMS){
@@ -74,15 +71,14 @@ window.onload = function startListen() {
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto"; 
   }
+//Écouteur sur le bouton des paramètres
 var BtnParams=document.getElementById('btmParam');
 if(BtnParams){
 BtnParams.addEventListener("click", allerPr)
 }
-
-
 }  
 
-
+//Définition des variables
 const indexation = [
   '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span class="icon-FA-chevron-right"></span></p><hr>',
@@ -99,11 +95,12 @@ const indexation = [
   '<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Téléphones mobiles<span class="icon-FA-chevron-right"></span></p>'
 ];
-
+//La page des paramètres s'ouvre
 function allerPr(){
   document.addEventListener("load", browser.runtime.openOptionsPage())
 }
-//Cette fonction permet de retourner au menu principal
+
+//Cette fonction permet de retourner au menu principal et réexécute majoritairement ce qui est présent dans la fonction startListen()
 function RetourPrincipal(){
   indexation[0]= '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span class="icon-FA-chevron-right"></span></p><hr>';
   indexation[1]= '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span class="icon-FA-chevron-right"></span></p><hr>';
@@ -122,17 +119,21 @@ function RetourPrincipal(){
   for(let i = 14; i < 100; i++) {
     indexation[i] = '';
  };
+ //On s'assure que les variables ne soient pas séparées par une virgule
     const text = indexation.join(''); 
     document.getElementById('laListe').innerHTML=text;
-    document.getElementById('myHeading').innerHTML="<span class='icon-cogs' id='btmParam'></span>Conseils<span class='icon-info'></span>";
+    //On définit l'en-tête
+    document.getElementById('myHeading').innerHTML="<span class='icon-cogs' id='btmParam'></span>Conseils<span class='icon-info' id='btmSources'></span>";
     document.getElementById('myHeading').style.color="black";
     document.querySelector("header").style.backgroundColor="aqua";
     document.querySelector("main").style.fontFamily="Oswald, sans-serif";
     document.querySelector("main").style.lineHeight="0.3";
+    //On définit la grille
     document.getElementById("myHeading").style.gridTemplateColumns="auto auto auto";  
     document.getElementById("myHeading").style.display="grid";
     document.getElementById("myHeading").style.textAlign="center";
-        var BtnNav= document.getElementById("leNav");
+    //On ajoute un écouteur à un élément id s'il est présent, ce qui va exécuter une fonction au clic
+    var BtnNav= document.getElementById("leNav");
     if (BtnNav){
       BtnNav.addEventListener("click", Navigateur); 
     }
@@ -140,7 +141,6 @@ function RetourPrincipal(){
     if (BtnOrdi){
     BtnOrdi.addEventListener("click", Ordi); 
   }
-
   var BtnAppNon = document.getElementById('indexAppNon');
   if (BtnAppNon) {
     BtnAppNon.addEventListener('click', AppNon);
@@ -199,6 +199,7 @@ function RetourPrincipal(){
   if(BtnParams){
   BtnParams.addEventListener("click", allerPr)
   }
+
   else{
     document.getElementById("myHeading").style.textAlign="center";
     document.getElementById("myHeading").style.display="grid";

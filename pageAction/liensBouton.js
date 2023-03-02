@@ -17,22 +17,22 @@ lien.addEventListener("click", popupFen)
 }
 else if (tab.url.includes("twitter.com")) {
     lien.setAttribute("href","https://twitter.com/settings/account");console.log(lien);
-    document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans ces paramètres";
+    document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans les paramètres de Twitter";
 
 }
 else if (tab.url.includes("instagram.com/")){
     lien.setAttribute("href","https://www.instagram.com/accounts/edit/");console.log(lien);
-    document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans ces paramètres";
+    document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans les paramètres d'Instagram";
 
 }
 else if (tab.url.includes("youtube.com/")){
     lien.setAttribute("href","https://www.youtube.com/account");console.log(lien);
-    document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans ces paramètres";
+    document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans les paramètres de YouTube";
     lien.addEventListener("click", popupFen)
 
 }else if (tab.url.includes("google.com/")){
     lien.setAttribute("href","https://myaccount.google.com/");console.log(lien);
-    document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans ces paramètres";
+    document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans les paramètres de Google";
 
 }
 else if (tab.url.includes("about:preferences")){

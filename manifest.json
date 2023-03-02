@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "CoSeCo",
+  "name": "CoSeCo — Conseils de Sécurité et de Confidentialité",
   "author": "Cyrille Tanguay",
   "description": "Vous donne des conseils pour protéger vos données et pour réagir en cas de chantage",
   "version": "1.0",
   "icons": {
-    "64": "icons/icon.png"
+    "64": "icons/icone64.svg"
   },
     
   "permissions": [
@@ -39,13 +39,13 @@
   ],
   "browser_action": {
     "default_icon": {
-      "64": "icons/icon.png"
+      "64": "icons/icone64Blanc.svg"
     },
     "default_popup": "browserAction/MenuPr/index.html",
     "default_title": "CoSeCo"
   },
   "page_action":{
-    "default_icon": "icons/icon19.png",
+    "default_icon": "icons/icone64Blanc.svg",
     "default_popup":"pageAction/index.html",
     "show_matches":["https://www.facebook.com/", "https://twitter.com/*", "https://*.instagram.com/*", "https://www.youtube.com/*", "https://*.google.com/*"]
   },
