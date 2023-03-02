@@ -1,3 +1,13 @@
+/**
+ * 
+ * Ce fichier intègre le code HTML de la page "Réseaux sociaux" dans le popup.
+ * 
+ * Les variables "indexation" sont définies dans le document "script.js"
+ * Toutes les fonctions concernant un réseau social se trouvent dans le document "ReseauxDiffs.js"
+ * La fonction RetourPrincipal se trouve dans le document "script.js"
+ * 
+ * 
+ */
 function unReseau() {
   //Catégories
   indexation[0] = "<p id='introP'>Êtes-vous sur un réseau social? Si oui, vous n’êtes sûrement pas sans savoir qu’ils ne sont pas très respectueux en matière de vie privée.</p>"

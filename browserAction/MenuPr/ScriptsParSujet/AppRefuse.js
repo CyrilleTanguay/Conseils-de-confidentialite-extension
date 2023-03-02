@@ -1,3 +1,13 @@
+/**
+ * 
+ * Ce fichier intègre le code HTML de la page "Applications à retirer" dans le popup.
+ * 
+ * Les variables "indexation" sont définies dans le document "script.js"
+ * La fonction RogueApp se trouve dans le document "RogueApps.js"
+ * La fonction RetourPrincipal se trouve dans le document "script.js"
+ * 
+ * 
+ */
 function AppNon() {
   //Catégories
   indexation[0] = "<p id='ouvrirAppDes' class='iconeOui'><span class='icon-FA-ban'></span>Applications à désinstaller<span class='icon-circle-down'></span></p><div id='AppDes'><ul>"

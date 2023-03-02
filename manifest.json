@@ -7,7 +7,7 @@
   "icons": {
     "64": "icons/icone64.svg"
   },
-    
+
   "permissions": [
     "activeTab",
     "browserSettings",
@@ -27,16 +27,14 @@
       "background_script.js"
     ]
   },
-  "content_scripts": [
-    {
-      "matches":[
-        "https://www.facebook.com/settings*"
-      ],
-      "js":[
-        "content_script.js", "liensBouton.js"
-      ]
-    }
-  ],
+  "content_scripts": [{
+    "matches": [
+      "https://www.facebook.com/settings*"
+    ],
+    "js": [
+      "content_script.js", "liensBouton.js"
+    ]
+  }],
   "browser_action": {
     "default_icon": {
       "64": "icons/icone64Blanc.svg"
@@ -44,17 +42,18 @@
     "default_popup": "browserAction/MenuPr/index.html",
     "default_title": "CoSeCo"
   },
-  "page_action":{
+  "page_action": {
     "default_icon": "icons/icone64Blanc.svg",
-    "default_popup":"pageAction/index.html",
-    "show_matches":["https://www.facebook.com/", "https://twitter.com/*", "https://*.instagram.com/*", "https://www.youtube.com/*", "https://*.google.com/*"]
+    "default_popup": "pageAction/index.html",
+    "show_matches": ["https://www.facebook.com/", "https://twitter.com/*", "https://*.instagram.com/*", "https://www.youtube.com/*", "https://*.google.com/*"]
   },
   "options_ui": {
     "page": "options/index.html"
   },
+  "browser_specific_settings":{
+"gecko":{
+  "id": "CoSeCo@extension.com"
+}
+  },
   "content_security_policy": "script-src 'self' https://fonts.googleapis.com/* https://fonts.gstatic.com/*; object-src 'self';"
-
-
-
-  
 }

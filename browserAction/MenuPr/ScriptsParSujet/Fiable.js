@@ -1,3 +1,12 @@
+/**
+ * 
+ * Ce fichier intègre le code HTML de la page indiquant des applications néfastes pour iPhone et pour Androïd dans ce popup.
+ * 
+ * Les variables "indexation" sont définies dans le document "script.js"
+ * La fonction RetourPrincipal se trouve dans le document "script.js"
+ * 
+ * 
+ */
 function Fiable() {
   //Catégories
   indexation[0] = "<p id='introP'>Si vous voulez aller sur un site, n’acceptez que les cookies essentiels</p>"
@@ -57,7 +66,7 @@ function Fiable() {
   if (BtnReviens) {
     BtnReviens.addEventListener("click", RetourPrincipal);
   }
- //S'il y a un div et que sa liste déroulante est masquée, on l'affiche et vice-versa
+  //S'il y a un div et que sa liste déroulante est masquée, on l'affiche et vice-versa
   var BtnReviens = document.getElementById("saFiabilite");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", function () {

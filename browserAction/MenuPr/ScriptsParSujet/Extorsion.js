@@ -1,3 +1,12 @@
+/**
+ * 
+ * Ce fichier intègre le code HTML de la page "Extorsion / Sextorsion / Chantage" dans le popup.
+ * 
+ * Les variables "indexation" sont définies dans le document "script.js"
+ * La fonction RetourPrincipal se trouve dans le document "script.js"
+ * 
+ * 
+ */
 function Extorsion() {
   //Catégories
   indexation[0] = "<p id='ouvprevExto' class='iconeOui'><span class='icon-FA-eye-slash'></span>Prévention<span class='icon-circle-down'></span></p><div id='prevExto'><ul>"

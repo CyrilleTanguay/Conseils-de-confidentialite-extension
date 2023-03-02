@@ -2,10 +2,11 @@
  * 
  * Ce fichier intègre le code HTML de la page "Votre ordinateur" dans le popup.
  * 
+ * Les variables "indexation" sont définies dans le document "script.js"
+ * La fonction RetourPrincipal se trouve dans le document "script.js"
  * 
  * 
  */
-
 //Catégories
 function Ordi() {
   indexation[0] = ["<p id='ouvrirAjust' class='iconeOui'><span class='icon-FA-sliders'></span>Ajustements<span class='icon-circle-down'></span></p><div id='Ajust'><ul><li>Vérifiez les paramètres de sécurité de votre ordinateur et désactivez la collecte de données.</li><li>Faites la mise à jour du système si une nouvelle version est disponible. Les mises à jour contiennent des correctifs permettant de rendre le système moins vulnérable.</li><li>Désactivez la mise à jour automatique (pour Windows). Bien que faire une mise à jour du système soit primordial pour notre sécurité, elle peut survenir au mauvais moment.</li><li>Enlevez des connections tiers avec des applications.</li><li>Activez le pare-feu</li><li>Désactivez l’option « masquer les extensions de fichier ». Cela vous permettra de cerner des fichiers pirates.</li></ul></div><hr>"];

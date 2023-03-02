@@ -1,3 +1,12 @@
+/**
+ * 
+ * Ce fichier intègre le code HTML de la page "Votre navigateur" dans le popup et doit détecter les extensions installées.
+ * 
+ * Les variables "indexation" sont définies dans le document "script.js"
+ * La fonction RetourPrincipal se trouve dans le document "script.js"
+ * 
+ * 
+ */
 //Catégories
 function Navigateur() {
   indexation[0] = "<p id='ouvrirConfNav' class='iconeOui'><span class='icon-FA-sliders'></span>Configuration<span class='icon-circle-down'></span></p><div id='confNav'><ul>"
@@ -39,7 +48,7 @@ function Navigateur() {
     BtnReviens.addEventListener("click", RetourPrincipal);
   }
 
-//Si, avec son ID, on découvre qu'une extension n'est pas installée, on met un bouton menant à sa page pour l'installer
+  //Si, avec son ID, on découvre qu'une extension n'est pas installée, on met un bouton menant à sa page pour l'installer
   if ((browser.management.get('jid1-ZAdIEUB7XOzOJw@jetpack'))) {
     console.log("installée")
   } else {

@@ -1,3 +1,13 @@
+/**
+ * 
+ * Ce fichier intègre le code HTML de la page "Arnaques" dans le popup.
+ * 
+ * Les variables "indexation" sont définies dans le document "script.js"
+ * La fonction SMS se trouve dans le document "Messagerie.js"
+ * La fonction ArnPres se trouve dans le document "ArnaquePres.js"
+ * La fonction ArnNigeriane se trouve dans le document "ArnaqueNigeriane.js"
+ * 
+ */
 function Arnaques() {
   indexation[0] = "<p id='introP'>Une messagerie est un bon moyen de vous arnaquer. Il existe cependant des moyens pour vous en prémunir.</p>";
   indexation[1] = "<p id='ouvrirStrcArn' class='iconeOui'><span class='icon-FA-list-ol'></span>Structure<span class='icon-circle-down'></span></p><div id='structure' style='display: none'><ul><li>Elle contient des couleurs vives et des majuscules</li><li>Elle contient beaucoup de fautes d’orthographe et de syntaxe</li><li>L’adresse courriel est très douteuse</li><li>Ils sont généralistes.</li></ul></div><hr>"

@@ -1,3 +1,13 @@
+/**
+ * 
+ * Ce fichier intègre le code HTML de la page "Achats en ligne" dans le popup.
+ * 
+ * Les variables "indexation" sont définies dans le document "script.js"
+ * La fonction RetourPrincipal se trouve dans le document "script.js"
+ * 
+ * 
+ */
+
 function Achats() {
   //Catégories
   indexation[0] = "<p id='introP'>Les achats en ligne peuvent faciliter notre vie, mais aussi celle de certains voleurs!</p>"

@@ -1,71 +1,73 @@
 h1 {
   font-style: italic;
 }
-body{
+
+body {
   font-family: 'Oswald', sans-serif;
   min-width: 285px;
   max-width: 350px;
-  margin:0;
-  /* overflow-x: hidden; */
-/* max-height: 900px; */
-height: max-content;
-overflow-y:auto;
+  margin: 0;
+  height: max-content;
+  overflow-y: auto;
 }
-ul{
+
+ul {
   padding-left: 20px;
   padding-right: 20px;
   line-height: 15pt;
 }
-ul li{
+
+ul li {
   padding-bottom: 12px;
+  font-family: K2D, sans-serif;
 }
-.iconesApps{
+
+.iconesApps {
   display: flex;
   justify-content: center;
 }
-.iconesApps img{
-  /* flex: 1 0 20px; */
+
+.iconesApps img {
   margin: 0 30px;
-}#introP{
+}
+
+#introP {
   line-height: 15pt;
   font-family: K2D, sans-serif;
 }
-hr{
+
+hr {
   border: 1px solid black;
 }
-#myHeading{
-margin: 0 8px;
+
+#myHeading {
+  margin: 0 8px;
   text-align: center;
   align-items: center;
-font-weight: 400;
-height: 100%;
-display: grid;
-grid-template-columns: auto auto auto;
+  font-weight: 400;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
-header{
+
+header {
   background-color: aqua;
   height: 40px;
 }
-main{
+
+main {
   margin-left: 8px;
   margin-right: 8px;
-  /* overflow-x: hidden; */
   line-height: 0.3;
-  color:midnightblue;
-  /* font-weight: 300;
-letter-spacing: 0.5px; */
+  color: midnightblue;
 }
-#caseRetour{
+
+#caseRetour {
   font-size: 18px;
   text-align: left;
 }
-#Ajust,#Inte,#appInte,#AppDes,#appRet,
-#appEnCas, #confNav, #confExt, #bonMDP, #peutMDP, #pasMDP, #gereMDP, #reseauGen, #sitesRen, #partagePhoto, #troll, #volDeI, #prevExto, #victExto, #Escrocs, #pred, #compor, #conseilMess, #structure, #contenuEscr, #escrSol, #presArn,#arnNigeria, #phishing, #autresArn, #achatSite, #achatProduit, #achatApp, #AppCom,#verIn,#chevalTroie,#spWare,#rsWare,#mWare,#kLog,#rootkit,#Dos,#intercept,#debo,#faille,#crsSite,#concepteur,#iphone,#android,#deuxTels, #appAppleNon, #appAndNon, #siteFiable, #infoFiable, #siteInf, #siteSante
-{
-  display: none;
-  font-family: K2D, sans-serif;
-}
-.icon{
+
+.icon {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -73,19 +75,20 @@ letter-spacing: 0.5px; */
   stroke: currentColor;
   fill: currentColor;
 }
-.iconeOui{
+
+.iconeOui {
   display: grid;
   grid-template-columns: 20px auto 20px;
   align-items: center;
   letter-spacing: 0.3pt;
   white-space: nowrap;
   user-select: none;
-
 }
 
-.icon-cogs{
+.icon-cogs {
   text-align: left;
 }
-.icon-info{
+
+.icon-info {
   text-align: right;
 }

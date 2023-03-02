@@ -5,30 +5,21 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <script src="script.js"></script>
-
-<form>
-  <p><input type="checkbox" id="sombre" name="Sombre">Mode sombre</p>
-</form>    
-    <p>Recevoir des notifications pour cette marque de téléphone:</p>
+   
+    <p>Afficher l'icône de notifications pour ces réseaux sociaux (ne désactivez ces options que si vous n'êtes pas connecté à l'un de ces comptes)</p>
     <form>
-      <input type="radio" id="android" name="favPhone">
-      <label for="android">Androïd</label><br>
-      <input type="radio" id="iphone" name="favPhone">
-      <label for="iphone">iPhone</label><br>
-      <input type="radio" id="Deux" name="favPhone">
-      <label for="Deux">Les deux</label><br>
-      <input type="radio" id="autre" name="favPhone">
-      <label for="autre">Je n'ai pas de téléphone</label>
+      <input type="checkbox" name="FbCheck" id="FbCheck">
+      <label for="FbCheck">Facebook</label><br>
+      <input type="checkbox" name="GoogleCheck" id="GoogleCheck">
+      <label for="GoogleCheck">Google</label><br>
+      <input type="checkbox" name="InstCheck" id="InstCheck">
+      <label for="InstCheck">Instagram</label><br>
+      <input type="checkbox" name="TwCheck" id="TwCheck">
+      <label for="TwCheck">Twitter</label><br>
+      <input type="checkbox" name="YtCheck" id="YtCheck">
+      <label for="YtCheck">YouTube</label><br>
+      <button type="submit" id="SoumettreParametre">Soumettre</button>
     </form>
-    <p>Recevoir des notifications pour cette marque d'ordi</p>
-    <form>
-      <input type="radio" id="Windows" name="favOrdi">
-      <label for="Windows">Windows</label><br>
-      <input type="radio" id="Mac" name="favOrdi">
-      <label for="Mac">Mac</label><br>
-      <input type="radio" id="Deux_2" name="favOrdi">
-      <label for="Deux_2">Les deux</label>
-    </form>
+     <script src="script.js"></script>  
   </body>
 </html>

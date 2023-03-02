@@ -1,3 +1,13 @@
+/**
+ * 
+ * Ce fichier intègre le code HTML de la page "Conseils pour les téléphones mobiles" dans le popup.
+ * 
+ * Les variables "indexation" sont définies dans le document "script.js"
+ * La fonction RetourPrincipal se trouve dans le document "script.js"
+ * La fonction OuvrirAppNon se trouve dans le document "OuvrirAppNon.js"
+ * 
+ * 
+ */
 //Catégories
 function Mobiles() {
   indexation[0] = "<p id='ouvririPhone' class='iconeOui'><span class='icon-logo-ios'></span>iPhone<span class='icon-circle-down'></span></p><div id='iphone'><ul>"
