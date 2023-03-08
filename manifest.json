@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "CoSeCo — Conseils de Sécurité et de Confidentialité",
+  "name": "CoSeCo",
   "author": "Cyrille Tanguay",
   "description": "Vous donne des conseils pour protéger vos données et pour réagir en cas de chantage",
   "version": "1.0",
@@ -32,7 +32,7 @@
       "https://www.facebook.com/settings*"
     ],
     "js": [
-      "content_script.js", "liensBouton.js"
+      "content_script.js"
     ]
   }],
   "browser_action": {
