@@ -45,13 +45,14 @@ function Mobiles() {
   //On s'assure que les variables ne soient pas séparées par une virgule
   const text = indexation.join('');
   document.getElementById('laListe').innerHTML = text;
-  document.querySelector("header").style.backgroundColor = "red";
+  document.querySelector("header").style.backgroundColor = "#b3ffff";
+  document.getElementById('myHeading').style.color = "black";
   //On s'assure que les listes déroulantes soient fermées et masquées
   for (let i = 0; i < document.querySelectorAll("div").length; i++) {
     document.querySelectorAll("div")[i].style.display = "none";
   }
   //On définit l'en-tête
-  document.getElementById('myHeading').innerHTML = "<div id='caseRetour'>◀</div><div></div>Conseils pour les téléphones mobiles";
+  document.getElementById('myHeading').innerHTML = "<div id='caseRetour'>◀</div><div></div>Téléphones mobiles";
   //Seul le bouton de retour est affiché en tout temps
   document.getElementById("caseRetour").style.display = "initial";
   document.getElementById("myHeading").style.textAlign = "right";

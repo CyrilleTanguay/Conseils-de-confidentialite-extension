@@ -21,6 +21,9 @@ ul li {
   padding-bottom: 12px;
   font-family: K2D, sans-serif;
 }
+div p {
+  font-family: K2D, sans-serif;
+}
 
 .iconesApps {
   display: flex;
@@ -48,11 +51,16 @@ hr {
   height: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
+  
 }
 
 header {
-  background-color: aqua;
+  background-color: #00B1CA;
   height: 40px;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 main {
@@ -60,6 +68,7 @@ main {
   margin-right: 8px;
   line-height: 0.3;
   color: midnightblue;
+  margin-top: 57px;
 }
 
 #caseRetour {
@@ -91,4 +100,8 @@ main {
 
 .icon-info {
   text-align: right;
+}
+
+.icon-FA-chevron-right{
+  color: midnightblue;
 }

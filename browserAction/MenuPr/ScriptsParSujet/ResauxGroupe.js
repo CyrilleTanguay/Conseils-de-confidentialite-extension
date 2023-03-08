@@ -67,7 +67,7 @@ function unReseau() {
   const text = indexation.join('');
   //On remplit la fenêtre avec ces catégories
   document.getElementById('laListe').innerHTML = text;
-  document.querySelector("header").style.backgroundColor = "red";
+  document.querySelector("header").style.backgroundColor = "CornflowerBlue";
   //On s'assure que les listes déroulantes soient fermées et masquées
   for (let i = 0; i < document.querySelectorAll("div").length; i++) {
     document.querySelectorAll("div")[i].style.display = "none";

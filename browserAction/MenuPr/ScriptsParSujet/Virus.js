@@ -22,7 +22,7 @@ function Virus() {
   };
   const text = indexation.join('');
   document.getElementById('laListe').innerHTML = text;
-  document.querySelector("header").style.backgroundColor = "red";
+  document.querySelector("header").style.backgroundColor = "orangeRed";
 
   for (let i = 0; i < document.querySelectorAll("div").length; i++) {
     document.querySelectorAll("div")[i].style.display = "none";

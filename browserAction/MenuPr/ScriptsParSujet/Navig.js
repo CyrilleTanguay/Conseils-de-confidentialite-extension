@@ -19,13 +19,13 @@ function Navigateur() {
   indexation[7] = " <li>Bloquez les permissions.</li>"
   indexation[8] = " <li>Activez les options de sécurité.</li></ul></div><hr>"
   indexation[9] = " <p id='ouvrirConfExt' class='iconeOui'><span class='icon-FA-puzzle-piece'></span>Extensions<span class='icon-circle-down'></span></p><div id='confExt'><ul>"
-  indexation[10] = "<li>Disconnect: permet de vous protéger de cookies tiers<div id='Disconnect'></div></li>"
-  indexation[11] = "<li>Don't track me Google: simplifie les liens dans les recherches Google<div id='DTM'></div></li>"
-  indexation[12] = "<li>Privacy Badger<div id='PRBdg'></div></li>"
-  indexation[13] = "<li>Ghostery: Enlève les publicités<div id='Ghst'></div></li>"
-  indexation[14] = "<li>Facebook Container: Empêche Meta (Facebook, Instagram) de vous traquer même en dehors de Facebook.<div id='FbCo'></div></li>"
-  indexation[15] = "<li>Return Youtube Dislike : Une extension qui, comme son nom l’indique, affiche les pouces rouges de Youtube.<div id='RYD'></div></li>"
-  indexation[16] = "<li>NoScript: Gère les scripts JavaScript (Attention: il vous faudra souvent faire le tri des scripts pour qu'un site fonctionne.)<div id='NSc'></div></li></ul></div>"
+  indexation[10] = "<li>Disconnect: permet de vous protéger de cookies tiers. <div id='Disconnect'></div></li>"
+  indexation[11] = "<li>Don't track me Google: simplifie les liens dans les recherches Google. <div id='DTM'></div></li>"
+  indexation[12] = "<li>Privacy Badger. <div id='PRBdg'></div></li>"
+  indexation[13] = "<li>Ghostery: Enlève les publicités. <div id='Ghst'></div></li>"
+  indexation[14] = "<li>Facebook Container: Empêche Meta (Facebook, Instagram) de vous traquer même en dehors de Facebook. <div id='FbCo'></div></li>"
+  indexation[15] = "<li>Return Youtube Dislike : Une extension qui, comme son nom l’indique, affiche les pouces rouges de Youtube. <div id='RYD'></div></li>"
+  indexation[16] = "<li>NoScript: Gère les scripts JavaScript (Attention: il vous faudra souvent faire le tri des scripts pour qu'un site fonctionne). <div id='NSc'></div></li></ul></div>"
   //On s'assure que les variables ne soient pas séparées par une virgule
   const text = indexation.join('');
   document.getElementById('laListe').innerHTML = text;
@@ -34,10 +34,17 @@ function Navigateur() {
     document.querySelectorAll("div")[i].style.display = "none";
   }
   //On définit l'en-tête
-  document.querySelector("header").style.backgroundColor = "orange";
+  document.querySelector("header").style.backgroundColor = "darkOrange";
   document.getElementById('myHeading').innerHTML = "<div id='caseRetour'>◀</div><div></div>Navigateur";
   //Seul le bouton de retour est affiché en tout temps
   document.getElementById("caseRetour").style.display = "initial";
+  document.getElementById("Disconnect").style.display = "initial";
+  document.getElementById("DTM").style.display = "initial";
+  document.getElementById("PRBdg").style.display = "initial";
+  document.getElementById("Ghst").style.display = "initial";
+  document.getElementById("FbCo").style.display = "initial";
+  document.getElementById("RYD").style.display = "initial";
+  document.getElementById("NSc").style.display = "initial";
   //On définit la grille
   document.getElementById("myHeading").style.textAlign = "right";
   document.getElementById("myHeading").style.display = "grid";
@@ -49,42 +56,49 @@ function Navigateur() {
   }
 
   //Si, avec son ID, on découvre qu'une extension n'est pas installée, on met un bouton menant à sa page pour l'installer
-  if ((browser.management.get('jid1-ZAdIEUB7XOzOJw@jetpack'))) {
-    console.log("installée")
-  } else {
-    document.getElementById("Disconnect").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>"
-  }
-  console.log(browser.management.get('dont-track-me-google@robwu.nl'))
-  if ((browser.management.get('dont-track-me-google@robwu.nl'))) {
-    console.log("installée")
-  } else {
-    document.getElementById("DTM").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>"
-  }
-  if ((browser.management.get('jid1-MnnxcxisBPnSXQ@jetpack'))) {
-    console.log("installée")
-  } else {
-    document.getElementById("PRBdg").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/privacy-badger17/'>Installer</a>"
-  }
-  if ((browser.management.get('firefox@ghostery.com'))) {
-    console.log("installée")
-  } else {
-    document.getElementById("Ghst").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/ghostery/'>Installer</a>"
-  }
-  if ((browser.management.get("@contain-facebook"))) {
-    console.log("installée")
-  } else {
-    document.getElementById("FbCo").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>"
-  }
-  if (!(browser.management.get("@contain-facebook"))) {
-    console.log("installée")
-  } else {
-    document.getElementById("RYD").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>"
-  }
-  if (!(browser.management.get("{73a6fe31-595d-460b-a920-fcc0f8843232}"))) {
-    console.log("installée")
-  } else {
-    document.getElementById("NSc").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/noscript/'>Installer</a>"
-  }
+  // if ((browser.management.get('jid1-ZAdIEUB7XOzOJw@jetpack'))) {
+  //   console.log("installée")
+  // } else {
+  //   document.getElementById("Disconnect").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>"
+  // }
+  // console.log(browser.management.get('dont-track-me-google@robwu.nl'))
+  // if ((browser.management.get('dont-track-me-google@robwu.nl'))) {
+  //   console.log("installée")
+  // } else {
+  //   document.getElementById("DTM").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>"
+  // }
+  // if ((browser.management.get('jid1-MnnxcxisBPnSXQ@jetpack'))) {
+  //   console.log("installée")
+  // } else {
+  //   document.getElementById("PRBdg").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/privacy-badger17/'>Installer</a>"
+  // }
+  // if ((browser.management.get('firefox@ghostery.com'))) {
+  //   console.log("installée")
+  // } else {
+  //   document.getElementById("Ghst").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/ghostery/'>Installer</a>"
+  // }
+  // if ((browser.management.get("@contain-facebook"))) {
+  //   console.log("installée")
+  // } else {
+  //   document.getElementById("FbCo").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>"
+  // }
+  // if (!(browser.management.get("@contain-facebook"))) {
+  //   console.log("installée")
+  // } else {
+  //   document.getElementById("RYD").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>"
+  // }
+  // if (!(browser.management.get("{73a6fe31-595d-460b-a920-fcc0f8843232}"))) {
+  //   console.log("installée")
+  // } else {
+  //   document.getElementById("NSc").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/noscript/'>Installer</a>"
+  // }
+  document.getElementById("Disconnect").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/disconnect/'>Installer</a>";
+ document.getElementById("DTM").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>";
+document.getElementById("PRBdg").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/privacy-badger17/'>Installer</a>";
+document.getElementById("Ghst").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/ghostery/'>Installer</a>";
+document.getElementById("FbCo").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>";
+document.getElementById("RYD").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/return-youtube-dislikes/'> Installer</a>";
+document.getElementById("NSc").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/noscript/'>Installer</a>";
   var BtnConfNav = document.getElementById("ouvrirConfNav");
 
   if (BtnConfNav) {

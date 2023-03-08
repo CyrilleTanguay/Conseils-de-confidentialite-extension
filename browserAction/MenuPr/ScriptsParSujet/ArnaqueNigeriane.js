@@ -15,7 +15,7 @@ function ArnNigeriane() {
    };
    const text = indexation.join('');
    document.getElementById('laListe').innerHTML = text;
-   document.querySelector("header").style.backgroundColor = "red";
+   document.querySelector("header").style.backgroundColor = "green";
    document.getElementById('myHeading').innerHTML = "<div id='caseRetour'>◀</div><div></div>Arnaque nigériane (alias 4-1-9)";
    document.querySelector("ul").style.fontFamily = "K2D, sans-serif";
 

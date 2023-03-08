@@ -60,7 +60,7 @@ function Extorsion() {
     document.querySelectorAll("div")[i].style.display = "none";
   }
   //On définit l'en-tête
-  document.getElementById('myHeading').innerHTML = "<div id='caseRetour'>◀</div><div></div>Extorsion / Sextorsion / Chantage";
+  document.getElementById('myHeading').innerHTML = "<div id='caseRetour'>◀</div><div></div>(S)extorsion/Chantage";
   //Seul le bouton de retour est affiché en tout temps
   document.getElementById("caseRetour").style.display = "initial";
   //On définit la grille

@@ -9,7 +9,7 @@
  */
 function MDP() {
   //Catégories
-  indexation[0] = "<p id='ouvreBonMDP' class='iconeOui'><span class='icon-FA-star'></span>Bon mot de passe<span class='icon-circle-down'></span></p><div id='bonMDP'>"
+  indexation[0] = "<p id='ouvreBonMDP' class='iconeOui'><span class='icon-FA-star'></span>Bon mot de passe<span class='icon-circle-down'></span></p><div id='bonMDP'><br>"
   indexation[1] = "<p>Un bon mot de passe doit...</p><ul>"
   indexation[2] = "    <li>Contenir au moins douze caractères</li>"
   indexation[3] = "    <li>Contenir des lettres, des chiffres et des symboles intercalés partout</li>"
@@ -53,7 +53,9 @@ function MDP() {
   document.getElementById('myHeading').innerHTML = "<div id='caseRetour'>◀</div><div></div>Mot de passe";
   //Seul le bouton de retour est affiché en tout temps
   document.getElementById("caseRetour").style.display = "initial";
+  
   //On définit la grille
+
   document.getElementById("myHeading").style.textAlign = "right";
   document.getElementById("myHeading").style.display = "grid";
   document.getElementById("myHeading").style.gridTemplateColumns = "auto auto auto";

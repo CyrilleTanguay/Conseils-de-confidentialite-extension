@@ -19,11 +19,12 @@ function Politique() {
   };
   const text = indexation.join('');
   document.getElementById('laListe').innerHTML = text;
-  document.querySelector("header").style.backgroundColor = "red";
+  document.querySelector("header").style.backgroundColor = "AntiqueWhite";
   document.getElementById('myHeading').innerHTML = "<div id='caseRetour'>◀</div><div></div>Politique de confidentialité";
   document.getElementById('laListe').style.fontFamily = "K2D";
   document.getElementById("myHeading").style.textAlign = "right";
   document.getElementById("myHeading").style.display = "grid";
+  document.getElementById("myHeading").style.color = "black";
   document.getElementById("myHeading").style.gridTemplateColumns = "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {

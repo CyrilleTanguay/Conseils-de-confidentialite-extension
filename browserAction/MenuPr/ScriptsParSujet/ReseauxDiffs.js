@@ -58,6 +58,9 @@ function Fb() {
   indexation[15] = "  <li>Il n’existe pas de fonctionnalité qui nous permet de savoir qui a consulté notre page Facebook. Cette « fonctionnalité » ne doit pas être confondue avec celle qui nous permet de savoir qui est CONNECTÉ sur notre compte.</li>"
   indexation[16] = "  <li>Méfiez-vous des courriels qui disent que notre compte sera bloqué. En cas de doute, allez vérifier les e-mails récents de Facebook</li>"
   indexation[17] = "<li>Ne jouez pas aux quiz.</li></ul></ul>"
+  for (let i = 18; i < 55; i++) {
+    indexation[i] = '';
+  };
   const text = indexation.join('');
   document.getElementById('laListe').innerHTML = text;
   document.querySelector("header").style.backgroundColor = "#1877f2";
@@ -338,7 +341,7 @@ function YTube() {
   indexation[8] = "  <li>Les commentaires sont négatifs et il y a beaucoup de pouces rouges. C’est pour ça que je vous ai demandé d’installer l’extension permettant d’afficher le nombre de pouces rouges.</li>"
   indexation[9] = "  <li>L’objet de son étude n’est pas clair.</li>"
   indexation[10] = "  <li>Il n’y a pas de texte de présentation</li></ul></ul>"
-  for (let i = 11; i < 55; i++) {
+  for (let i = 11; i < 57; i++) {
     indexation[i] = '';
   };
   const text = indexation.join('');

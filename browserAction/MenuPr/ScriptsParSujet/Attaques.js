@@ -27,7 +27,7 @@ function Attaques() {
   indexation[16] = "<p id='ouvrirCWeb'>Pour le concepteur web</p><div id='concepteur'><ul><li>Vérifiez le format des données entrées par les utilisateurs.</li><li>Encodez ces données utilisateurs affichées en remplaçant les caractères spéciaux par leurs équivalents HTML</li></ul></div>"
   const text = indexation.join('');
   document.getElementById('laListe').innerHTML = text;
-  document.querySelector("header").style.backgroundColor = "red";
+  document.querySelector("header").style.backgroundColor = "#ff0000";
 
   for (let i = 0; i < document.querySelectorAll("div").length; i++) {
     document.querySelectorAll("div")[i].style.display = "none";

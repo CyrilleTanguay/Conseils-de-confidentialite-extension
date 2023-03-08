@@ -44,11 +44,13 @@ function Fiable() {
   indexation[32] = "<li>Les cas les plus mentionnés (et souvent faux) se retrouvent en première position sur Google, donc prudence.</li>"
   indexation[33] = "<li>Méfiez-vous des formulaires automatisés, ils ne sont fiables qu’à 34%.</li>"
   indexation[34] = "<li>Utilisez des sites fiables comme Patientslikeme, Doctissimo, Sante.Journaldesfemmes.com, Maladiesrares.info, Santé Canada</li></ul></div>"
+  indexation.length=34;
   //On s'assure que les variables ne soient pas séparées par une virgule
   const text = indexation.join('');
   //On remplit la fenêtre avec ces catégories
   document.getElementById('laListe').innerHTML = text;
-  document.querySelector("header").style.backgroundColor = "red";
+  document.querySelector("header").style.backgroundColor = "#7733ff";
+  document.getElementById('myHeading').style.color = "white";
   //On s'assure que les listes déroulantes soient fermées et masquées
   for (let i = 0; i < document.querySelectorAll("div").length; i++) {
     document.querySelectorAll("div")[i].style.display = "none";
