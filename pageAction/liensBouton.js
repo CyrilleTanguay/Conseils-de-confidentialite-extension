@@ -5,7 +5,6 @@
  * La fonction popupFen() va ouvrir un popup présent dans le document ./MenuPr/script.js
  * 
  */
-
 //On définit l'onglet de la page
 browser.tabs.query({
     currentWindow: true,
@@ -41,7 +40,9 @@ browser.tabs.query({
         document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans les paramètres de YouTube";
         lien.addEventListener("click", popupFen)
 
-    } else if (tab.url.includes("google.com/")) {
+    }
+
+    else if (tab.url.includes("google.com/")) {
         lien.setAttribute("href", "https://myaccount.google.com/");
         console.log(lien);
         document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans les paramètres de Google";

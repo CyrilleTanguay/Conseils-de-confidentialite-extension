@@ -5,20 +5,23 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-   <h3>NOTE: Ces options ne fonctionnent pas encore. Elles fonctionneront dans une future version.</h3>
     <p>Afficher l'icône de notifications pour ces réseaux sociaux (ne désactivez ces options que si vous n'êtes pas connecté à l'un de ces comptes)</p>
     <form>
-      <input type="checkbox" name="FbCheck" id="FbCheck">
+      <input type="checkbox" name="FbCheck" id="FbCheck" checked>
       <label for="FbCheck">Facebook</label><br>
-      <input type="checkbox" name="GoogleCheck" id="GoogleCheck">
+      <input type="checkbox" name="GoogleCheck" id="GoogleCheck" checked>
       <label for="GoogleCheck">Google</label><br>
-      <input type="checkbox" name="InstCheck" id="InstCheck">
+      <input type="checkbox" name="InstCheck" id="InstCheck" checked>
       <label for="InstCheck">Instagram</label><br>
-      <input type="checkbox" name="TwCheck" id="TwCheck">
+      <input type="checkbox" name="TwCheck" id="TwCheck" checked>
       <label for="TwCheck">Twitter</label><br>
-      <input type="checkbox" name="YtCheck" id="YtCheck">
+      <input type="checkbox" name="YtCheck" id="YtCheck" checked>
       <label for="YtCheck">YouTube</label><br>
+      
+      <h4>L'extension se rechargera lorsque vous cliquerez sur "Soumettre" pour exécuter vos paramètres.</h4>
       <button type="submit" id="SoumettreParametre">Soumettre</button>
+      <p id="messageOp" style="display: none;">Vos modifications ont été enregistrées!</p>
+      
     </form>
      <script src="script.js"></script>  
   </body>
