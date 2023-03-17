@@ -26,6 +26,13 @@
       "background_script.js"
     ]
   },
+  "content_scripts": [
+    {
+      "matches" : ["<all_urls>"],
+      "js": ["purify.min.js", "myinjectionscript.js"]
+    }
+  ]
+,  
   "browser_action": {
     "default_icon": {
       "64": "icons/icone64Blanc.svg"
@@ -35,8 +42,7 @@
   },
   "page_action": {
     "default_icon": "icons/icone64Blanc.svg",
-    "default_popup": "pageAction/index.html",
-    "show_matches": ["https://www.facebook.com/", "https://twitter.com/*", "https://*.instagram.com/*", "https://www.youtube.com/*", "https://*.google.com/*"]
+    "default_popup": "pageAction/index.html"
   },
   "options_ui": {
     "page": "options/index.html"

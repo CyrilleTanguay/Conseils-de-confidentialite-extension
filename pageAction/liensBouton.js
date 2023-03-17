@@ -22,6 +22,7 @@ browser.tabs.query({
         lien.setAttribute("href", "https://www.facebook.com/settings/");
         //On indique à l'utilisateur qu'il peut modifier des paramètres
         document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans les paramètres de Facebook";
+
         //On appelle une fonction qui va ouvrir le popup avec la liste de conseils
         lien.addEventListener("click", popupFen)
     } else if (tab.url.includes("twitter.com")) {
