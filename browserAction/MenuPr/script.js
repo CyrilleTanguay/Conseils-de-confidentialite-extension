@@ -94,7 +94,7 @@ window.onload = function startListen() {
 const indexation = [
   '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span class="icon-FA-chevron-right"></span></p><hr>',
-  '<p id="leNav" class="iconeOui"><span class="icon-firefox"></span>Navigateur<span class="icon-FA-chevron-right"></span></p><hr>',
+  '<p id="leNav" class="iconeOui"><span class="icon-earth"></span>Navigateur<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="leMDP" class="iconeOui"><span class="icon-key"></span>Mot de passe<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="fiable" class="iconeOui"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="reseau" class="iconeOui"><span class="icon-users"></span>Réseaux sociaux<span class="icon-FA-chevron-right"></span></p><hr>',
@@ -124,7 +124,7 @@ function allerSr() {
 function RetourPrincipal() {
   indexation[0] = '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
   indexation[1] = '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[2] = '<p id="leNav" class="iconeOui"><span class="icon-firefox"></span>Navigateur<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[2] = '<p id="leNav" class="iconeOui"><span class="icon-earth"></span>Navigateur<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
   indexation[3] = '<p id="leMDP" class="iconeOui"><span class="icon-key"></span>Mot de passe<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
   indexation[4] = '<p id="fiable" class="iconeOui"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
   indexation[5] = '<p id="reseau" class="iconeOui"><span class="icon-users"></span>Réseaux sociaux<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
@@ -136,9 +136,6 @@ function RetourPrincipal() {
   indexation[11] = '<p id="virus" class="iconeOui"><span class="icon-bug"></span>Virus<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
   indexation[12] = '<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
   indexation[13] = '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Téléphones mobiles<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p>';
-  // for (let i = 14; i < 100; i++) {
-  //   indexation[i] = '';
-  // };
   indexation.splice(14, 90);
   //On s'assure que les variables ne soient pas séparées par une virgule
   const text = indexation.join('');
@@ -206,12 +203,10 @@ function RetourPrincipal() {
   var BtnAttaque = document.getElementById("attaques");
   if (BtnAttaque) {
     BtnAttaque.addEventListener("click", Attaques);
-
   }
   var BtnMobile = document.getElementById("mobiles");
   if (BtnMobile) {
     BtnMobile.addEventListener("click", Mobiles);
-
   }
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {

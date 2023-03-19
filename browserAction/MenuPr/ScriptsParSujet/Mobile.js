@@ -36,7 +36,7 @@ function Mobiles() {
   indexation[23] = "<li>Faites le tri de vos comptes et supprimez ceux qui vous sont inutiles</li>"
   indexation[24] = "<li>Triez vos applications</li>"
   indexation[25] = "<li>Utilisez des messageries chiffrées (WhatsApp, Signal, Wire, Telegram, Wickr, Riot.IM)</li>"
-  indexation[26] = "<li>Gardez toujours votre téléphone verrouillé (configurez son verrouillage automatique pour 5 minutes)</li>"
+  indexation[26] = "<li>Gardez toujours votre téléphone verrouillé (configurez le verrouillage automatique pour 5 minutes)</li>"
   indexation[27] = "<li>N’utilisez que les boutiques d’application fiables (App Store, Google Play)</li>"
   indexation[28] = "<li>Désactivez les publicités ciblées</li><li>Vérifiez les permissions (appareil photo, géolocalisation)</li>"
   indexation[29] = "<li>Personnalisez votre code PIN, qui protège de l’usage de votre carte SIM. Évitez les codes trop simples.</li>"

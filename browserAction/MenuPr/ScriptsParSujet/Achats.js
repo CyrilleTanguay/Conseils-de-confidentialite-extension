@@ -12,10 +12,10 @@ function Achats() {
   //Catégories
   indexation[0] = "<p id='introP'>Les achats en ligne peuvent faciliter notre vie, mais aussi celle de certains voleurs!</p>"
   indexation[1] = "<p id='ouvrirAchatSite' class='iconeOui'><span class='icon-terminal'></span>Concernant le site<span class='icon-circle-down'></span></p><div id='achatSite' style='display: none'><ul>"
-  indexation[2] = "  <li>Vérifiez le nom de domaine avec cet outil. Si son acquisition est récente, cela est suspect</li>"
+  indexation[2] = "  <li>Vérifiez le nom de domaine avec cet <a href='https://votresite.ca/abonnement/whois'>outil</a>. Si son acquisition est récente, cela est suspect</li>"
   indexation[3] = "  <li>Vérifiez l’adresse de la boutique en ligne. Le fait qu’il soit situé dans un bloc-appartement ou au milieu de nulle part est suspicieux.</li>"
   indexation[4] = "  <li>Téléphonez à l’entreprise pour vous assurer que le numéro est bel et bien lié à l’entreprise.</li>"
-  indexation[5] = "  <li>Pour le cas de boutiques québécoises, consultez le registraire des entreprises du Québec. Toutes les compagnies du Québec sont obligées de s’inscrire à ce registraire.</li><li>Vérifiez les conditions générales de vente</li>"
+  indexation[5] = "  <li>Pour le cas de boutiques québécoises, consultez le <a href='https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises'>registraire des entreprises du Québec</a>. Toutes les compagnies du Québec sont obligées de s’inscrire à ce registraire.</li><li>Vérifiez les conditions générales de vente</li>"
   indexation[6] = "  <li>Assurez-vous que le site soit sécurisé. Vous pouvez utiliser un scanner.</li><li>Ne faites pas d’achat sur un ordinateur infecté ou public</li></ul></div><hr>"
   indexation[7] = "  <p id='ouvrirAchatProd' class='iconeOui'><span class='icon-gift'></span>Concernant le produit<span class='icon-circle-down'></span></p><div id='achatProduit' style='display: none'><ul>"
   indexation[8] = "<li>Vérifiez les commentaires d’un produit</li>"

@@ -22,7 +22,7 @@ function Attaques() {
   indexation[11] = "<p>Routeurs</p>"
   indexation[12] = "<ul><li>Faille présente dans le microcode: </li>"
   indexation[13] = "<li>Raison: le serveur HTML est mal conçu, le système de mots de passe est défaillant ou il y a une porte dérobée non documentée par le constructeur (solution: mise à jour par flashage de la mémoire statique du routeur)</li><li>Failles majeures: remplacez temporairement le matériel impacté et surtout, suivez les bulletins d’informations des sites spécialisés</li></ul>"
-  indexation[14] = "<p>Autres:</p><ul><li>Bluetooth: appliquez un mot de passe et désactivez-le lorsqu’il n’est pas utilisé</li><li>Fermez sa session quand on n’est plus devant son PC</li><li>APT: utiliser un pare-feu ou pour des entreprises, utiliser un ordinateur volontairement vulnérable</li></ul></div><hr>"
+  indexation[14] = "<p>Autres:</p><ul><li>Bluetooth: appliquez un mot de passe et désactivez-le lorsqu’il n’est pas utilisé</li><li>Fermez votre session si vous n’êtes plus devant votre ordinateur</li><li>APT: utilisez un pare-feu ou pour des entreprises, utilisez un ordinateur volontairement vulnérable</li></ul></div><hr>"
   indexation[15] = "<p id='ouvrirCS'>Attaque Cross-site scripting</p><div id='crsSite'><ul><li>Configurez le navigateur de manière à empêcher l’exécution de scripts</li></ul></div><hr>"
   indexation[16] = "<p id='ouvrirCWeb'>Pour le concepteur web</p><div id='concepteur'><ul><li>Vérifiez le format des données entrées par les utilisateurs.</li><li>Encodez ces données utilisateurs affichées en remplaçant les caractères spéciaux par leurs équivalents HTML</li></ul></div>"
   const text = indexation.join('');

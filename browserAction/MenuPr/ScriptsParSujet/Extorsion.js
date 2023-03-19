@@ -10,7 +10,7 @@
 function Extorsion() {
   //Catégories
   indexation[0] = "<p id='ouvprevExto' class='iconeOui'><span class='icon-FA-eye-slash'></span>Prévention<span class='icon-circle-down'></span></p><div id='prevExto'><ul>"
-  indexation[1] = "<li>N’affichez pas trop de détails sur les médias sociaux. Plus de la moitié des victimes de sextorsion connaissaient l’harceleur.</li>"
+  indexation[1] = "<li>N’affichez pas trop de détails sur les médias sociaux. Selon une étude, plus de la moitié des victimes de sextorsion connaissaient l’harceleur.</li>"
   indexation[2] = "<li>Évitez de mettre des photos compromettantes dans un service d’archivage ou de stockage en ligne, car elles pourraient être piratées.</li></ul></div><hr>"
   indexation[3] = "<p id='ouvvictExto' class='iconeOui'><span class='icon-FA-thumb-tack'></span>Si vous êtes victime<span class='icon-circle-down'></span></p><div id='victExto'><ul>"
   indexation[4] = "<li><b><i><u>Règle #1: Ne lui envoyez JAMAIS d’argent ou de photos, bref, ne vous pliez JAMAIS à ses demandes. Cela peut faire en sorte que l’extorqueur va en profiter pour vous en demander plus.</u></i></b></li>"
@@ -29,11 +29,11 @@ function Extorsion() {
   indexation[17] = "<li>Ils peuvent faire croire qu’il en sait plus à votre sujet que vous ne leur en avez appris.</li>"
   indexation[18] = "<li>Ils sont insistants.</li>"
   indexation[19] = "<li>Ils se renseignent sur vous et sur votre famille.</li>"
-  indexation[20] = "<li>Ils sont empathiques (« Qu’est-ce qui ne va pas »)</li>"
+  indexation[20] = "<li>Ils sont empathiques (« Qu’est-ce qui ne va pas? »)</li>"
   indexation[21] = "<li>Ils critiquent vos relations</li>"
   indexation[22] = "<li>Ils peuvent se contredire dans leur histoire, dans leur âge ou activité</li>"
   indexation[23] = "<li>Ils peuvent vous offrir des cadeaux ou de l’argent. CELA EST SUSPECT.</li>"
-  indexation[24] = "<li>Ils utilisent une fausse photo de profil. Vous pouvez faire une recherche sur google images pour savoir si cette photo représente une autre personne.</li>"
+  indexation[24] = "<li>Ils utilisent une fausse photo de profil. Vous pouvez faire une recherche sur Google Images pour savoir si cette photo représente une autre personne.</li>"
   indexation[25] = "<li>La conversation peut tourner sur le sexe ou sur des vues radicales ou violentes.</li>"
   indexation[26] = "<li>Ils vous forcent à mentir</li></ul></div><hr>"
   indexation[27] = "<p id='compDev' class='iconeOui'><span class='icon-FA-bomb'></span>Les comportements déviants<span class='icon-circle-down'></span></p><div id='compor'><p style='line-height:initial'>Les gens ayant une mauvaise influence (le groupe terroriste ISIS, le groupe de hackers Lazarus – qui a créé le virus WannaCry) tiennent des propos déviants. Il est possible de repérer deux types de comportements.</p><p>Les narcissiques:</p><ul>"

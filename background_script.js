@@ -137,8 +137,6 @@ function logTabsYT(tabs) {
 //Les options sont appliquées sur tout onglet YouTube
 browser.webNavigation.onCommitted.addListener(() => {
     browser.tabs.query({
-        url: "*://*.youtube.com/*",
-        currentWindow: true,
-        active: true
+        url: "*://*.youtube.com/*"
     }).then(logTabsYT, onError);
 });

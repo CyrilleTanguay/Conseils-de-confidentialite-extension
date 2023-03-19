@@ -24,20 +24,6 @@ function Deez() {
   }
 }
 
-function Edge() {
-  document.getElementById('laListe').innerHTML = '<ul><li>Supprimez l’extension Rédacteur Microsoft. Elle envoie à Microsoft tout ce que vous tapez sur votre ordi.</li></ul>';
-  document.getElementById("myHeading").style.color = "white";
-  document.querySelector("header").style.backgroundColor = "#0078d7";
-  document.getElementById('laListe').style.fontFamily = "K2D, sans-serif";
-  document.getElementById('myHeading').innerHTML = "<div id='caseRetour'>◀</div><div></div>Edge";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns = "auto auto auto";
-  var BtnReviens = document.getElementById("caseRetour");
-  if (BtnReviens) {
-    BtnReviens.addEventListener("click", unReseau);
-  }
-}
 
 function Fb() {
   indexation[0] = "<ul><li>Ne mentez pas sur votre âge. Bien que cela puisse sembler sécuritaire, il se peut que Facebook vous demande de valider votre identité avec une pièce d’identité. Les deux dates de naissance ne concorderont pas et votre compte sera bloqué!</li>"
@@ -82,9 +68,7 @@ function Google() {
   indexation[0] = "<ul><li>Désactivez l’historique OK Google</li>"
   indexation[1] = "<li>Méfiez-vous des Google Docs publics (comme les formulaires) qui vous sont inconnus.</li>"
   indexation[2] = "<li>Assurez-vous que Google Agenda soit privé, sinon quelqu’un pourrait en tirer des informations</li>"
-  indexation[3] = "<li>Nettoyez l’historique de Chrome</li>"
-  indexation[4] = "<li>Si vous avez installé Google Chrome, désactivez l’option « Vérifier l’orthographe du texte saisi sur les pages Web » ou choisissez l’option « Correcteur orthographique de base », car tout ce que vous tapez sera parvenu à Google!</li></ul>"
-  for (let i = 5; i < 55; i++) {
+  for (let i = 3; i < 55; i++) {
     indexation[i] = '';
   };
   const text = indexation.join('');
@@ -336,7 +320,7 @@ function YTube() {
   indexation[3] = "<li>Méfiez-vous des demandes de partenariat</li>"
   indexation[4] = "<li>Définissez qui peut voir vos vidéos.</li>"
   indexation[5] = "<li>Ne renseignez votre mot de passe dans aucun formulaire</li>"
-  indexation[6] = "<p>Méfiez-vous des tutoriels de mauvaise qualité! La qualité d’un tutoriel peut être remise en question si:</p><ul>"
+  indexation[6] = "<li>Méfiez-vous des tutoriels de mauvaise qualité! La qualité d’un tutoriel peut être remise en question si:</li><ul>"
   indexation[7] = "  <li>On ne comprend rien de ce qu’il dit.</li>"
   indexation[8] = "  <li>Les commentaires sont négatifs et il y a beaucoup de pouces rouges. C’est pour ça que je vous ai demandé d’installer l’extension permettant d’afficher le nombre de pouces rouges.</li>"
   indexation[9] = "  <li>L’objet de son étude n’est pas clair.</li>"
