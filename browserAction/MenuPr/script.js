@@ -1,16 +1,71 @@
 /**
- * 
+ *
  * Ce fichier intègre le code HTML de la page d'accueil de l'index dans le popup.
- * 
- * 
+ *
+ *
  */
 
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
 //Ajout d'écouteurs dès que le menu est chargé pour exécuter une fonction en cliquant sur une catégorie pour accéder à ses sous-catégories
 window.onload = function startListen() {
   //On s'assure que les variables ne soient pas séparées par une virgule
-  const text = indexation.join('');
+  // indexation[0] =
+  //   '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[1] =
+  //   '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[2] =
+  //   '<p id="leNav" class="iconeOui"><span class="icon-earth"></span>Navigateur<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[3] =
+  //   '<p id="leMDP" class="iconeOui"><span class="icon-key"></span>Mot de passe<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[4] =
+  //   '<p id="fiable" class="iconeOui"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[5] =
+  //   '<p id="reseau" class="iconeOui"><span class="icon-users"></span>Réseaux sociaux<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[6] =
+  //   '<p id="extorsion" class="iconeOui"><span class="icon-evil2"></span>Extorsion / Sextorsion / Chantage<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[7] =
+  //   '<p id="sms" class="iconeOui"><span class="icon-mail"></span>Messagerie<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[8] =
+  //   '<p id="achats" class="iconeOui"><span class="icon-cart"></span>Achats en ligne<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[9] =
+  //   '<p id="achatDeApp" class="iconeOui"><span class="icon-download2"></span>Achat d’application<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[10] =
+  //   '<p id="politique" class="iconeOui"><span class="icon-file-text"></span>Politique de confidentialité<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[11] =
+  //   '<p id="virus" class="iconeOui"><span class="icon-bug"></span>Virus<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[12] =
+  //   '<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  // indexation[13] =
+  //   '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Téléphones mobiles<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p>';
+  // const text = indexation.join("");
+  // for (let i = 14; i < 100; i++) {
+  //   indexation[i] = "";
+  // }
+  indexation.splice(13, 1000);
+  for (let i = 0; i < document.querySelectorAll("div").length; i++) {
+    document.querySelectorAll("div")[i].style.display = "none";
+  }
+  let text = "";
+
+  for (let i = 0; i < AcIcone.length; i++) {
+    text +=
+      '<p id="' +
+      AcId[i] +
+      '" class="iconeOui"><span class="' +
+      AcIcone[i] +
+      '"></span>' +
+      LesCats[i] +
+      '<span class="icon-FA-chevron-right"></span></p>' +
+      LignePr[i];
+  }
   //On remplit la fenêtre avec ces catégories
-  document.getElementById('laListe').innerHTML = text;
+  document.getElementById("laListe").innerHTML = text;
+  document.getElementById("myHeading").innerHTML =
+    "<span class='icon-cogs' id='btmParam'></span>Conseils<span class='icon-info' id='btnSrc'></span>";
+  document.querySelector("header").style.backgroundColor = "#00B1CA";
+  document.getElementById("myHeading").style.color = "white";
+
   //On ajoute un écouteur à un élément id s'il est présent, ce qui va exécuter une fonction au clic
   var BtnNav = document.getElementById("leNav");
   if (BtnNav) {
@@ -20,9 +75,9 @@ window.onload = function startListen() {
   if (BtnOrdi) {
     BtnOrdi.addEventListener("click", Ordi);
   }
-  var BtnAppNon = document.getElementById('indexAppNon');
+  var BtnAppNon = document.getElementById("indexAppNon");
   if (BtnAppNon) {
-    BtnAppNon.addEventListener('click', AppNon);
+    BtnAppNon.addEventListener("click", AppNon);
   }
   var BtnMDP = document.getElementById("leMDP");
   if (BtnMDP) {
@@ -36,7 +91,7 @@ window.onload = function startListen() {
   if (BtnReseau) {
     BtnReseau.addEventListener("click", unReseau);
   }
-  var BtnExto = document.getElementById("extorsion")
+  var BtnExto = document.getElementById("extorsion");
   if (BtnExto) {
     BtnExto.addEventListener("click", Extorsion);
   }
@@ -63,7 +118,6 @@ window.onload = function startListen() {
   var BtnAttaque = document.getElementById("attaques");
   if (BtnAttaque) {
     BtnAttaque.addEventListener("click", Attaques);
-
   }
   var BtnMobile = document.getElementById("mobiles");
   if (BtnMobile) {
@@ -71,24 +125,91 @@ window.onload = function startListen() {
   }
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
-    BtnReviens.addEventListener("click", RetourPrincipal);
+    BtnReviens.addEventListener("click", window.onload);
   } else {
     document.getElementById("myHeading").style.textAlign = "center";
     document.getElementById("myHeading").style.display = "grid";
     document.getElementById("myHeading").style.letterSpacing = "0.07em";
-    document.getElementById("myHeading").style.gridTemplateColumns = "auto auto auto";
+    document.getElementById("myHeading").style.gridTemplateColumns =
+      "auto auto auto";
   }
   //Écouteur sur le bouton des paramètres
-  var BtnParams = document.getElementById('btmParam');
+  var BtnParams = document.getElementById("btmParam");
   if (BtnParams) {
-    BtnParams.addEventListener("click", allerPr)
+    BtnParams.addEventListener("click", allerPr);
   }
   //Écouteur sur le bouton des sources
   var BtnSrc = document.getElementById("btnSrc");
   if (BtnSrc) {
-    BtnSrc.addEventListener("click", allerSr)
+    BtnSrc.addEventListener("click", allerSr);
   }
-}
+};
+const LignePr = [
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "<hr>",
+  "",
+];
+
+const AcIcone = [
+  "icon-display",
+  "icon-bin",
+  "icon-earth",
+  "icon-key",
+  "icon-wondering2",
+  "icon-users",
+  "icon-evil2",
+  "icon-mail",
+  "icon-cart",
+  "icon-download2",
+  "icon-file-text",
+  "icon-bug",
+  "icon-target",
+  "icon-mobile",
+];
+const AcId = [
+  "VotreOrdi",
+  "indexAppNon",
+  "leNav",
+  "leMDP",
+  "fiable",
+  "reseau",
+  "extorsion",
+  "sms",
+  "achats",
+  "achatDeApp",
+  "politique",
+  "virus",
+  "attaques",
+  "mobiles",
+];
+const LesCats = [
+  "Votre ordinateur",
+  "Applications à ne pas installer",
+  "Navigateur",
+  "Mot de passe",
+  "Fiabilité d’un site web",
+  "Réseaux sociaux",
+  "Extorsion / Sextorsion / Chantage",
+  "Messagerie",
+  "Achats en ligne",
+  "Achat d’application",
+  "Politique de confidentialité",
+  "Virus",
+  "Attaques",
+  "Conseils pour les téléphones mobiles",
+];
+// ReactDOM.render(<ContenuAcc/>, document.getElementById('laListe'))
 
 //Définition des variables
 const indexation = [
@@ -105,15 +226,15 @@ const indexation = [
   '<p id="politique" class="iconeOui"><span class="icon-file-text"></span>Politique de confidentialité<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="virus" class="iconeOui"><span class="icon-bug"></span>Virus<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span class="icon-FA-chevron-right"></span></p><hr>',
-  '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Téléphones mobiles<span class="icon-FA-chevron-right"></span></p>'
+  '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Téléphones mobiles<span class="icon-FA-chevron-right"></span></p>',
 ];
 //La page des paramètres s'ouvre
 function allerPr() {
-  document.addEventListener("load", browser.runtime.openOptionsPage())
+  document.addEventListener("load", browser.runtime.openOptionsPage());
 }
 //Un onglet pour la page des sources s'ouvre
 let createSource = {
-  url: "../listeSources.html"
+  url: "../listeSources.html",
 };
 
 function allerSr() {
@@ -122,32 +243,48 @@ function allerSr() {
 
 //Cette fonction permet de retourner au menu principal et réexécute majoritairement ce qui est présent dans la fonction startListen()
 function RetourPrincipal() {
-  indexation[0] = '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[1] = '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[2] = '<p id="leNav" class="iconeOui"><span class="icon-earth"></span>Navigateur<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[3] = '<p id="leMDP" class="iconeOui"><span class="icon-key"></span>Mot de passe<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[4] = '<p id="fiable" class="iconeOui"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[5] = '<p id="reseau" class="iconeOui"><span class="icon-users"></span>Réseaux sociaux<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[6] = '<p id="extorsion" class="iconeOui"><span class="icon-evil2"></span>Extorsion / Sextorsion / Chantage<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[7] = '<p id="sms" class="iconeOui"><span class="icon-mail"></span>Messagerie<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[8] = '<p id="achats" class="iconeOui"><span class="icon-cart"></span>Achats en ligne<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[9] = '<p id="achatDeApp" class="iconeOui"><span class="icon-download2"></span>Achat d’application<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[10] = '<p id="politique" class="iconeOui"><span class="icon-file-text"></span>Politique de confidentialité<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[11] = '<p id="virus" class="iconeOui"><span class="icon-bug"></span>Virus<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[12] = '<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
-  indexation[13] = '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Téléphones mobiles<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p>';
+  indexation[0] =
+    '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[1] =
+    '<p id="indexAppNon" class="iconeOui"><span class="icon-bin"></span>Applications à ne pas installer<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[2] =
+    '<p id="leNav" class="iconeOui"><span class="icon-earth"></span>Navigateur<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[3] =
+    '<p id="leMDP" class="iconeOui"><span class="icon-key"></span>Mot de passe<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[4] =
+    '<p id="fiable" class="iconeOui"><span class="icon-wondering2"></span>Fiabilité d’un site web consulté<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[5] =
+    '<p id="reseau" class="iconeOui"><span class="icon-users"></span>Réseaux sociaux<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[6] =
+    '<p id="extorsion" class="iconeOui"><span class="icon-evil2"></span>Extorsion / Sextorsion / Chantage<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[7] =
+    '<p id="sms" class="iconeOui"><span class="icon-mail"></span>Messagerie<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[8] =
+    '<p id="achats" class="iconeOui"><span class="icon-cart"></span>Achats en ligne<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[9] =
+    '<p id="achatDeApp" class="iconeOui"><span class="icon-download2"></span>Achat d’application<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[10] =
+    '<p id="politique" class="iconeOui"><span class="icon-file-text"></span>Politique de confidentialité<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[11] =
+    '<p id="virus" class="iconeOui"><span class="icon-bug"></span>Virus<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[12] =
+    '<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p><hr>';
+  indexation[13] =
+    '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Téléphones mobiles<span id="iconeAccueil" class="icon-FA-chevron-right"></span></p>';
   indexation.splice(14, 90);
   //On s'assure que les variables ne soient pas séparées par une virgule
-  const text = indexation.join('');
-  document.getElementById('laListe').innerHTML = text;
+  const text = indexation.join("");
+  document.getElementById("laListe").innerHTML = text;
   //On définit l'en-tête
-  document.getElementById('myHeading').innerHTML = "<span class='icon-cogs' id='btmParam'></span>CONSEILS<span class='icon-info' id='btnSrc'></span>";
-  document.getElementById('myHeading').style.color = "white";
+  document.getElementById("myHeading").innerHTML =
+    "<span class='icon-cogs' id='btmParam'></span>Conseils<span class='icon-info' id='btnSrc'></span>";
+  document.getElementById("myHeading").style.color = "white";
   document.querySelector("header").style.backgroundColor = "#00B1CA";
   document.querySelector("main").style.fontFamily = "Oswald, sans-serif";
   document.querySelector("main").style.lineHeight = "0.3";
   //On définit la grille
-  document.getElementById("myHeading").style.gridTemplateColumns = "auto auto auto";
+  document.getElementById("myHeading").style.gridTemplateColumns =
+    "auto auto auto";
   document.getElementById("myHeading").style.display = "grid";
   document.getElementById("myHeading").style.textAlign = "center";
   //On ajoute un écouteur à un élément id s'il est présent, ce qui va exécuter une fonction au clic
@@ -160,9 +297,9 @@ function RetourPrincipal() {
   if (BtnOrdi) {
     BtnOrdi.addEventListener("click", Ordi);
   }
-  var BtnAppNon = document.getElementById('indexAppNon');
+  var BtnAppNon = document.getElementById("indexAppNon");
   if (BtnAppNon) {
-    BtnAppNon.addEventListener('click', AppNon);
+    BtnAppNon.addEventListener("click", AppNon);
   }
   var BtnMDP = document.getElementById("leMDP");
   if (BtnMDP) {
@@ -176,7 +313,7 @@ function RetourPrincipal() {
   if (BtnReseau) {
     BtnReseau.addEventListener("click", unReseau);
   }
-  var BtnExto = document.getElementById("extorsion")
+  var BtnExto = document.getElementById("extorsion");
   if (BtnExto) {
     BtnExto.addEventListener("click", Extorsion);
   }
@@ -208,21 +345,22 @@ function RetourPrincipal() {
   if (BtnMobile) {
     BtnMobile.addEventListener("click", Mobiles);
   }
-  var BtnReviens = document.getElementById("caseRetour");
-  if (BtnReviens) {
-    BtnReviens.addEventListener("click", RetourPrincipal);
-  }
-  var BtnParams = document.getElementById('btmParam');
+  // var BtnReviens = document.getElementById("caseRetour");
+  // if (BtnReviens) {
+  //   BtnReviens.addEventListener("click", RetourPrincipal);
+  // }
+  var BtnParams = document.getElementById("btmParam");
   if (BtnParams) {
-    BtnParams.addEventListener("click", allerPr)
+    BtnParams.addEventListener("click", allerPr);
   }
   var BtnSrc = document.getElementById("btnSrc");
   if (BtnSrc) {
-    BtnSrc.addEventListener("click", allerSr)
+    BtnSrc.addEventListener("click", allerSr);
   } else {
     document.getElementById("myHeading").style.textAlign = "center";
     document.getElementById("myHeading").style.display = "grid";
     document.getElementById("myHeading").style.letterSpacing = "0.07em";
-    document.getElementById("myHeading").style.gridTemplateColumns = "auto auto auto";
+    document.getElementById("myHeading").style.gridTemplateColumns =
+      "auto auto auto";
   }
 }

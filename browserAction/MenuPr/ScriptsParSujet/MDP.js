@@ -11,14 +11,14 @@ function MDP() {
   //Catégories
   indexation[0] = "<p id='ouvreBonMDP' class='iconeOui'><span class='icon-FA-star'></span>Bon mot de passe<span class='icon-circle-down'></span></p><div id='bonMDP'><br>"
   indexation[1] = "<p>Un bon mot de passe doit...</p><ul>"
-  indexation[2] = "    <li>Contenir au moins douze caractères</li>"
-  indexation[3] = "    <li>Contenir des lettres, des chiffres et des symboles intercalés partout</li>"
-  indexation[4] = "    <li>Contenir des majuscules et des minuscules</li>"
-  indexation[5] = "    <li>Être facile à se rappeler</li></ul></div><hr>"
-  indexation[6] = "    <p id='ouvrePeutMDP' class='iconeOui'><span class='icon-FA-thumbs-o-up'></span>Possibilités<span class='icon-circle-down'></span></p><div id='peutMDP'>"
-  indexation[7] = "      <p>Un bon mot de passe peut être...</p><ul>"
-  indexation[8] = "        <li>Un mot rare connu que de vous</li>"
-  indexation[9] = "        <li>De type phonétique: on prend les sons de chaque syllabe d’une phrase. Exemple: J’ai acheté huit cd pour cent euros cet après-midi » deviendra « ght8CD%€7am »</li>"
+  indexation[2] = "<li>Contenir au moins douze caractères</li>"
+  indexation[3] = "<li>Contenir des lettres, des chiffres et des symboles intercalés partout</li>"
+  indexation[4] = "<li>Contenir des majuscules et des minuscules</li>"
+  indexation[5] = "<li>Être facile à se rappeler</li></ul></div><hr>"
+  indexation[6] = "<p id='ouvrePeutMDP' class='iconeOui'><span class='icon-FA-thumbs-o-up'></span>Possibilités<span class='icon-circle-down'></span></p><div id='peutMDP'>"
+  indexation[7] = "<p>Un bon mot de passe peut être...</p><ul>"
+  indexation[8] = "<li>Un mot rare connu que de vous</li>"
+  indexation[9] = "<li>De type phonétique: on prend les sons de chaque syllabe d’une phrase. Exemple: J’ai acheté huit cd pour cent euros cet après-midi » deviendra « ght8CD%€7am »</li>"
   indexation[10] = "<li>Constitué à partir des premières lettres d’une phrase. Évidemment, il faut utiliser alterner entre les majuscules et les minuscules, et il est possible d’ajouter des chiffres: la phrase « un tiens vaut mieux que deux tu l’auras » deviendra « 1tvmQ2tl’A » </li></ul></div><hr>"
   indexation[11] = "<p id='ouvrePasMDP' class='iconeOui'><span class='icon-FA-close'></span>À proscrire<span class='icon-circle-down'></span></p><div id='pasMDP'>"
   indexation[12] = "<p>Un bon mot de passe ne doit PAS...</p><ul>"
@@ -62,7 +62,7 @@ function MDP() {
   //Si on clique sur le bouton de retour, on appelle sa fonction
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
-    BtnReviens.addEventListener("click", RetourPrincipal);
+    BtnReviens.addEventListener("click", window.onload);
   }
   //Si la liste déroulante est masquée, on l'affiche et vice-versa
   var BtnReviens = document.getElementById("ouvreBonMDP");

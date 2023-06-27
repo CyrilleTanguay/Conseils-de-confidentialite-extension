@@ -51,6 +51,7 @@ hr {
   height: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
+  font-family: K2D, sans-serif;
   
 }
 
@@ -61,6 +62,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  font-family: K2D, sans-serif;
 }
 
 main {

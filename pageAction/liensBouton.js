@@ -6,6 +6,7 @@
  * 
  */
 //On définit l'onglet de la page
+ 
 browser.tabs.query({
     currentWindow: true,
     active: true
@@ -40,7 +41,6 @@ browser.tabs.query({
         console.log(lien);
         document.getElementById("messageExt").innerHTML = "Vous pourriez faire des modifications dans les paramètres de YouTube";
         lien.addEventListener("click", popupFen)
-
     }
 
     else if (tab.url.includes("google.com/")) {
@@ -56,6 +56,8 @@ browser.tabs.query({
     }
 
     function popupFen() {
-        document.addEventListener("load", browser.browserAction.openPopup());
+        document.addEventListener("load", browser.pageAction.openPopup());
+        document.querySelector("body").innerHTML=""
+        // unReseau()
     }
 }, console.error)
