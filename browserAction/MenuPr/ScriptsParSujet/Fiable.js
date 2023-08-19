@@ -12,7 +12,7 @@ function Fiable() {
   indexation[0] =
     "<p id='introP'>Si vous voulez aller sur un site, n’acceptez que les cookies essentiels</p>";
   indexation[1] =
-    "<p id='saFiabilite' class='iconeOui'><span class='icon-FA-list-alt'></span>Fiabilité du site<i id='openFia' class='icon-circle-down'></i></p><div id='siteFiable'><p id='introP'>Lorsque vous allez sur un site, posez-vous ces questions:</p><ul>";
+    "<p id='saFiabilite' class='iconeOui'><span class='icon-FA-list-alt'></span>Fiabilité du site<span id='openFia' class='icon-circle-down'></span></p><div id='siteFiable'><p id='introP'>Lorsque vous allez sur un site, posez-vous ces questions:</p><ul>";
   indexation[2] =
     "<li>Qui est l’auteur(e)?</li><li>Quelles sont sa profession, son expérience, et sa formation?</li><li>A-t-il/elle de l’expérience sur le sujet?</li>";
   indexation[3] = "<li>Peut-on contacter cette personne?</li>";
@@ -70,7 +70,7 @@ function Fiable() {
     "<li>Méfiez-vous des formulaires automatisés. Selon une étude, ils ne sont fiables qu’à 34%.</li>";
   indexation[34] =
     "<li>Utilisez des sites fiables comme Patientslikeme, Doctissimo, Sante.Journaldesfemmes.com, Maladiesrares.info, Santé Canada</li></ul></div>";
-  indexation.length = 34;
+  indexation.length = 35;
   //On s'assure que les variables ne soient pas séparées par une virgule
   const text = indexation.join("");
   //On remplit la fenêtre avec ces catégories
@@ -101,20 +101,21 @@ function Fiable() {
   if (BtnReviens) {
     BtnReviens.addEventListener("click", function (y) {
       var x = document.getElementById("siteFiable");
-      // document.getElementById("openFia").classList.toggle("icon-circle-up")
 
       if (x.style.display === "none") {
         x.style.display = "block";
+        // document.getElementById("openFia").classList.toggle("icon-circle-up")
       } else {
         x.style.display = "none";
+        // document.getElementById("openFia").classList.toggle("icon-circle-down")
       }
     });
   }
-  // if(document.getElementById("siteFiable").style.display==='none'){
-  //   document.getElementById("openFia").classList.toggle("icon-circle-down")
-  // }if(document.getElementById("siteFiable").style.display==='none'){
-  //           document.getElementById("openFia").classList.toggle("icon-circle-up")
-
+  // if (document.getElementById("siteFiable").style.display === "none") {
+  //   document.getElementById("openFia").classList.toggle("icon-circle-down");
+  // }
+  // else{
+  //   document.getElementById("openFia").classList.toggle("icon-circle-up");
   // }
   // function openFia(x){
   //   x.classList.toggle("icon-circle-up")

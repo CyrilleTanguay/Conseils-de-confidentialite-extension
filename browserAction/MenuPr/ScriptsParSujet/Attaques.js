@@ -21,7 +21,7 @@ function Attaques() {
   indexation[6] =
     "<li>Attaque du protocole BGP: utilisez secureBGP ou soBGP</li></ul></div><hr>";
   indexation[7] =
-    " <p id='ouvrirTampon'>Attaque par débordement de tampon</p><div id='debo'><ul>";
+    " <p id='ouvrirTampon' >Attaque par débordement de tampon</p><div id='debo'><ul>";
   indexation[8] =
     "<li>Développez des applications à l’aide de langages de programmation évolués assurant une gestion fine de la mémoire allouée ou bien à l’aide de langages de bas niveau en utilisant des bibliothèques de fonctions sécurisées (par exemple les fonctions strncpy)</li>";
   indexation[9] =
@@ -37,8 +37,10 @@ function Attaques() {
   indexation[15] =
     "<p id='ouvrirCS'>Attaque Cross-site scripting</p><div id='crsSite'><ul><li>Configurez le navigateur de manière à empêcher l’exécution de scripts</li></ul></div><hr>";
   indexation[16] =
-    "<p id='ouvrirCWeb'>Pour le concepteur web</p><div id='concepteur'><ul><li>Vérifiez le format des données entrées par les utilisateurs.</li><li>Encodez ces données utilisateurs affichées en remplaçant les caractères spéciaux par leurs équivalents HTML</li></ul></div>";
-  const text = indexation.join("");
+    "<p id='ouvrirCWeb' class='iconeOui'><span class='icon-logo-html5'></span>Pour le concepteur web</p><div id='concepteur'><ul><li>Vérifiez le format des données entrées par les utilisateurs.</li><li>Encodez ces données utilisateurs affichées en remplaçant les caractères spéciaux par leurs équivalents HTML</li></ul></div>";
+    indexation.length = 17;
+
+    const text = indexation.join("");
   document.getElementById("laListe").innerHTML = text;
   document.querySelector("header").style.backgroundColor = "#ff0000";
 

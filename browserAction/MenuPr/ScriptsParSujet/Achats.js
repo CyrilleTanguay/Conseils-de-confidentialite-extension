@@ -64,6 +64,8 @@ function Achats() {
     "<li>Achetez local. Si vous avez une plainte à faire à la compagnie, il sera plus facile d’aller directement à une compagnie qui habite près de chez vous qu'à une compagnie située dans une autre ville.</li></ul></div>";
   //On s'assure que les variables ne soient pas séparées par une virgule
   //const text = indexation.join('');
+  indexation.length = 14;
+
   //On remplit la fenêtre avec ces catégories
   document.getElementById("laListe").innerHTML =
     "<p id='introP'>Les achats en ligne peuvent faciliter notre vie, mais aussi celle de certains voleurs!</p>" +

@@ -38,6 +38,7 @@ function autresAppNon() {
     "Z",
   ];
   let text = "";
+  let index = "";
   const listeInt = [
     "<li>2048 Merge Cube – Win Cash</li><li>4K Pro Camera</li><li>4K Wallpapers, Auto Changer</li>",
     "<li>Advanced SMS</li><li>aipic – Magic Photo Editor</li><li>All Good PDF Scanner</li><li>All Language Translate</li><li>All Photo Translator</li><li>Arrow Coins</li><li>Art Filters</li><li>Astro + Horoscope Astrology</li><li>Astroline : The Daily Horoscope</li><li>Auto Stamp Camera</li><li>Auto Sticker Maker Studio</li><li>Avatar Maker Character Creator</li>",
@@ -68,9 +69,11 @@ function autresAppNon() {
     "<li>Ztime:Earn cash rewards easily</li>",
   ];
   for (let i = 0; i < LesCats.length; i++) {
-    text += "<h4>" + LesCats[i] + "</h4><ul>" + listeInt[i] + "</ul>";
+    text += "<h4 id='"+ LesCats[i] +"'>" + LesCats[i] + "</h4><ul>" + listeInt[i] + "</ul>";
   }
-
+  for (let i = 0; i < LesCats.length; i++) {
+    index += "<a href='#" + LesCats[i] +"'>" + LesCats[i] + "</a>";
+  }
   indexation[0] =
     "<h4>0</h4><ul><li>2048 Merge Cube – Win Cash</li><li>4K Pro Camera</li><li>4K Wallpapers, Auto Changer</li></ul>";
   indexation[1] =
@@ -124,8 +127,10 @@ function autresAppNon() {
   // for (let i = 27; i < 100; i++) {
   //   indexation[i] = '';
   // };
+  indexation.length = 27;
+
   //const text = indexation.join('');
-  document.getElementById("laListe").innerHTML = text;
+  document.getElementById("laListe").innerHTML = "<div style='display:grid;grid-template-columns:10%90%'>" + "<div style='display:flex;flex-direction:column;gap:15px;position:fixed'>"+ index + "</div>" + "<div >" + text+"</div>" + "</div>";
   document.querySelector("header").style.backgroundColor = "silver";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Les deux";

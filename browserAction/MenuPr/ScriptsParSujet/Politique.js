@@ -20,9 +20,11 @@ function Politique() {
     "<li>Pour les utilisateurs de Windows: « Eulalyser » permet d’analyser le contenu.</li>";
   indexation[5] =
     "<li>Alternative: <a href='https://tosdr.org/'>Terms of Service; Didn't Read</a></li></ul>";
-  for (let i = 6; i < 14; i++) {
-    indexation[i] = "";
-  }
+  // for (let i = 6; i < 14; i++) {
+  //   indexation[i] = "";
+  // }
+  indexation.length = 6;
+
   const text = indexation.join("");
   // const text = "<div w3-include-html='Politique.html'></div>"
   document.getElementById("laListe").innerHTML = text;

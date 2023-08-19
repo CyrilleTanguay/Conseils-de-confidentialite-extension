@@ -45,6 +45,8 @@ function RogueApp() {
   indexation[18] =
     "<h4>X</h4><ul><li>XP AntiMalware</li><li>XP AntiSpyware 2009, 2010 et 2012</li><li>XP Antivirus 2010 et 2012</li><li>XP Antivirus Pro 2010</li><li>XP Defender Pro</li><li>XP Home Security 2011</li><li>XP Internet Security 2010</li></ul>";
   indexation[19] = "<h4>Y</h4><ul><li>Your PC Protector</li></ul>";
+  indexation.length = 20;
+
   const text = indexation.join("");
   document.getElementById("laListe").innerHTML = text;
 

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * Script pour les options
  */
 function saveOptions(e) {
@@ -7,13 +7,14 @@ function saveOptions(e) {
     FBCheck: document.getElementById("FbCheck").checked,
     GoogleCHeck: document.getElementById("GoogleCheck").checked,
     ISTCheck: document.getElementById("InstCheck").checked,
+    SpotifyCheck: document.getElementById("SpotifyCheck").checked,
     TWCheck: document.getElementById("TwCheck").checked,
-    YTCheck: document.getElementById("YtCheck").checked
+    TikTokCheck: document.getElementById("TikTokCheck").checked,
+    YTCheck: document.getElementById("YtCheck").checked,
   });
   e.preventDefault();
   //On recharge l'extension pour faire en sorte que la modification se fasse sur les onglets ouverts
   browser.runtime.reload();
-
 
   // document.getElementById("messageOp").style.display="inherit"
   // setTimeout(rechargeExt, 3000);
@@ -22,8 +23,6 @@ function saveOptions(e) {
   //     browser.runtime.reload();
   //     document.getElementById("messageOp").style.display="none"
   // }
-
-
 }
 
 function restoreOptions() {
@@ -31,9 +30,11 @@ function restoreOptions() {
     document.getElementById("FbCheck").checked = result.FBCheck;
     document.getElementById("GoogleCheck").checked = result.GoogleCHeck;
     document.getElementById("InstCheck").checked = result.ISTCheck;
+    document.getElementById("SpotifyCheck").checked = result.SpotifyCheck;
+
+    document.getElementById("TikTokCheck").checked = result.TikTokCheck;
     document.getElementById("TwCheck").checked = result.TWCheck;
     document.getElementById("YtCheck").checked = result.YTCheck;
-
   }
 
   function onError(error) {

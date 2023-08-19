@@ -63,6 +63,8 @@ function Mobiles() {
   indexation[31] =
     "<p id='ouvrirAppNon' class='iconeOui'><span class='icon-FA-warning'></span>Applications à ne pas installer<span class='icon-FA-chevron-right'></span></p>";
   //On s'assure que les variables ne soient pas séparées par une virgule
+  indexation.length = 32;
+
   const text = indexation.join("");
   document.getElementById("laListe").innerHTML = text;
   document.querySelector("header").style.backgroundColor = "#b3ffff";

@@ -22,9 +22,8 @@ function SMS() {
     "<li>Vérifiez les paramètres de sécurité de votre boîte mail.</li></ul></div><hr>";
   indexation[7] =
     "<p id='Arnaques' class='iconeOui'><span class='icon-FA-flag'></span>Arnaques/pourriel<span class='icon-FA-chevron-right'></span></p>";
-  for (let i = 8; i < 14; i++) {
-    indexation[i] = "";
-  }
+  indexation.length = 8;
+
   const text = indexation.join("");
   document.getElementById("laListe").innerHTML = text;
   document.querySelector("header").style.backgroundColor = "blue";

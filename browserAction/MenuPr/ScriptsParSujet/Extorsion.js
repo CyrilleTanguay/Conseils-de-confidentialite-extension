@@ -80,6 +80,8 @@ function Extorsion() {
     "<li>Un bon exemple: Gordon Gekko du film Wall Street.</li></ul></div>";
   //On s'assure que les variables ne soient pas séparées par une virgule
   const text = indexation.join("");
+  indexation.length = 41;
+
   //On remplit la fenêtre avec ces catégories
   document.getElementById("laListe").innerHTML = text;
   document.querySelector("header").style.backgroundColor = "red";

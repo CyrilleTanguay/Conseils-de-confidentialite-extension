@@ -35,9 +35,10 @@ function achatApp() {
   }
   //Catégories
   //On laisse les indexations restantes vides
-  for (let i = 12; i < 14; i++) {
-    indexation[i] = "";
-  }
+  // for (let i = 12; i < 14; i++) {
+  //   indexation[i] = "";
+  // }
+  
   //On s'assure que les variables ne soient pas séparées par une virgule
   // const text = indexation.join('');
   //On remplit la fenêtre avec ces catégories

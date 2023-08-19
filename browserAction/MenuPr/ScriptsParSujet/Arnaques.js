@@ -10,7 +10,6 @@
  */
 function Arnaques() {
   //On laisse les indexations restantes vides
-  indexation.splice(9, 5);
 
   indexation[0] =
     "<p id='introP'>Une messagerie est un bon moyen de vous arnaquer. Il existe cependant des moyens pour vous en prémunir.</p>";
@@ -30,6 +29,7 @@ function Arnaques() {
     "<p id='autArn' class='iconeOui'><span class='icon-FA-ellipsis-h'></span>Autres<span class='icon-circle-down'></span></p><div id='autresArn' style='display: none'>";
   indexation[8] =
     "<ul><li>On vous demande de faire un paiement via des moyens qui ne sont pas sécuritaires</li><li>Un contact vous demande de payer vers un nouveau compte</li><li>Un vendeur que vous avez déjà payé vous demande plus d'argent en raison de circonstances imprévues</li><li>L’arnaque « Hi mum » (littéralement « allô maman »): Quelqu’un se fait passer pour un de vos contacts et vous fait croire qu’il a perdu son téléphone. Ce message peut contenir un soi-disant « nouveau numéro de téléphone ». En cas de doute, appelez votre ami avec le numéro de téléphone d’origine et non celui du courriel.</li><li>*Un ami prétendument atteint d’un cancer vous demande d’acheter des cartes Google Play et dit qu’il va vous rembourser bientôt. Bien que l'adresse courriel correspond à celle de votre ami, elle reste une arnaque, <b><i><u>mais ne supprimez pas le message.</u></i></b> Cela signifie surtout que son compte a été piraté, alors appelez-la par téléphone pour l’avertir.</li><li>Quelqu’un vous envoie un message avec votre propre adresse courriel, prétendant qu’il a pris le contrôle de votre compte et vous demande de l’argent. Cette personne vous ment: tout le monde peut écrire un courriel à partir de l’adresse de n’importe qui. Si vous avez des doutes, regardez s’il y a des connections inconnues dans les paramètres.</li><li>Il peut s’agir d’une fausse commande, d’un faux prélèvement ou d’un faux concours.</li><li>Il s’agit d’une prescription de médicaments, de méthodes d’enrichissement, de services financiers/réduction de dettes, diplômes à acheter ou de jeux d’argent</li></ul></div>";
+  indexation.length = 9;
 
   //On s'assure que les variables ne soient pas séparées par une virgule
   const text = indexation.join("");

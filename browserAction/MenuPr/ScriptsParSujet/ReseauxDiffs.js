@@ -9,6 +9,8 @@
  */
 
 function Deez() {
+  document.documentElement.scrollTop = 0;
+
   document.getElementById("laListe").innerHTML =
     "<ul><li>Économisez de l’espace en réduisant le débit ou mettant les données sur une carte mémoire.</li></ul>";
 
@@ -17,17 +19,15 @@ function Deez() {
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Deezer";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Fb() {
+  document.documentElement.scrollTop = 0;
   indexation[0] =
     "<ul><li>Ne mentez pas sur votre âge. Bien que cela puisse sembler sécuritaire, il se peut que Facebook vous demande de valider votre identité avec une pièce d’identité. Les deux dates de naissance ne concorderont pas et votre compte sera bloqué!</li>";
   indexation[1] =
@@ -49,13 +49,13 @@ function Fb() {
   indexation[11] =
     "<li>Facebook et Messenger vident le contenu de la batterie de votre téléphone pour faire des tests négatifs. Un test négatif fait des essais sur des nouvelles fonctionnalités ou sur les performances d’une application en puisant directement dans les ressources de votre téléphone. Un ex-employé, qui a été renvoyé car il avait refusé de participer à ces tests, est présentement en poursuite judiciaire contre Meta.</li>";
   indexation[12] = "<p>Faites attention à ces arnaques sur Facebook:</p><ul>";
-  indexation[13] = "  <li>N’achetez pas de NFT de singes en 3D</li>";
+  indexation[13] = "<li>N’achetez pas de NFT de singes en 3D</li>";
   indexation[14] =
-    "  <li>Méfiez-vous des concours faciles. Un conseil: allez voir la date de création de la page qui organise ce concours. </li>";
+    "<li>Méfiez-vous des concours faciles. Un conseil: allez voir la date de création de la page qui organise ce concours. </li>";
   indexation[15] =
-    "  <li>Il n’existe pas de fonctionnalité qui nous permet de savoir qui a consulté notre page Facebook. Cette « fonctionnalité » ne doit pas être confondue avec celle qui nous permet de savoir qui est CONNECTÉ sur notre compte.</li>";
+    "<li>Il n’existe pas de fonctionnalité qui nous permet de savoir qui a consulté notre page Facebook. Cette « fonctionnalité » ne doit pas être confondue avec celle qui nous permet de savoir qui est CONNECTÉ sur notre compte.</li>";
   indexation[16] =
-    "  <li>Méfiez-vous des courriels qui disent que notre compte sera bloqué. En cas de doute, allez vérifier les e-mails récents de Facebook</li>";
+    "<li>Méfiez-vous des courriels qui disent que notre compte sera bloqué. En cas de doute, allez vérifier les e-mails récents de Facebook</li>";
   indexation[17] = "<li>Ne jouez pas aux quiz.</li></ul></ul>";
   for (let i = 18; i < 55; i++) {
     indexation[i] = "";
@@ -68,18 +68,18 @@ function Fb() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Facebook";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
+
   document.getElementById("myHeading").style.color = "white";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Google() {
+  document.documentElement.scrollTop = 0;
+
   indexation[0] = "<ul><li>Désactivez l’historique OK Google</li>";
   indexation[1] =
     "<li>Méfiez-vous des Google Docs publics (comme les formulaires) qui vous sont inconnus.</li>";
@@ -96,18 +96,17 @@ function Google() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Google";
-  document.getElementById("myHeading").style.textAlign = "right";
   document.getElementById("myHeading").style.color = "white";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Insta() {
+  document.documentElement.scrollTop = 0;
+
   document.getElementById("laListe").innerHTML =
     "<ul><li>N’utilisez pas le navigateur interne d’Instagram, il collecte des données. À la place, copiez le lien en question et collez-le dans votre navigateur.</li><li>Ne divulguez pas votre adresse (surtout si votre compte est public)</li><li>Si vous recevez un courriel de certification de profil, c’est un faux.</li></ul>";
 
@@ -116,21 +115,16 @@ function Insta() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Instagram";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Messng() {
+  document.documentElement.scrollTop = 0;
+
   indexation[0] =
     "<ul><li>N’intégrez pas les mêmes photos sur vos réseaux privés et professionnels.</li>";
   indexation[1] =
@@ -154,17 +148,16 @@ function Messng() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Messenger";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Nint() {
+  document.documentElement.scrollTop = 0;
+
   indexation[0] = "<p>Comment savoir si vous avez été piraté</p><ul>";
   indexation[1] = "<li>Regardez si vous avez eu une alerte de connexion</li>";
   indexation[2] =
@@ -188,17 +181,35 @@ function Nint() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Compte Nintendo";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
+}
+function OnlyFans() {
+  document.documentElement.scrollTop = 0;
+
+  document.getElementById("laListe").innerHTML = `<ul>
+    <li>Si on vous propose de télécharger un fichier ZIP qui contient des photos issus de comptes premium OnlyFans, ne le faites pas, car il contient un malware nommé DcRAT, qui peut prendre contrôle de votre ordi.</li>
+    </ul>`;
+
+  document.querySelector("header").style.backgroundColor = "#00aff0";
+  document.getElementById("myHeading").style.color = "white";
+  document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
+  document.getElementById("myHeading").innerHTML =
+    "<div id='caseRetour'>◀</div><div></div>OnlyFans";
+
+  var BtnReviens = document.getElementById("caseRetour");
+  if (BtnReviens) {
+    BtnReviens.addEventListener("click", unReseau);
+  }
+  alignHeader();
 }
 
 function Sig() {
+  document.documentElement.scrollTop = 0;
+
   indexation[0] = "<ul><li>Désactivez les indicateurs de saisie</li>";
   indexation[1] = "<li>Désactivez les accusés de lecture</li>";
   indexation[2] =
@@ -224,17 +235,16 @@ function Sig() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Signal";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Skype() {
+  document.documentElement.scrollTop = 0;
+
   document.getElementById("laListe").innerHTML =
     "<ul><li>Vous pouvez choisir d’apparaître dans les résultats de recherche de Skype si vous ne tenez pas à être trouvé(e).</li><li>Utilisez la fonction « Conversation privée ». Ses notifications sont masquées et les conversations ne sont accessibles que sur un périphérique à la fois.</li><li>Désactivez le téléchargement de photos.</li></ul>";
   document.querySelector("header").style.color = "white";
@@ -243,17 +253,16 @@ function Skype() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Skype";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Snapchat() {
+  document.documentElement.scrollTop = 0;
+
   document.getElementById("laListe").innerHTML =
     "<ul><li>Snapchat est un média qui sera toujours gratuit, donc si on vous demande de payer, c’est une arnaque.</li> <li>Lors de votre inscription, entrez votre vrai nom et votre vrai prénom, mais ne l’utilisez pas dans votre nom d’utilisateur</li><li>Ne divulguez pas votre numéro de téléphone à n’importe qui, car c’est ce qui vous permet d’avoir accès à votre profil.</li></ul>";
   document.getElementById("myHeading").style.color = "black";
@@ -262,17 +271,16 @@ function Snapchat() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>SnapChat";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Spotify() {
+  document.documentElement.scrollTop = 0;
+
   document.getElementById("laListe").innerHTML =
     "<ul><li>Vous pouvez utiliser la fonction « économiseur de données » pour consommer moins de données cellulaires/Wifi. Cependant, cela a pour conséquence d’affaiblir la qualité audio...</li><li>Videz le cache.</li><li>Désactivez les publicités ciblées (nécessite un compte premium)</li></ul>";
   document.getElementById("myHeading").style.color = "white";
@@ -282,17 +290,16 @@ function Spotify() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Spotify";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Telegram() {
+  document.documentElement.scrollTop = 0;
+
   indexation[0] =
     "<ul><li>Choisissez les informations qui peuvent être vues par certains.</li>";
   indexation[1] =
@@ -318,19 +325,17 @@ function Telegram() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Telegram";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
   document.getElementById("myHeading").style.color = "white";
-
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function TikTok() {
+  document.documentElement.scrollTop = 0;
+
   document.getElementById("laListe").innerHTML =
     "<ul><li>N’utilisez pas le navigateur interne de TikTok, il collecte des données. À la place, copiez le lien en question et collez-le dans votre navigateur.</li><li>Méfiez-vous de cette application, car elle utilise vos données sans votre consentement.</li><li>Utilisez le mode privé si vous voulez être plus discret.</li></ul>";
 
@@ -338,25 +343,24 @@ function TikTok() {
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>TikTok";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   document.getElementById("myHeading").style.color = "white";
   //document.getElementById("myHeading").style.textShadow = "1px 0px red, 0px -1px aqua";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Twitter() {
+  document.documentElement.scrollTop = 0;
+
   indexation[0] =
     "<ul><li>Pour plus de protection, rendez votre page privée</li><li>Décochez la case « Recevoir des messages privés de n’importe qui ».</li></ul><p id='introP'>Quelques moyens de récupération du mot de passe Twitter:</p>";
   indexation[1] =
-    "  <p>À utiliser:</p><ul><li>La double authentification</li><li>Une application externe (Google)</li><li>Une clé physique</li><li>Un code de récupération</li></ul>";
+    "<p>À utiliser:</p><ul><li>La double authentification</li><li>Une application externe (Google)</li><li>Une clé physique</li><li>Un code de récupération</li></ul>";
   indexation[2] =
-    "  <p>À ne pas utiliser</p><ul><li>Les messages textes</li></ul></ul>";
+    "<p>À ne pas utiliser</p><ul><li>Les messages textes</li></ul></ul>";
   for (let i = 3; i < 55; i++) {
     indexation[i] = "";
   }
@@ -366,16 +370,12 @@ function Twitter() {
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Twitter";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
   document.getElementById("myHeading").style.color = "white";
-
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 if (window.location.href == "https://www.youtube.com/account") {
   YTube();
@@ -383,6 +383,8 @@ if (window.location.href == "https://www.youtube.com/account") {
 }
 
 function WhatsApp() {
+  document.documentElement.scrollTop = 0;
+
   indexation[0] =
     "<ul><li>Il est possible de mettre les numéros inconnus en sourdine pour filtrer vos appels</li>";
   indexation[1] =
@@ -404,18 +406,16 @@ function WhatsApp() {
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>WhatsApp";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function YTube() {
-  console.log("mais oui!!!");
+  document.documentElement.scrollTop = 0;
+
   indexation[0] = "<ul><li>Vérifiez le check-up de sécurité Google</li>";
   indexation[1] =
     "<li>Activez la protection du compte contre les attaques ciblées. Cela ne s’applique qu’aux profils plus à risque d’être exposés que d’autres (journalistes, personnalités publiques...).</li>";
@@ -427,11 +427,11 @@ function YTube() {
     "<li>Ne renseignez votre mot de passe dans aucun formulaire</li>";
   indexation[6] =
     "<li>Méfiez-vous des tutoriels de mauvaise qualité! La qualité d’un tutoriel peut être remise en question si:</li><ul>";
-  indexation[7] = "  <li>On ne comprend rien de ce qu’il dit.</li>";
+  indexation[7] = "<li>On ne comprend rien de ce qu’il dit.</li>";
   indexation[8] =
     "  <li>Les commentaires sont négatifs et il y a beaucoup de pouces rouges. C’est pour ça que je vous ai demandé d’installer l’extension permettant d’afficher le nombre de pouces rouges.</li>";
-  indexation[9] = "  <li>L’objet de son étude n’est pas clair.</li>";
-  indexation[10] = "  <li>Il n’y a pas de texte de présentation</li></ul></ul>";
+  indexation[9] = "<li>L’objet de son étude n’est pas clair.</li>";
+  indexation[10] = "<li>Il n’y a pas de texte de présentation</li></ul></ul>";
   for (let i = 11; i < 57; i++) {
     indexation[i] = "";
   }
@@ -440,22 +440,20 @@ function YTube() {
   document.getElementById("myHeading").style.color = "white";
 
   document.querySelector("header").style.backgroundColor = "red";
-  document.querySelector("p").style.lineHeight = "inherit";
-  document.querySelector("p").style.fontFamily = "K2D, sans-serif";
-  document.querySelector("main").style.fontFamily = "K2D, sans-serif";
+  document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
+
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>YouTube";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }
 
 function Zoom() {
+  document.documentElement.scrollTop = 0;
+
   document.getElementById("laListe").innerHTML =
     "<ul><li>Méfiez-vous des liens qui commencent par le nom d’une entreprise. Il est possible pour n’importe qui de modifier le sous-domaine de l’URL ou de le rediriger vers une autre adresse. </li></ul>";
 
@@ -465,12 +463,9 @@ function Zoom() {
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.getElementById("myHeading").innerHTML =
     "<div id='caseRetour'>◀</div><div></div>Zoom";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
   }
+  alignHeader();
 }

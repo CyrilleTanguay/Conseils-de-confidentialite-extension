@@ -40,9 +40,11 @@ function ouvrirAppNon() {
   indexation[24] = "<li>Wonder Time</li>";
   indexation[25] = "<li>X-File Manager</li></ul></div>";
 
-  for (let i = 26; i < 32; i++) {
-    indexation[i] = "";
-  }
+  // for (let i = 26; i < 32; i++) {
+  //   indexation[i] = "";
+  // }
+  indexation.length = 26;
+
   const text = indexation.join("");
   document.getElementById("laListe").innerHTML = text;
   document.querySelector("header").style.backgroundColor = "silver";
@@ -53,7 +55,7 @@ function ouvrirAppNon() {
     document.querySelectorAll("div")[i].style.display = "none";
   }
   document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Applications à ne pas installer";
+    "<div id='caseRetour'>◀</div><div></div>Apps à ne pas installer";
   document.getElementById("caseRetour").style.display = "initial";
   document.getElementById("myHeading").style.textAlign = "right";
   document.getElementById("myHeading").style.display = "grid";

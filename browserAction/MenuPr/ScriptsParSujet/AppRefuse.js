@@ -13,7 +13,7 @@ function AppNon() {
   indexation[0] =
     "<p id='ouvrirAppDes' class='iconeOui'><span class='icon-FA-ban'></span>Applications à désinstaller<span class='icon-circle-down'></span></p><div id='AppDes'><ul>";
   indexation[1] =
-    " <li>Adware Doctor</li><li>ChatGPT Chat GPT AI With GPT-3. Il s’agit d’une version illégale de ChatGPT.</li><li>Codice Fiscale 2022</li><li>Dr. Antivirus</li><li>Dr. Battery</li><li>Dr. Cleaner Disk</li><li>Dr. Cleaner Pro</li><li>Dr.Unarchiver</li><li>Duplicate Finder</li><li>FakeSpy</li><li>File Manager Small, Lite</li><li>GodFather (malware)</li><li>Internet Explorer.</li><li>Open Any Files</li> <li>Pokemon-go.io (malware)</li><li>QuickTime (uniquement si vous êtes sur Windows). Des failles ont été découvertes et Apple a abandonné cette version du logiciel.</li><li>Vex Editor</li></ul></div><hr>";
+    " <li>Adware Doctor</li><li>ChatGPT Chat GPT AI With GPT-3. Il s’agit d’une version illégale de ChatGPT.</li><li>Codice Fiscale 2022</li><li>Dr. Antivirus</li><li>Dr. Battery</li><li>Dr. Cleaner Disk</li><li>Dr. Cleaner Pro</li><li>Dr.Unarchiver</li><li>Duplicate Finder</li><li>FakeSpy</li><li>File Manager Small, Lite</li><li>GodFather (malware)</li><li>Internet Explorer.</li><li>Open Any Files</li> <li>Pokemon-go.io (malware)</li><li>QuickTime (uniquement si vous êtes sur Windows). Des failles ont été découvertes et Apple a abandonné cette version du logiciel.</li><li>Super Mario 3: Mario Forever</li><li>WhatsApp Pink (malware)</li><li>Vex Editor</li></ul></div><hr>";
   // indexation[2] = " <p id='ouvrirExtDes' class='iconeOui'><span class='icon-FA-puzzle'></span>Extensions à désinstaller<span class='icon-circle-down'></span></p><div id='AppDes'><ul>"
   indexation[2] =
     " <p id='RogueApp' class='iconeOui'><span class='icon-FA-clone'></span>Logiciels de type Rogue<span class='icon-FA-chevron-right'></span></p><hr>";
@@ -26,9 +26,11 @@ function AppNon() {
   indexation[6] =
     "     <li>Supprimez-le en plaçant l’application dans la corbeille et en la vidant <b><u>(CE N’EST PAS TOUT)</u></b></li><li>Accédez au cache de l’application</li><ul><li>Windows: Activez l’option « Afficher les fichiers cachés » et allez dans « ProgramData »</li><li>Apple: Pomme + Maj + (.) et allez dans la bibliothèque (il y a deux bibliothèques)</li></ul><li>Supprimez-le</li></ul></div>";
   //On laisse les indexations restantes vides
-  for (let i = 7; i < 76; i++) {
-    indexation[i] = "";
-  }
+  // for (let i = 7; i < 76; i++) {
+  //   indexation[i] = "";
+  // }
+  indexation.length = 7;
+
   //On s'assure que les variables ne soient pas séparées par une virgule
   const text = indexation.join("");
   //On remplit la fenêtre avec ces catégories
