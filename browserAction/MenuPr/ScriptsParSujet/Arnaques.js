@@ -41,10 +41,12 @@ function Arnaques() {
     document.querySelectorAll("div")[i].style.display = "none";
   }
   //On définit l'en-tête
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Arnaques";
+
+    HeaderTitle = "Arnaques"
+
+    headerUp()
   //Seul le bouton de retour est affiché en tout temps
-  document.getElementById("caseRetour").style.display = "initial";
+  
   //On définit la grille
   document.getElementById("myHeading").style.textAlign = "right";
   document.getElementById("myHeading").style.display = "grid";

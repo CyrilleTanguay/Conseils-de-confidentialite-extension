@@ -8,8 +8,7 @@
  *
  */
 function Politique() {
-  indexation[0] =
-    "<p id='introP'>Avouons-le: vous ne consultez presque jamais les politiques de confidentialité, n’est-ce pas? S’il y a bien une chose sur laquelle nous sommes tous d’accord, c’est sur le fait que les politiques de confidentialité sont trop longues, ennuyantes et incompréhensibles. Mais cela peut permettre aux voleurs de prendre vos données (presque) légalement. Alors, concernant les politiques:</p><ul>";
+  indexation[0] = `<p id='introP'>Avouons-le: vous ne consultez presque jamais les politiques de confidentialité, n’est-ce pas? S’il y a bien une chose sur laquelle nous sommes tous d’accord, c’est sur le fait que les politiques de confidentialité sont trop longues, ennuyantes et incompréhensibles. Mais cela peut permettre aux voleurs de prendre vos données (presque) légalement. Alors, concernant les politiques:</p><ul>`;
   indexation[1] =
     "<li>N’oubliez pas que des politiques de confidentialité courtes et compréhensibles, ça existe. Prenez le temps de la lire.</li>";
   indexation[2] =
@@ -26,11 +25,13 @@ function Politique() {
   indexation.length = 6;
 
   const text = indexation.join("");
-  // const text = "<div w3-include-html='Politique.html'></div>"
+  // const text = document.createElement(<>Test</>);
+  // document.getElementById("laListe").appendChild(text);
   document.getElementById("laListe").innerHTML = text;
   document.querySelector("header").style.backgroundColor = "AntiqueWhite";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Politique de confidentialité";
+  HeaderTitle = "Politique de confidentialité";
+
+  headerUp();
   document.getElementById("laListe").style.fontFamily = "K2D";
   document.getElementById("myHeading").style.textAlign = "right";
   document.getElementById("myHeading").style.display = "grid";

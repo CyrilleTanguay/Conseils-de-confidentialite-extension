@@ -69,10 +69,13 @@ function autresAppNon() {
     "<li>Ztime:Earn cash rewards easily</li>",
   ];
   for (let i = 0; i < LesCats.length; i++) {
-    text += "<h4 id='"+ LesCats[i] +"'>" + LesCats[i] + "</h4><ul>" + listeInt[i] + "</ul>";
+    text += `<h4 id='${LesCats[i]}'>
+      ${LesCats[i]}</h4><ul>
+      ${listeInt[i]}
+      </ul>`;
   }
   for (let i = 0; i < LesCats.length; i++) {
-    index += "<a href='#" + LesCats[i] +"'>" + LesCats[i] + "</a>";
+    index += `<a href='#${LesCats[i]}'>${LesCats[i]}</a>`;
   }
   indexation[0] =
     "<h4>0</h4><ul><li>2048 Merge Cube – Win Cash</li><li>4K Pro Camera</li><li>4K Wallpapers, Auto Changer</li></ul>";
@@ -130,15 +133,23 @@ function autresAppNon() {
   indexation.length = 27;
 
   //const text = indexation.join('');
-  document.getElementById("laListe").innerHTML = "<div style='display:grid;grid-template-columns:10%90%'>" + "<div style='display:flex;flex-direction:column;gap:15px;position:fixed'>"+ index + "</div>" + "<div >" + text+"</div>" + "</div>";
+  document.getElementById(
+    "laListe"
+  ).innerHTML = `<div style='display:flex;flex-direction:row'>
+    <div style='display:flex;flex-direction:column;line-height:1.25;position:fixed'>
+    ${index}
+    </div>
+    <div style='margin-left:1.25rem'>
+    ${text}
+    </div>
+    </div>`;
   document.querySelector("header").style.backgroundColor = "silver";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Les deux";
+
+  HeaderTitle = "Les deux";
+
+  headerUp();
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
+  alignHeader();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", ouvrirAppNon);

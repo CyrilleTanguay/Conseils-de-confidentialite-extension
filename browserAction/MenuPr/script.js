@@ -14,13 +14,13 @@ window.onload = function startListen() {
 
   for (let i = 0; i < AcIcone.length; i++) {
     text +=
-      '<p id="' +
+      '<div id="' +
       AcId[i] +
       '" class="iconeOui"><span class="' +
       AcIcone[i] +
-      '"></span>' +
+      '"></span><p>' +
       LesCats[i] +
-      '<span class="icon-FA-chevron-right"></span></p>' +
+      '</p><span class="icon-FA-chevron-right"></span></div>' +
       LignePr[i];
   }
   //On remplit la fenêtre avec ces catégories
@@ -29,7 +29,7 @@ window.onload = function startListen() {
     "<span class='icon-cogs' id='btmParam'></span>Conseils<span class='icon-info' id='btnSrc'></span>";
   document.querySelector("header").style.backgroundColor = "#00B1CA";
   document.getElementById("myHeading").style.color = "white";
-  document.querySelector("main").style.fontFamily = "Oswald, sans-serif";
+  // document.querySelector("main").style.fontFamily = "Oswald, sans-serif";
 
   //On ajoute un écouteur à un élément id s'il est présent, ce qui va exécuter une fonction au clic
   var BtnNav = document.getElementById("leNav");
@@ -172,7 +172,7 @@ const LesCats = [
   "Politique de confidentialité",
   "Virus",
   "Attaques",
-  "Conseils pour les téléphones mobiles",
+  "Téléphones mobiles",
 ];
 //Définition des variables
 const indexation = [
@@ -191,6 +191,16 @@ const indexation = [
   '<p id="attaques" class="iconeOui"><span class="icon-target"></span>Attaques<span class="icon-FA-chevron-right"></span></p><hr>',
   '<p id="mobiles" class="iconeOui"><span class="icon-mobile"></span>Téléphones mobiles<span class="icon-FA-chevron-right"></span></p>',
 ];
+
+var HeaderTitle = "";
+
+function headerUp() {
+  document.getElementById("myHeading").innerHTML =
+    "<div id='caseRetour'>◀</div><div></div><div> " + HeaderTitle + "</div>";
+}
+//Seul le bouton de retour est affiché en tout temps
+
+document.getElementById("caseRetour").style.display = "initial";
 //La page des paramètres s'ouvre
 function allerPr() {
   document.addEventListener("load", browser.runtime.openOptionsPage());

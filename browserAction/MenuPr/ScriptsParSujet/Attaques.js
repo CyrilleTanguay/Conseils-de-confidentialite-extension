@@ -47,13 +47,12 @@ function Attaques() {
   for (let i = 0; i < document.querySelectorAll("div").length; i++) {
     document.querySelectorAll("div")[i].style.display = "none";
   }
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Attaques";
-  document.getElementById("caseRetour").style.display = "initial";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
+
+    HeaderTitle = "Attaques"
+
+    headerUp()
+  
+alignHeader()
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", window.onload);

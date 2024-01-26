@@ -74,15 +74,11 @@ function Mobiles() {
     document.querySelectorAll("div")[i].style.display = "none";
   }
   //On définit l'en-tête
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Téléphones mobiles";
-  //Seul le bouton de retour est affiché en tout temps
-  document.getElementById("caseRetour").style.display = "initial";
-  document.getElementById("myHeading").style.textAlign = "right";
+
+  HeaderTitle = "Téléphones mobiles";
+  headerUp();
   //On définit la grille
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
+  alignHeader()
   //Si on clique sur le bouton de retour, on appelle sa fonction
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {

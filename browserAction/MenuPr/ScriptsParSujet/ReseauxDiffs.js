@@ -17,8 +17,10 @@ function Deez() {
   document.querySelector("header").style.backgroundColor = "#feaa2d";
   document.getElementById("myHeading").style.color = "black";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Deezer";
+
+  HeaderTitle = "Deezer";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -66,8 +68,10 @@ function Fb() {
   document.querySelector("p").style.lineHeight = "inherit";
   document.querySelector("p").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Facebook";
+
+  HeaderTitle = "Facebook";
+
+  headerUp();
 
   document.getElementById("myHeading").style.color = "white";
   var BtnReviens = document.getElementById("caseRetour");
@@ -94,8 +98,10 @@ function Google() {
   document.querySelector("header").style.backgroundColor = "grey";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Google";
+
+  HeaderTitle = "Google";
+
+  headerUp();
   document.getElementById("myHeading").style.color = "white";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
@@ -113,8 +119,10 @@ function Insta() {
   document.querySelector("header").style.backgroundColor = "#e4405f";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Instagram";
+
+  HeaderTitle = "Instagram";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -146,8 +154,10 @@ function Messng() {
   document.querySelector("header").style.backgroundColor = "#00b2ff";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Messenger";
+
+  HeaderTitle = "Messenger";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -179,8 +189,10 @@ function Nint() {
   document.querySelector("p").style.lineHeight = "inherit";
   document.querySelector("p").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Compte Nintendo";
+
+  HeaderTitle = "Compte Nintendo";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -197,9 +209,10 @@ function OnlyFans() {
   document.querySelector("header").style.backgroundColor = "#00aff0";
   document.getElementById("myHeading").style.color = "white";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>OnlyFans";
 
+  HeaderTitle = "OnlyFans";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -233,8 +246,10 @@ function Sig() {
   document.querySelector("header").style.color = "white";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Signal";
+
+  HeaderTitle = "Signal";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -251,8 +266,10 @@ function Skype() {
   document.querySelector("header").style.backgroundColor = "#00aff0";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Skype";
+
+  HeaderTitle = "Skype";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -269,8 +286,10 @@ function Snapchat() {
   document.querySelector("header").style.backgroundColor = "#fcf700";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>SnapChat";
+
+  HeaderTitle = "SnapChat";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -288,8 +307,10 @@ function Spotify() {
   document.querySelector("header").style.backgroundColor = "#1ed760";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Spotify";
+
+  HeaderTitle = "Spotify";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -323,8 +344,10 @@ function Telegram() {
   document.querySelector("header").style.color = "white";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Telegram";
+
+  HeaderTitle = "Telegram";
+
+  headerUp();
   document.getElementById("myHeading").style.color = "white";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
@@ -356,7 +379,7 @@ function Twitter() {
   document.documentElement.scrollTop = 0;
 
   indexation[0] =
-    "<ul><li>Pour plus de protection, rendez votre page privée</li><li>Décochez la case « Recevoir des messages privés de n’importe qui ».</li></ul><p id='introP'>Quelques moyens de récupération du mot de passe Twitter:</p>";
+    "<ul><li>Pour plus de protection, rendez votre page privée</li><li>Décochez la case « Recevoir des messages privés de n’importe qui ».</li></ul><p id='introP'>Quelques moyens de récupération du mot de passe X:</p>";
   indexation[1] =
     "<p>À utiliser:</p><ul><li>La double authentification</li><li>Une application externe (Google)</li><li>Une clé physique</li><li>Un code de récupération</li></ul>";
   indexation[2] =
@@ -366,10 +389,12 @@ function Twitter() {
   }
   const text = indexation.join("");
   document.getElementById("laListe").innerHTML = text;
-  document.querySelector("header").style.backgroundColor = "#1da1f2";
+  document.querySelector("header").style.backgroundColor = "black";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Twitter";
+
+  HeaderTitle = "X";
+
+  headerUp();
   document.getElementById("myHeading").style.color = "white";
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
@@ -380,6 +405,35 @@ function Twitter() {
 if (window.location.href == "https://www.youtube.com/account") {
   YTube();
   console.log("etoui");
+}
+
+function Threads() {
+  document.documentElement.scrollTop = 0;
+
+  const TrMap = [
+    `Faites attention avec les comptes de crypto-monnaie. Des voleurs peuvent utiliser du hameçonnage pour soutirer 
+    vos bitcoins et avec la technologie de blockchain, il est presque impossible de les récupérer en cas de vol.`,
+    `Méfiez-vous également des liens sur lesquels on vous propose de cliquer (surtout sur des comptes qui usurpent l'identité d'influenceurs) car ils peuvent entraîner le téléchargement d'un malware qui prendra vos données.`,
+  ];
+
+  document.getElementById("laListe").innerHTML = `<ul>${TrMap.map(
+    (e) => `<li>${e}</li>`
+  ).join("")}</ul>`;
+
+  // document.getElementById("laListe").innerHTML = text;
+
+  document.querySelector("header").style.backgroundColor = "black";
+  document.querySelector("header").style.color = "white";
+  document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
+
+  HeaderTitle = "Threads";
+
+  headerUp();
+  var BtnReviens = document.getElementById("caseRetour");
+  if (BtnReviens) {
+    BtnReviens.addEventListener("click", unReseau);
+  }
+  alignHeader();
 }
 
 function WhatsApp() {
@@ -404,8 +458,10 @@ function WhatsApp() {
   document.querySelector("header").style.color = "white";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
   document.querySelector("main").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>WhatsApp";
+
+  HeaderTitle = "WhatsApp";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -442,8 +498,9 @@ function YTube() {
   document.querySelector("header").style.backgroundColor = "red";
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
 
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>YouTube";
+  HeaderTitle = "YouTube";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);
@@ -461,8 +518,10 @@ function Zoom() {
   document.getElementById("myHeading").style.color = "white";
 
   document.getElementById("laListe").style.fontFamily = "K2D, sans-serif";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Zoom";
+
+  HeaderTitle = "Zoom";
+
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", unReseau);

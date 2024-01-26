@@ -22,7 +22,7 @@ function Navigateur() {
   indexation[3] = " <li>Bloquez les permissions.</li>";
   indexation[4] = " <li>Activez les options de sécurité.</li></ul></div><hr>";
   indexation[5] =
-    "<p id='CGPT' class='iconeOui' style='height:4.8px'><svg role='img' viewBox='0 0 24 24' style='width:11px;background-color:#65A293;fill:white;padding:3px; border-radius:4px 4px 0px 4px'><path d='M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z'/></svg>ChatGPT<span class='icon-FA-chevron-right'></span></p><hr>";
+    "<p id='CGPT' class='iconeOui'><svg role='img' viewBox='0 0 24 24' style='width:11px;background-color:#65A293;fill:white;padding:3px; border-radius:4px 4px 0px 4px'><path d='M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z'/></svg>ChatGPT<span class='icon-FA-chevron-right'></span></p><hr>";
   indexation[7] =
     "<p id='Edge' class='iconeOui'><span class='icon-logo-microsoftedge'></span>Edge<span class='icon-FA-chevron-right'></span></p><hr>";
   indexation[8] =
@@ -51,7 +51,7 @@ function Navigateur() {
   indexation[19] =
     "<li><a href='https://haveibeenpwned.com/'>Have I Been Pwned</a>: Permet de savoir si votre addresse courriel/numéro de téléphone/mot de passe a fuité et si un site web est dangereux</li>";
   indexation[20] =
-    "<li><a href='https://respectemesdatas.fr'>Je ne suis pas une Data</a>: un outil qui vous montre les données collectées par Facebook, Twitter, Instagram, LinkedIn, Google, Uber, Tinder, TikTok ou Netflix. Vous aurez ensuite accès à plusieurs options pour gérer ces données, comme les supprimer, les modifier, en obtenir une copie, etc.</li>";
+    "<li><a href='https://respectemesdatas.fr'>Je ne suis pas une Data</a>: un outil qui vous montre les données collectées par Facebook, X, Instagram, LinkedIn, Google, Uber, Tinder, TikTok ou Netflix. Vous aurez ensuite accès à plusieurs options pour gérer ces données, comme les supprimer, les modifier, en obtenir une copie, etc.</li>";
   indexation[21] =
     "<li><a href='https://www.f-secure.com/en/home/free-tools/identity-theft-checker'>F-Secure</a>: vous permet de savoir si votre addresse courriel a fuitée </li>";
   indexation[22] =
@@ -74,10 +74,11 @@ function Navigateur() {
   }
   //On définit l'en-tête
   document.querySelector("header").style.backgroundColor = "darkOrange";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Navigateur";
+  HeaderTitle = "Navigateur";
+
+  headerUp();
   //Seul le bouton de retour est affiché en tout temps
-  document.getElementById("caseRetour").style.display = "initial";
+
   document.getElementById("Disconnect").style.display = "initial";
   document.getElementById("DTM").style.display = "initial";
   document.getElementById("PRBdg").style.display = "initial";
@@ -86,10 +87,7 @@ function Navigateur() {
   document.getElementById("RYD").style.display = "initial";
   document.getElementById("NSc").style.display = "initial";
   //On définit la grille
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
+  alignHeader();
   //Si on clique sur le bouton de retour, on appelle sa fonction
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
@@ -217,8 +215,9 @@ function Edge() {
   document.getElementById("laListe").innerHTML = text;
   document.getElementById("myHeading").style.color = "white";
   document.querySelector("header").style.backgroundColor = "#0078d7";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Edge";
+
+  HeaderTitle = "Edge";
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", Navigateur);
@@ -228,14 +227,15 @@ function Edge() {
 
 function ChatGPT() {
   indexation[0] =
-    "<ul><li>N’envoyez pas vos données personnelles à ChatGPT, car elles retiennent tout</li><li>ChatGPT n’est disponible officiellement ni sous la forme d’une extension web ni sous la forme d’une application mobile, donc attention aux imitations!</li></ul>";
+    "<ul><li>N’envoyez pas vos données personnelles à ChatGPT, car elles retiennent tout</li></ul>";
   indexation.splice(1, 90);
   const text = indexation.join("");
   document.getElementById("laListe").innerHTML = text;
   document.getElementById("myHeading").style.color = "white";
   document.querySelector("header").style.backgroundColor = "#65A293";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>ChatGPT";
+
+  HeaderTitle = "ChatGPT";
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", Navigateur);
@@ -252,8 +252,9 @@ function Chrome() {
   document.getElementById("laListe").innerHTML = text;
   document.getElementById("myHeading").style.color = "white";
   document.querySelector("header").style.backgroundColor = "#0078d7";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Chrome";
+
+  HeaderTitle = "Chrome";
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", Navigateur);
@@ -275,8 +276,9 @@ function Firefox() {
   document.getElementById("laListe").innerHTML = text;
   document.getElementById("myHeading").style.color = "white";
   document.querySelector("header").style.backgroundColor = "darkOrange";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Firefox";
+
+  HeaderTitle = "Firefox";
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", Navigateur);
@@ -303,8 +305,9 @@ function Safari() {
   document.getElementById("laListe").innerHTML = text;
   document.getElementById("myHeading").style.color = "white";
   document.querySelector("header").style.backgroundColor = "blue";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Safari";
+
+  HeaderTitle = "Safari";
+  headerUp();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", Navigateur);

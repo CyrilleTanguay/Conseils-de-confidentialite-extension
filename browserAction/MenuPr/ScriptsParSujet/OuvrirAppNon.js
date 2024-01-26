@@ -8,6 +8,29 @@
  *
  */
 function ouvrirAppNon() {
+  const listApps = [
+    "Big Decisions",
+    "Document PDF Scanner",
+    "FITSTAR",
+    "Golden Hunt",
+    "Jewel Sea",
+    "King Blitz",
+    "Luck Hammer",
+    "Lucky Clover",
+    "Lucky Habit: health tracker",
+    "Lucky Step-Walking Tracker",
+    "Lux Fruit Games",
+    "Reflector",
+    "Safe VPN",
+    "SEEKS",
+    "Seven Golden Wolf blackjack",
+    "Smart Night Clock",
+    "Smart Screen Mirroring",
+    "Unlimited Score",
+    "WalkingJoy",
+    "Wonder Time",
+  ];
+
   indexation[0] =
     "<p id='autresAppNon' class='iconeOui'><span class='icon-FA-columns'></span>Les deux<span class='icon-FA-chevron-right'></span></p><hr>";
   indexation[1] =
@@ -48,19 +71,16 @@ function ouvrirAppNon() {
   const text = indexation.join("");
   document.getElementById("laListe").innerHTML = text;
   document.querySelector("header").style.backgroundColor = "silver";
-  document.querySelector("main").style.fontFamily = "Oswald, sans-serif";
   document.querySelector("li").style.fontFamily = "K2D, sans-serif";
 
   for (let i = 0; i < document.querySelectorAll("div").length; i++) {
     document.querySelectorAll("div")[i].style.display = "none";
   }
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Apps à ne pas installer";
-  document.getElementById("caseRetour").style.display = "initial";
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
+
+  HeaderTitle = "Apps à ne pas installer";
+  headerUp();
+
+  alignHeader();
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", Mobiles);

@@ -41,16 +41,12 @@ function AppNon() {
     document.querySelectorAll("div")[i].style.display = "none";
   }
   //On définit l'en-tête
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Applications à retirer";
-  //Seul le bouton de retour est affiché en tout temps
-  document.getElementById("caseRetour").style.display = "initial";
+
+  HeaderTitle = "Applications à retirer";
+  headerUp();
+
   //On définit la grille
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
-  document.getElementById("laListe").style.fontFamily = "Oswald";
+  alignHeader();
 
   var BtnOuvrirAppDes = document.getElementById("ouvrirAppDes");
   if (BtnOuvrirAppDes) {

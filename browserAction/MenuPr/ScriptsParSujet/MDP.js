@@ -54,7 +54,7 @@ function MDP() {
   indexation[29] =
     "<li>Si vous le pouvez, utilisez votre propre phrase de récupération</li>";
   indexation[30] =
-    "<li>Clifford Stoll, un spécialiste en hacking, a affirmé ceci « Traitez votre mot de passe comme votre brosse à dents:  Ne pas laisser quelqu’un d’autre l’utiliser...</li><ul><li>Cela est vrai</li></ul><li>… et en obtenir une nouvelle tous les six mois. »</li><ul><li>Plusieurs spécialistes sont en désaccord avec ce conseil, car ils estiment qu’il est inutile de changer de mot de passe si vous n’avez pas été piraté.</li></ul></ul></div>";
+    "<li>Clifford Stoll, un spécialiste en hacking, a affirmé ceci « Traitez votre mot de passe comme votre brosse à dents: Ne pas laisser quelqu’un d’autre l’utiliser...</li><ul><li>Cela est vrai</li></ul><li>… et en obtenir une nouvelle tous les six mois. »</li><ul><li>Plusieurs spécialistes sont en désaccord avec ce conseil, car ils estiment qu’il est inutile de changer de mot de passe si vous n’avez pas été piraté.</li></ul></ul></div>";
   //On s'assure que les variables ne soient pas séparées par une virgule
   indexation.length = 31;
 
@@ -68,16 +68,13 @@ function MDP() {
   }
   //On définit l'en-tête
   document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Mot de passe";
+    "<div id='caseRetour'>◀</div><div></div><div>Mot de passe</div>";
   //Seul le bouton de retour est affiché en tout temps
-  document.getElementById("caseRetour").style.display = "initial";
+  
 
   //On définit la grille
 
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
+alignHeader()
   //Si on clique sur le bouton de retour, on appelle sa fonction
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {

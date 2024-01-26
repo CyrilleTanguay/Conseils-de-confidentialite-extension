@@ -22,14 +22,13 @@ function ArnNigeriane() {
   const text = indexation.join("");
   document.getElementById("laListe").innerHTML = text;
   document.querySelector("header").style.backgroundColor = "green";
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>Arnaque nigériane (alias 4-1-9)";
+
+    HeaderTitle = "Arnaque nigériane (alias 4-1-9)"
+
+    headerUp()
   document.querySelector("ul").style.fontFamily = "K2D, sans-serif";
 
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
+alignHeader()
   console.log("oui");
 
   var BtnReviens = document.getElementById("caseRetour");

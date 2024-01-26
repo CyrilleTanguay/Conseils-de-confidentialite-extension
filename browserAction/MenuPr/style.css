@@ -1,24 +1,29 @@
 h1 {
   font-style: italic;
 }
+html{
+  /* overflow-y:scroll; */
+}
 
 body {
-  font-family: 'Oswald', sans-serif;
-  min-width: 285px;
+  /* font-family: 'Oswald', sans-serif; */
+  min-width: 305px;
   max-width: 350px;
-  margin: 0;
+  /* margin: 0; */
   height: max-content;
-  overflow-y: auto;
+  font-family: K2D, sans-serif;
+
+  overflow-y:auto;
 }
 
 ul {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   line-height: 15pt;
 }
 
 ul li {
-  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
   font-family: K2D, sans-serif;
 }
 div p {
@@ -31,7 +36,7 @@ div p {
 }
 
 .iconesApps img {
-  margin: 0 30px;
+  margin: 0 1.875rem;
 }
 
 #introP {
@@ -41,10 +46,11 @@ div p {
 
 hr {
   border: 1px solid black;
+  margin:  0.45rem 0;
 }
 
 #myHeading {
-  margin: 0 8px;
+  margin: 0 0.5rem;
   text-align: center;
   align-items: center;
   font-weight: 400;
@@ -57,24 +63,28 @@ hr {
 
 header {
   background-color: #00B1CA;
-  height: 40px;
+  height: 2.5rem;
   color: white;
   position: fixed;
   top: 0;
   width: 100%;
   font-family: K2D, sans-serif;
+  left: 0;
 }
 
 main {
-  margin-left: 8px;
-  margin-right: 8px;
-  line-height: 0.3;
+  /* margin-left: 0.5rem;
+  margin-right: 0.5rem; */
+  /* line-height: 0.3; */
   color: midnightblue;
-  margin-top: 57px;
+  margin-top: 3rem;
 }
 
+main > div > p{
+  margin: 0;
+}
 #caseRetour {
-  font-size: 18px;
+  /* font-size: 10.5rem; */
   text-align: left;
 }
 
@@ -89,13 +99,17 @@ main {
 
 .iconeOui {
   display: grid;
-  grid-template-columns: 20px auto 20px;
+  grid-template-columns: 1.25rem auto 1.25rem;
   align-items: center;
   letter-spacing: 0.3pt;
   white-space: nowrap;
   user-select: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
+.iconeOui > span{
+  width: fit-content;
+}
 .icon-cogs {
   text-align: left;
 }
@@ -106,4 +120,5 @@ main {
 
 .icon-FA-chevron-right{
   color: midnightblue;
+  width: fit-content;
 }

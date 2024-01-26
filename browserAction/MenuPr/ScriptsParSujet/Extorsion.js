@@ -90,15 +90,13 @@ function Extorsion() {
     document.querySelectorAll("div")[i].style.display = "none";
   }
   //On définit l'en-tête
-  document.getElementById("myHeading").innerHTML =
-    "<div id='caseRetour'>◀</div><div></div>(S)extorsion/Chantage";
-  //Seul le bouton de retour est affiché en tout temps
-  document.getElementById("caseRetour").style.display = "initial";
+
+    HeaderTitle = "(S)extorsion/Chantage"
+
+    headerUp()
+  
   //On définit la grille
-  document.getElementById("myHeading").style.textAlign = "right";
-  document.getElementById("myHeading").style.display = "grid";
-  document.getElementById("myHeading").style.gridTemplateColumns =
-    "auto auto auto";
+alignHeader()
   //Si on clique sur le bouton de retour, on appelle sa fonction
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
