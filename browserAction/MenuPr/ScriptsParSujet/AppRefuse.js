@@ -9,30 +9,84 @@
  *
  */
 function AppNon() {
-  //Catégories
-  indexation[0] =
-    "<p id='ouvrirAppDes' class='iconeOui'><span class='icon-FA-ban'></span>Applications à désinstaller<span class='icon-circle-down'></span></p><div id='AppDes'><ul>";
-  indexation[1] =
-    " <li>Adware Doctor</li><li>ChatGPT Chat GPT AI With GPT-3. Il s’agit d’une version illégale de ChatGPT.</li><li>Codice Fiscale 2022</li><li>Dr. Antivirus</li><li>Dr. Battery</li><li>Dr. Cleaner Disk</li><li>Dr. Cleaner Pro</li><li>Dr.Unarchiver</li><li>Duplicate Finder</li><li>FakeSpy</li><li>File Manager Small, Lite</li><li>GodFather (malware)</li><li>Internet Explorer.</li><li>Open Any Files</li> <li>Pokemon-go.io (malware)</li><li>QuickTime (uniquement si vous êtes sur Windows). Des failles ont été découvertes et Apple a abandonné cette version du logiciel.</li><li>Super Mario 3: Mario Forever</li><li>WhatsApp Pink (malware)</li><li>Vex Editor</li></ul></div><hr>";
-  // indexation[2] = " <p id='ouvrirExtDes' class='iconeOui'><span class='icon-FA-puzzle'></span>Extensions à désinstaller<span class='icon-circle-down'></span></p><div id='AppDes'><ul>"
-  indexation[2] =
-    " <p id='RogueApp' class='iconeOui'><span class='icon-FA-clone'></span>Logiciels de type Rogue<span class='icon-FA-chevron-right'></span></p><hr>";
-  indexation[3] =
-    " <p id='ouvrirAppRet'class='iconeOui'><span class='icon-FA-lemon-o'></span>Applications néfastes retirées<span class='icon-circle-down'></span></p><div id='appRet'><ul>";
-  indexation[4] =
-    "   <li>AVG Antivirus 2011 – Imite AVG.</li><li>ContraVirus – Utilise une base de signatures dépassée.</li><li>Defense Center</li><li>Microsoft Security Essentials – Se fait passer pour le programme légitime éponyme.</li><li>MS AntiSpyware 2009 – Exploite le nom de Microsoft Antispyware, aujourd’hui WindowDefender.</li><li>PCSecureSystem</li><li>PerfectCleaner</li><li>Spydawn</li><li>SpyLax – Anciennement connu sous le nom de SpyDoctor,se fait passer pour Spyware Doctor. </li><li>SpywareBot – Imite Spybot - Search & Destroy.</li><li>Winpc Defender – Imite Windows Defender.</li></ul></div><hr>";
-  indexation[5] =
-    "   <p id='ouvrirAppEnCas' class='iconeOui'><span class='icon-FA-warning'></span>Si vous avez un logiciel malveillant<span class='icon-circle-down'></span></p><div id='appEnCas'><ul>";
-  indexation[6] =
-    "     <li>Supprimez-le en plaçant l’application dans la corbeille et en la vidant <b><u>(CE N’EST PAS TOUT)</u></b></li><li>Accédez au cache de l’application</li><ul><li>Windows: Activez l’option « Afficher les fichiers cachés » et allez dans « ProgramData »</li><li>Apple: Pomme + Maj + (.) et allez dans la bibliothèque (il y a deux bibliothèques)</li></ul><li>Supprimez-le</li></ul></div>";
-  //On laisse les indexations restantes vides
-  // for (let i = 7; i < 76; i++) {
-  //   indexation[i] = "";
-  // }
-  indexation.length = 7;
-
+  const listAll = [
+    {
+      id: "ouvrirAppDes",
+      icon: "icon-FA-ban",
+      title: "Applications à désinstaller",
+      iconRight: "icon-circle-down",
+      idContent: "AppDes",
+      content: [
+        "Adware Doctor",
+        "ChatGPT Chat GPT AI With GPT-3. Il s’agit d’une version illégale de ChatGPT.",
+        "Codice Fiscale 2022",
+        "Dr. Antivirus",
+        "Dr. Battery",
+        "Dr. Cleaner Disk",
+        "Dr. Cleaner Pro",
+        "Dr.Unarchiver",
+        "Duplicate Finder",
+        "FakeSpy",
+        "File Manager Small, Lite",
+        "GodFather (malware)",
+        "Internet Explorer.",
+        "Open Any Files",
+        "Pokemon-go.io (malware)",
+        "QuickTime (uniquement si vous êtes sur Windows). Des failles ont été découvertes et Apple a abandonné cette version du logiciel.",
+        "Super Mario 3: Mario Forever",
+        "WhatsApp Pink (malware)",
+        "Vex Editor",
+      ],
+    },
+    {
+      id: "RogueApp",
+      icon: "icon-FA-clone",
+      title: "Logiciels de type Rogue",
+      iconRight: "icon-FA-chevron-right",
+      idContent: "",
+      content: "",
+      function: RogueApp,
+    },
+    {
+      id: "ouvrirAppRet",
+      icon: "icon-FA-lemon-o",
+      title: "Applications néfastes retirées",
+      iconRight: "icon-circle-down",
+      idContent: "appRet",
+      content: [
+        "AVG Antivirus 2011 – Imite AVG.",
+        "ContraVirus – Utilise une base de signatures dépassée.",
+        "Defense Center",
+        "Microsoft Security Essentials – Se fait passer pour le programme légitime éponyme.",
+        "MS AntiSpyware 2009 – Exploite le nom de Microsoft Antispyware, aujourd’hui WindowDefender.",
+        "PCSecureSystem",
+        "PerfectCleaner",
+        "Spydawn",
+        "SpyLax – Anciennement connu sous le nom de SpyDoctor,se fait passer pour Spyware Doctor. ",
+        "SpywareBot – Imite Spybot - Search & Destroy.",
+        "Winpc Defender – Imite Windows Defender.",
+      ],
+    },
+    {
+      id: "ouvrirAppEnCas",
+      icon: "icon-FA-warning",
+      title: "Si vous avez un logiciel malveillant",
+      iconRight: "icon-circle-down",
+      idContent: "appEnCas",
+      content: [
+        "Supprimez-le en plaçant l’application dans la corbeille et en la ,vidant <b><u>(CE N’EST PAS TOUT)</u></b>",
+        "Accédez au cache de l’application",
+        "<ul><li>Windows: Activez l’option « Afficher les fichiers cachés » et allez dans « ProgramData »</li><li>Apple: Pomme + Maj + (.), allez dans la bibliothèque (il y a deux bibliothèques) puis dans le dossier « Application Support ». Trouvez le dossier correspondant au nom de l'application.</li></ul",
+        "Supprimez-le",
+      ],
+    },
+  ];
   //On s'assure que les variables ne soient pas séparées par une virgule
-  const text = indexation.join("");
+  const text = listAll
+    .map((a,i) =>
+      paragraphList(a.id, a.icon, a.title, a.iconRight, a.idContent, a.content)+ (i == listAll.length - 1 ? "" : "<hr/>")
+    )
+    .join("");
   //On remplit la fenêtre avec ces catégories
   document.getElementById("laListe").innerHTML = text;
   document.querySelector("header").style.backgroundColor = "red";
@@ -48,54 +102,16 @@ function AppNon() {
   //On définit la grille
   alignHeader();
 
-  var BtnOuvrirAppDes = document.getElementById("ouvrirAppDes");
-  if (BtnOuvrirAppDes) {
-    BtnOuvrirAppDes.addEventListener("click", ouvrirAppDes);
-  }
-
-  var BtnOuvrirRogue = document.getElementById("RogueApp");
-  if (BtnOuvrirRogue) {
-    BtnOuvrirRogue.addEventListener("click", RogueApp);
-  }
-
-  var BtnOuvAppRet = document.getElementById("ouvrirAppRet");
-  if (BtnOuvAppRet) {
-    BtnOuvAppRet.addEventListener("click", ouvrirAppRet);
-  }
-  var BtnOuvAppEnCas = document.getElementById("ouvrirAppEnCas");
-  if (BtnOuvAppEnCas) {
-    BtnOuvAppEnCas.addEventListener("click", ouvrirAppEnCas);
-  }
-
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", window.onload);
   }
 
-  function ouvrirAppDes() {
-    var x = document.getElementById("AppDes");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+  listAll.map((l) => {
+    if (l.iconRight == "icon-FA-chevron-right") {
+      document.getElementById(l.id).addEventListener("click", l.function);
     } else {
-      x.style.display = "none";
+      OpenList(l.id, l.idContent);
     }
-  }
-
-  function ouvrirAppRet() {
-    var x = document.getElementById("appRet");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-
-  function ouvrirAppEnCas() {
-    var x = document.getElementById("appEnCas");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
+  });
 }

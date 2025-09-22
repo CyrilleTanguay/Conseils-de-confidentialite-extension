@@ -13,10 +13,150 @@ function Navigateur() {
   //   var browser = Firefox;
   // }
 
+  const listNav = [
+    {
+      id: "ouvrirConfNav",
+      icon: "icon-FA-sliders",
+      title: "Configuration",
+      contentId: "confNav",
+      contentList: [
+        {
+          subContent: [
+            {
+              text: "Définissez un navigateur par défaut:",
+              subList: [
+                {
+                  text: "DuckDuckGo: ce navigateur est connu pour sa confidentialité.",
+                },
+                {
+                  text: "Qwant: Connu lui aussi pour sa sécurité mais collecte quelques données pour des publicités.",
+                },
+                {
+                  text: "Lilo: permet de financer une association de votre choix.",
+                },
+                {
+                  text: "Ecosia: un moteur de recherche qui respecte non seulement vos données, mais aussi la planète. En effet, une partie de ses bénéfices sert à financer des programmes de reforestation.",
+                },
+                {
+                  text: "Brave",
+                },
+                {
+                  text: "StartPage.com: ce navigateur utilise Google mais sans les cookies.",
+                },
+                {
+                  text: "SearX: Moteur libre",
+                },
+              ],
+            },
+            {
+              text: "Faites un ménage de vos cookies. Enlevez ceux qui peuvent concerner des sites que vous ne consultez plus ou que vous n’avez consulté qu’une fois.",
+            },
+            {
+              text: "Bloquez les permissions.",
+            },
+            {
+              text: "Activez les options de sécurité.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "CGPT",
+      icon: "icon-FA-sliders",
+      title: "ChatGPT",
+    },
+    {
+      id: "Edge",
+      icon: "icon-logo-microsoftedge",
+      title: "Edge",
+    },
+    {
+      id: "Firefox",
+      icon: "icon-logo-mozillafirefox",
+      title: "Firefox",
+    },
+    {
+      id: "Chrome",
+      icon: "icon-logo-googlechrome",
+      title: "Chrome",
+    },
+    {
+      id: "Safari",
+      icon: "icon-logo-safari",
+      title: "Safari",
+    },
+    {
+      id: "ouvrirConfExt",
+      icon: "icon-FA-puzzle-piece",
+      title: "Extensions",
+      contentId: "confExt",
+      contentList: [
+        {
+          subContent: [
+            {
+              text: "Disconnect: permet de vous protéger de cookies tiers. <div id='Disconnect'></div>",
+            },
+            {
+              text: "Don't track me Google: simplifie les liens dans les recherches Google. <div id='DTM'></div>",
+            },
+            {
+              text: "Privacy Badger. <div id='PRBdg'></div>",
+            },
+            {
+              text: "Ghostery: Enlève les publicités. <div id='Ghst'></div>",
+            },
+            {
+              text: "Facebook Container: Empêche Meta (Facebook, Instagram) de vous traquer même en dehors de Facebook. <div id='FbCo'></div>",
+            },
+            {
+              text: "Return Youtube Dislike : Une extension qui, comme son nom l’indique, affiche les pouces rouges de Youtube. <div id='RYD'></div>",
+            },
+            {
+              text: "NoScript: Gère les scripts JavaScript (Attention: il vous faudra souvent faire le tri des scripts pour qu'un site fonctionne). <div id='NSc'></div>",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "ouvrirOU",
+      icon: "icon-FA-sliders",
+      title: "Outils utiles",
+      contentId: "OU",
+      contentList: [
+        {
+          subContent: [
+            {
+              text: "<a href='https://haveibeenpwned.com/'>Have I Been Pwned</a>: Permet de savoir si votre addresse courriel/numéro de téléphone/mot de passe a fuité et si un site web est dangereux",
+            },
+            {
+              text: "<a href='https://respectemesdatas.fr'>Je ne suis pas une Data</a>: un outil qui vous montre les données collectées par Facebook, X, Instagram, LinkedIn, Google, Uber, Tinder, TikTok ou Netflix. Vous aurez ensuite accès à plusieurs options pour gérer ces données, comme les supprimer, les modifier, en obtenir une copie, etc.",
+            },
+            {
+              text: "<a href='https://www.f-secure.com/en/home/free-tools/identity-theft-checker'>F-Secure</a>: vous permet de savoir si votre addresse courriel a fuitée ",
+            },
+            {
+              text: "<a href='https://www.avast.com/hackcheck#mac'>Avast Hack Check</a>",
+            },
+            {
+              text: "<a href='https://sec.hpi.de/ilc/?'>Hasso Plattner Institut</a>",
+            },
+            {
+              text: "<a href='https://cybernews.com/personal-data-leak-check/'>CyberNews</a>: un site d'informations sur la sécurité en ligne qui a aussi un outil pour savoir si vos informations en ligne ont fuité",
+            },
+            {
+              text: "<a href='https://www.virustotal.com/gui/home/upload'>Virus Total</a>: un site qui permet de scanner un fichier pour savoir s'il contient un virus",
+            },
+          ],
+        },
+      ],
+    },
+  ];
+
   indexation[0] =
     "<p id='ouvrirConfNav' class='iconeOui'><span class='icon-FA-sliders'></span>Configuration<span class='icon-circle-down'></span></p><div id='confNav'><ul>";
-  indexation[1] =
-    " <li>Définissez un navigateur par défaut:</li><ul><li>DuckDuckGo: ce navigateur est connu pour sa confidentialité.</li><li>Qwant: Connu lui aussi pour sa sécurité mais collecte quelques données pour des publicités.</li><li>Lilo: permet de financer une association de votre choix.</li><li>Ecosia: un moteur de recherche qui respecte non seulement vos données, mais aussi la planète. En effet, une partie de ses bénéfices sert à financer des programmes de reforestation.</li><li>Brave</li><li>StartPage.com: ce navigateur utilise Google mais sans les cookies.</li><li>SearX: Moteur libre</li></ul>";
+  indexation[1] = ` <li>Définissez un navigateur par défaut:</li><ul><li>DuckDuckGo: ce navigateur est connu pour sa confidentialité.</li><li>Qwant: Connu lui aussi pour sa sécurité mais collecte quelques données pour des publicités.</li><li>Lilo: permet de financer une association de votre choix.</li><li>Ecosia: un moteur de recherche qui respecte non seulement vos données, mais aussi la planète. En effet, une partie de ses bénéfices sert à financer des programmes de reforestation.</li><li>Brave</li><li>StartPage.com: ce navigateur utilise Google mais sans les cookies.</li><li>SearX: Moteur libre</li></ul>`;
   indexation[2] =
     " <li>Faites un ménage de vos cookies. Enlevez ceux qui peuvent concerner des sites que vous ne consultez plus ou que vous n’avez consulté qu’une fois.</li>";
   indexation[3] = " <li>Bloquez les permissions.</li>";
@@ -65,7 +205,19 @@ function Navigateur() {
   //On s'assure que les variables ne soient pas séparées par une virgule
   indexation.length = 26;
 
-  const text = indexation.join("");
+  const text = listNav.map((e, i) =>
+    paragraphListSub(
+      e.id,
+      e.icon,
+      e.title,
+      e.contentList ? "icon-circle-down" : "icon-FA-chevron-right",
+      e.contentId,
+      null,
+      e.contentList,
+      listNav,
+      i
+    )
+  ).join("");
   document.getElementById("laListe").innerHTML = text;
 
   //On s'assure que les listes déroulantes soient fermées et masquées
@@ -95,6 +247,20 @@ function Navigateur() {
   }
 
   //Si, avec son ID, on découvre qu'une extension n'est pas installée, on met un bouton menant à sa page pour l'installer
+
+  var gettingAll = browser.management.getAll();
+  gettingAll.then(gotAll);
+  const AllIds = [];
+  function gotAll(infoArray) {
+    for (info of infoArray) {
+      if (info.type == "extension") {
+        AllIds.push(info.id);
+      }
+    }
+  }
+
+  console.log(!AllIds.includes(`jid1-ZAdIEUB7XOzOJw@jetpack`));
+
   // if (browser.management.get('jid1-ZAdIEUB7XOzOJw@jetpack')) {
   //   console.log("installée")
   // } else {
@@ -106,45 +272,50 @@ function Navigateur() {
   // } else {
   //   document.getElementById("DTM").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>"
   // }
-  // if ((browser.management.get('jid1-MnnxcxisBPnSXQ@jetpack'))) {
-  //   console.log("installée")
+  // if (browser.management?.get("jid1-MnnxcxisBPnSXQ@jetpack")) {
+  //   console.log("installée");
   // } else {
-  //   document.getElementById("PRBdg").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/privacy-badger17/'>Installer</a>"
+  //   document.getElementById("PRBdg").innerHTML =
+  //     "<a href='https://addons.mozilla.org/fr/firefox/addon/privacy-badger17/'>Installer</a>";
   // }
-  // if ((browser.management.get('firefox@ghostery.com'))) {
-  //   console.log("installée")
-  // } else {
-  //   document.getElementById("Ghst").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/ghostery/'>Installer</a>"
-  // }
-  // if ((browser.management.get("@contain-facebook"))) {
-  //   console.log("installée")
-  // } else {
-  //   document.getElementById("FbCo").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>"
-  // }
+
+  if (!AllIds.includes("firefox@ghostery.com")) {
+    console.log("installée");
+  } else {
+    document.getElementById("Ghst").innerHTML =
+      "<a href='https://addons.mozilla.org/fr/firefox/addon/ghostery/'>Installer</a>";
+  }
+  if (!AllIds.includes("@contain-facebook")) {
+    console.log("installée");
+  } else {
+    document.getElementById("FbCo").innerHTML =
+      "<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>";
+  }
   // if (!(browser.management.get("@contain-facebook"))) {
   //   console.log("installée")
   // } else {
   //   document.getElementById("RYD").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>"
   // }
-  // if (!(browser.management.get("{73a6fe31-595d-460b-a920-fcc0f8843232}"))) {
-  //   console.log("installée")
-  // } else {
-  //   document.getElementById("NSc").innerHTML = "<a href='https://addons.mozilla.org/fr/firefox/addon/noscript/'>Installer</a>"
-  // }
+  if (!AllIds.includes("{73a6fe31-595d-460b-a920-fcc0f8843232}")) {
+    console.log("installée");
+  } else {
+    document.getElementById("NSc").innerHTML =
+      "<a href='https://addons.mozilla.org/fr/firefox/addon/noscript/'>Installer</a>";
+  }
   document.getElementById("Disconnect").innerHTML =
     "<a href='https://addons.mozilla.org/fr/firefox/addon/disconnect/'>Installer</a>";
   document.getElementById("DTM").innerHTML =
     "<a href='https://addons.mozilla.org/fr/firefox/addon/dont-track-me-google1/'>Installer</a>";
   document.getElementById("PRBdg").innerHTML =
     "<a href='https://addons.mozilla.org/fr/firefox/addon/privacy-badger17/'>Installer</a>";
-  document.getElementById("Ghst").innerHTML =
-    "<a href='https://addons.mozilla.org/fr/firefox/addon/ghostery/'>Installer</a>";
-  document.getElementById("FbCo").innerHTML =
-    "<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>";
+  // document.getElementById("Ghst").innerHTML =
+  //   "<a href='https://addons.mozilla.org/fr/firefox/addon/ghostery/'>Installer</a>";
+  // document.getElementById("FbCo").innerHTML =
+  //   "<a href='https://addons.mozilla.org/fr/firefox/addon/facebook-container/'>Installer</a>";
   document.getElementById("RYD").innerHTML =
     "<a href='https://addons.mozilla.org/fr/firefox/addon/return-youtube-dislikes/'> Installer</a>";
-  document.getElementById("NSc").innerHTML =
-    "<a href='https://addons.mozilla.org/fr/firefox/addon/noscript/'>Installer</a>";
+  // document.getElementById("NSc").innerHTML =
+  //   "<a href='https://addons.mozilla.org/fr/firefox/addon/noscript/'>Installer</a>";
 
   var BtnConfNav = document.getElementById("ouvrirConfNav");
 
@@ -226,10 +397,12 @@ function Edge() {
 }
 
 function ChatGPT() {
-  indexation[0] =
-    "<ul><li>N’envoyez pas vos données personnelles à ChatGPT, car elles retiennent tout</li></ul>";
-  indexation.splice(1, 90);
-  const text = indexation.join("");
+  const listeInfos = [
+    "N’envoyez pas vos données personnelles à ChatGPT, car elles retiennent tout",
+    "Désactivez l'historique de discussion du Chat.",
+  ];
+  const text =
+    "<ul>" + listeInfos.map((e) => `<li>${e}</li>`).join("") + "</ul>";
   document.getElementById("laListe").innerHTML = text;
   document.getElementById("myHeading").style.color = "white";
   document.querySelector("header").style.backgroundColor = "#65A293";

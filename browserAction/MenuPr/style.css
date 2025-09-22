@@ -99,6 +99,7 @@ main > div > p{
 
 .iconeOui {
   display: grid;
+  gap: 0.25rem;
   grid-template-columns: 1.25rem auto 1.25rem;
   align-items: center;
   letter-spacing: 0.3pt;
@@ -121,4 +122,8 @@ main > div > p{
 .icon-FA-chevron-right{
   color: midnightblue;
   width: fit-content;
+}
+.linkAll:hover{
+  background-color: aquamarine;
+  border-radius: 1rem;
 }

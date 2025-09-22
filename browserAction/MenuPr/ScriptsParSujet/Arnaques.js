@@ -9,30 +9,121 @@
  *
  */
 function Arnaques() {
+  const arnList = [
+    {
+      id: "ouvrirStrcArn",
+      icon: "icon-FA-list-ol",
+      title: "Structure",
+      rightIcon: "icon-circle-down",
+      idContent: "structure",
+      content: [
+        "Elle contient des couleurs vives et des majuscules",
+        "Elle contient beaucoup de fautes d’orthographe et de syntaxe",
+        "L’adresse courriel est très douteuse",
+        "Ils sont généralistes.",
+      ],
+    },
+    {
+      id: "ouvrirContenuArn",
+      icon: "icon-FA-list-ul",
+      title: "Le contenu",
+      rightIcon: "icon-circle-down",
+      idContent: "contenuEscr",
+      content: [
+        "Ils sont pressants",
+        "Ils contiennent une source crédible",
+        "Ils vous menacent si vous ne vous faites pas quelque chose rapidement.",
+        "Ils contiennent des liens et des pièces jointes suspicieuses",
+        "Ils vous invitent à partager un courriel.",
+      ],
+    },
+    {
+      id: "ouvrirEscSol",
+      icon: "icon-FA-question-circle",
+      title: "Que faire?",
+      rightIcon: "icon-circle-down",
+      idContent: "escrSol",
+      content: [
+        "Toujours vérifier l’adresse courriel.",
+        "Prenez le temps de lire le courriel et ne vous pressez pas. Les auteurs de ces courriels veulent que vous fassiez le contraire pour pouvoir arriver à leurs fins.",
+        "<b><u><i>Ne répondez jamais à ces courriels.</i></u></b>",
+        "<b><u><i>Ne cliquez jamais sur les liens, même s’il y a un lien vous invitant à vous désabonner d’une infolettre.</i></u></b> Cela prouvera simplement au destinataire que votre adresse courriel  est active, et vous recevrez encore plus de pourriels. Aussi, placez le curseur de votre souris sur le lien pour voir si l’adresse est fiable.",
+        "<b><u><i>N’ouvrez pas les fichiers joints.</i></u></b>",
+        "Avant de supprimer le courriel, vérifiez le type d’arnaque.",
+        "En cas de fuite, bloquez les comptes bancaires.",
+      ],
+    },
+    {
+      id: "arnPres",
+      icon: "icon-FA-user-secret",
+      title: "Arnaque au président",
+      rightIcon: "icon-FA-chevron-right",
+      function: ArnPres,
+    },
+    {
+      id: "arnNiger",
+      icon: "icon-FA-money",
+      title: "Arnaque nigériane (alias 4-1-9)",
+      rightIcon: "icon-FA-chevron-right",
+      function: ArnNigeriane,
+    },
+    {
+      id: "phish",
+      icon: "icon-FA-anchor",
+      title: "Ingénierie sociale (ou phishing)",
+      rightIcon: "icon-circle-down",
+      idContent: "phishing",
+      content: [
+        "Un contact institutionnel",
+        "Un site de rencontre (« Rencontrez ces filles célibataires dans votre région »)",
+        "Un message indiquant que vous avez gagné un prix",
+        "Une arnaque au tueur (un tueur à gage a été engagé pour vous assassiner, mais est prêt à vous oublier en échange d’une somme)",
+        "Un message indiquant que vous avez été piraté et qui vous demande de vous connecter à un site pour estimer les dégâts",
+        "Un message de l’équipe de support Microsoft, qui vous propose des conseils payants ",
+        "Une fausse institution financière qui vous presse de transférer vos fonds.",
+        "Une urgence médicale d’un de vos contacts",
+        "Des dettes",
+        "Un message de la compagnie de téléphone",
+        "Un message avec une annonce trop belle pour être vraie",
+        "De la police (la police ne vous demandera jamais des infos sur votre carte de crédit)",
+      ],
+    },
+    {
+      id: "autArn",
+      icon: "icon-FA-ellipsis-h",
+      title: "Autres",
+      rightIcon: "icon-circle-down",
+      idContent: "autresArn",
+      content: [
+        "On vous demande de faire un paiement via des moyens qui ne sont pas sécuritaires",
+        "Un contact vous demande de payer vers un nouveau compte",
+        "Un vendeur que vous avez déjà payé vous demande plus d'argent en raison de circonstances imprévues",
+        "L’arnaque « Hi mum » (littéralement « allô maman »): Quelqu’un se fait passer pour un de vos contacts et vous fait croire qu’il a perdu son téléphone. Ce message peut contenir un soi-disant « nouveau numéro de téléphone ». En cas de doute, appelez votre ami avec le numéro de téléphone d’origine et non celui du courriel.",
+        "*Un ami prétendument atteint d’un cancer vous demande d’acheter des cartes Google Play et dit qu’il va vous rembourser bientôt. Bien que l'adresse courriel correspond à celle de votre ami, elle reste une arnaque, <b><i><u>mais ne supprimez pas le message.</u></i></b> Cela signifie surtout que son compte a été piraté, alors appelez-la par téléphone pour l’avertir.",
+        "Quelqu’un vous envoie un message avec votre propre adresse courriel, prétendant qu’il a pris le contrôle de votre compte et vous demande de l’argent. Cette personne vous ment: tout le monde peut écrire un courriel à partir de l’adresse de n’importe qui. Si vous avez des doutes, regardez s’il y a des connections inconnues dans les paramètres.",
+        "Il peut s’agir d’une fausse commande, d’un faux prélèvement ou d’un faux concours.",
+        "Il s’agit d’une prescription de médicaments, de méthodes d’enrichissement, de services financiers/réduction de dettes, diplômes à acheter ou de jeux d’argent",
+        "Avec l'intelligence artificielle, il est même possible de créer des deepfakes de personnalités connues ou même de vos proches. Dans le cas où un proche vous ferait une demande inhabituelle, posez lui une question à laquelle seule la véritable personne pourrait répondre.",
+        
+      ],
+    },
+  ];
   //On laisse les indexations restantes vides
 
-  indexation[0] =
-    "<p id='introP'>Une messagerie est un bon moyen de vous arnaquer. Il existe cependant des moyens pour vous en prémunir.</p>";
-  indexation[1] =
-    "<p id='ouvrirStrcArn' class='iconeOui'><span class='icon-FA-list-ol'></span>Structure<span class='icon-circle-down'></span></p><div id='structure' style='display: none'><ul><li>Elle contient des couleurs vives et des majuscules</li><li>Elle contient beaucoup de fautes d’orthographe et de syntaxe</li><li>L’adresse courriel est très douteuse</li><li>Ils sont généralistes.</li></ul></div><hr>";
-  indexation[2] =
-    "<p id='ouvrirContenuArn' class='iconeOui'><span class='icon-FA-list-ul'></span>Le contenu<span class='icon-circle-down'></span></p><div id='contenuEscr' style='display: none'><ul><li>Ils sont pressants</li><li>Ils contiennent une source crédible</li><li>Ils vous menacent si vous ne vous faites pas quelque chose rapidement.</li><li>Ils contiennent des liens et des pièces jointes suspicieuses</li><li>Ils vous invitent à partager un courriel.</li></ul></div><hr>";
-  indexation[3] =
-    "<p id='ouvrirEscSol' class='iconeOui'><span class='icon-FA-question-circle'></span>Que faire?<span class='icon-circle-down'></span></p><div id='escrSol' style='display: none'><ul><li>Toujours vérifier l’adresse courriel.</li><li>Prenez le temps de lire le courriel et ne vous pressez pas. Les auteurs de ces courriels veulent que vous fassiez le contraire pour pouvoir arriver à leurs fins.</li><li><b><u><i>Ne répondez jamais à ces courriels.</i></u></b></li><li><b><u><i>Ne cliquez jamais sur les liens, même s’il y a un lien vous invitant à vous désabonner d’une infolettre.</i></u></b> Cela prouvera simplement au destinataire que votre adresse courriel est active, et vous recevrez encore plus de pourriels. Aussi, placez le curseur de votre souris sur le lien pour voir si l’adresse est fiable.</li><li><b><u><i>N’ouvrez pas les fichiers joints.</i></u></b></li><li>Avant de supprimer le courriel, vérifiez le type d’arnaque.</li><li>En cas de fuite, bloquez les comptes bancaires.</li></ul></div><hr>";
-  indexation[4] =
-    "<p id='arnPres' class='iconeOui'><span class='icon-FA-user-secret'></span>Arnaque au président<span class='icon-FA-chevron-right'></span></p><hr>";
-  indexation[5] =
-    "<p id='arnNiger' class='iconeOui'><span class='icon-FA-money'></span>Arnaque nigériane (alias 4-1-9)<span class='icon-FA-chevron-right'></span></p><hr>";
-  indexation[6] =
-    "<p id='phish' class='iconeOui'><span class='icon-FA-anchor'></span>Ingénierie sociale (ou phishing)<span class='icon-circle-down'></span></p><div id='phishing' style='display: none'><p id='introP'>Il s’agit probablement du type d’arnaque le plus populaire. Elle peut être:</p><ul><li>Une carte de vœux</li><li>Un contact institutionnel</li><li>Un site de rencontre (« Rencontrez ces filles célibataires dans votre région »)</li><li>Un message indiquant que vous avez gagné un prix</li><li>Une arnaque au tueur (un tueur à gage a été engagé pour vous assassiner, mais est prêt à vous oublier en échange d’une somme)</li><li>Un message indiquant que vous avez été piraté et qui vous demande de vous connecter à un site pour estimer les dégâts</li><li>Un message de l’équipe de support Microsoft, qui vous propose des conseils payants </li><li>Une fausse institution financière qui vous presse de transférer vos fonds.</li><li>Une urgence médicale d’un de vos contacts</li><li>Des dettes</li><li>Un message de la compagnie de téléphone</li><li>Un message avec une annonce trop belle pour être vraie</li><li>De la police (la police ne vous demandera jamais des infos sur votre carte de crédit)</li></ul></div><hr>";
-  indexation[7] =
-    "<p id='autArn' class='iconeOui'><span class='icon-FA-ellipsis-h'></span>Autres<span class='icon-circle-down'></span></p><div id='autresArn' style='display: none'>";
-  indexation[8] =
-    "<ul><li>On vous demande de faire un paiement via des moyens qui ne sont pas sécuritaires</li><li>Un contact vous demande de payer vers un nouveau compte</li><li>Un vendeur que vous avez déjà payé vous demande plus d'argent en raison de circonstances imprévues</li><li>L’arnaque « Hi mum » (littéralement « allô maman »): Quelqu’un se fait passer pour un de vos contacts et vous fait croire qu’il a perdu son téléphone. Ce message peut contenir un soi-disant « nouveau numéro de téléphone ». En cas de doute, appelez votre ami avec le numéro de téléphone d’origine et non celui du courriel.</li><li>*Un ami prétendument atteint d’un cancer vous demande d’acheter des cartes Google Play et dit qu’il va vous rembourser bientôt. Bien que l'adresse courriel correspond à celle de votre ami, elle reste une arnaque, <b><i><u>mais ne supprimez pas le message.</u></i></b> Cela signifie surtout que son compte a été piraté, alors appelez-la par téléphone pour l’avertir.</li><li>Quelqu’un vous envoie un message avec votre propre adresse courriel, prétendant qu’il a pris le contrôle de votre compte et vous demande de l’argent. Cette personne vous ment: tout le monde peut écrire un courriel à partir de l’adresse de n’importe qui. Si vous avez des doutes, regardez s’il y a des connections inconnues dans les paramètres.</li><li>Il peut s’agir d’une fausse commande, d’un faux prélèvement ou d’un faux concours.</li><li>Il s’agit d’une prescription de médicaments, de méthodes d’enrichissement, de services financiers/réduction de dettes, diplômes à acheter ou de jeux d’argent</li></ul></div>";
-  indexation.length = 9;
-
   //On s'assure que les variables ne soient pas séparées par une virgule
-  const text = indexation.join("");
+  const text = `<p id='introP'>Une messagerie est un bon moyen de vous arnaquer. Il existe cependant des moyens pour vous en prémunir.</p>
+  ${arnList
+    .map((arn,i) =>
+      paragraphList(
+        arn.id,
+        arn.icon,
+        arn.title,
+        arn.rightIcon,
+        arn.idContent,
+        arn.content
+      ) + (i == arnList.length - 1 ? "" : "<hr/>")
+    )
+    .join("")}`;
   //On remplit la fenêtre avec ces catégories
   document.getElementById("laListe").innerHTML = text;
   document.querySelector("header").style.backgroundColor = "blue";
@@ -42,11 +133,11 @@ function Arnaques() {
   }
   //On définit l'en-tête
 
-    HeaderTitle = "Arnaques"
+  HeaderTitle = "Arnaques";
 
-    headerUp()
+  headerUp();
   //Seul le bouton de retour est affiché en tout temps
-  
+
   //On définit la grille
   document.getElementById("myHeading").style.textAlign = "right";
   document.getElementById("myHeading").style.display = "grid";
@@ -58,67 +149,14 @@ function Arnaques() {
   if (BtnReviens) {
     BtnReviens.addEventListener("click", SMS);
   }
-  var BtnReviens = document.getElementById("arnPres");
-  if (BtnReviens) {
-    BtnReviens.addEventListener("click", ArnPres);
-  }
-  var BtnReviens = document.getElementById("arnNiger");
-  if (BtnReviens) {
-    BtnReviens.addEventListener("click", ArnNigeriane);
-  }
-  var BtnouvrirStrcArn = document.getElementById("ouvrirStrcArn");
-  if (BtnouvrirStrcArn) {
-    BtnouvrirStrcArn.addEventListener("click", function ouvrirStrcArn() {
-      var x = document.getElementById("structure");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
+
+  arnList.map((a) => {
+    if (a.rightIcon == "icon-FA-chevron-right") {
+      if (document.getElementById(a.id)) {
+        document.getElementById(a.id).addEventListener("click", a.function);
       }
-    });
-  }
-  var BtnouvrirContenuArn = document.getElementById("ouvrirContenuArn");
-  if (BtnouvrirContenuArn) {
-    BtnouvrirContenuArn.addEventListener("click", function ouvrirContenuArn() {
-      var x = document.getElementById("contenuEscr");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    });
-  }
-  var BtnouvrirEscSol = document.getElementById("ouvrirEscSol");
-  if (BtnouvrirEscSol) {
-    BtnouvrirEscSol.addEventListener("click", function ouvrirEscSol() {
-      var x = document.getElementById("escrSol");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    });
-  }
-  var BtnouvrirPhish = document.getElementById("phish");
-  if (BtnouvrirPhish) {
-    BtnouvrirPhish.addEventListener("click", function ouvrirPhish() {
-      var x = document.getElementById("phishing");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    });
-  }
-  var BtnouvrirAutArn = document.getElementById("autArn");
-  if (BtnouvrirAutArn) {
-    BtnouvrirAutArn.addEventListener("click", function ouvrirAutArn() {
-      var x = document.getElementById("autresArn");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    });
-  }
+    } else {
+      OpenList(a.id, a.idContent);
+    }
+  });
 }

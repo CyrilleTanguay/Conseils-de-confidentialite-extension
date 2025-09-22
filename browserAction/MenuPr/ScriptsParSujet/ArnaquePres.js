@@ -25,7 +25,6 @@ function ArnPres() {
   document.querySelector("ul").style.fontFamily = "K2D, sans-serif";
 
   alignHeader();
-  console.log("oui");
 
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {

@@ -4,90 +4,245 @@
  *
  *
  */
+
+function paragraphList(id, icon, title, rightIcon, idContent, content) {
+  return `<p id="${id}" class="iconeOui"><span class="${icon}">
+  </span>${title}<span class="${rightIcon}"></span></p>
+${
+  rightIcon == "icon-circle-down"
+    ? `<div id="${idContent}" style="display: none">${
+        id == "phish"
+          ? `<p id='introP'>Il s’agit probablement du type d’arnaque le plus populaire. Elle peut être:</p>`
+          : ""
+      }<ul>${content.map((a) => `<li>${a}</li>`).join("")}</ul></div>`
+    : ``
+}`;
+}
+
+function paragraphListSub(
+  id,
+  icon,
+  title,
+  rightIcon,
+  contentId,
+  introText,
+  contentList,
+  list,
+  i
+) {
+  return `<p id=${id} class='iconeOui'><span class=${icon}></span>${title}<span class=${rightIcon}></span></p>${contentList ? `<div id=${contentId}>
+  ${introText ? `<p id='introP'>${introText}</p><br/>` : ""}${contentList
+    .map(
+      (s) =>
+        `${s.headerText ? `<p>${s.headerText}</p>` : ""}<ul>${s.subContent
+          .map(
+            (d) => `<li>${d.text}
+              ${
+                d.subList
+                  ? "<ul>" +
+                    d.subList
+                      .map((sList) => `<li>${sList.text}</li>`)
+                      .join("") +
+                    "</ul>"
+                  : ""
+              }
+              </li>`
+          )
+          .join("")}</ul>`
+    )
+    .join("")}</div>`: ""}${i == list.length - 1 ? "" : "<hr/>"}`;
+}
+
+function OpenBlock(id, openId) {
+  var x = document.getElementById(id);
+  var y = document.getElementById(openId);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.children[1].className = "icon-circle-up";
+  } else {
+    x.style.display = "none";
+    y.children[1].className = "icon-circle-down";
+  }
+}
+
+const HomePage = [
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-display",
+    AcId: "VotreOrdi",
+    LesCats: "Votre ordinateur",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-bin",
+    AcId: "indexAppNon",
+    LesCats: "Applications à ne pas installer",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-earth",
+    AcId: "leNav",
+    LesCats: "Navigateur",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-key",
+    AcId: "leMDP",
+    LesCats: "Mot de passe",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-wondering2",
+    AcId: "fiable",
+    LesCats: "Fiabilité d’un site web",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-users",
+    AcId: "reseau",
+    LesCats: "Réseaux sociaux",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-evil2",
+    AcId: "extorsion",
+    LesCats: "Extorsion / Sextorsion / Chantage",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-mail",
+    AcId: "sms",
+    LesCats: "Messagerie",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-cart",
+    AcId: "achats",
+    LesCats: "Achats en ligne",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-download2",
+    AcId: "achatDeApp",
+    LesCats: "Achat d’application",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-file-text",
+    AcId: "politique",
+    LesCats: "Politique de confidentialité",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-bug",
+    AcId: "virus",
+    LesCats: "Virus",
+  },
+  {
+    LignePr: "<hr>",
+    AcIcone: "icon-target",
+    AcId: "attaques",
+    LesCats: "Attaques",
+  },
+  {
+    LignePr: "",
+    AcIcone: "icon-mobile",
+    AcId: "mobiles",
+    LesCats: "Téléphones mobiles",
+  },
+];
+
 //Ajout d'écouteurs dès que le menu est chargé pour exécuter une fonction en cliquant sur une catégorie pour accéder à ses sous-catégories
 window.onload = function startListen() {
   //On s'assure que les variables ne soient pas séparées par une virgule
   for (let i = 0; i < document.querySelectorAll("div").length; i++) {
     document.querySelectorAll("div")[i].style.display = "none";
   }
-  let text = "";
+  let text = HomePage.map(
+    (home, i) =>
+      paragraphList(
+        home.AcId,
+        home.AcIcone,
+        home.LesCats,
+        "icon-FA-chevron-right"
+      ) + (i == HomePage.length - 1 ? "" : "<hr/>")
+  ).join("");
 
-  for (let i = 0; i < AcIcone.length; i++) {
-    text +=
-      '<div id="' +
-      AcId[i] +
-      '" class="iconeOui"><span class="' +
-      AcIcone[i] +
-      '"></span><p>' +
-      LesCats[i] +
-      '</p><span class="icon-FA-chevron-right"></span></div>' +
-      LignePr[i];
-  }
   //On remplit la fenêtre avec ces catégories
   document.getElementById("laListe").innerHTML = text;
-  document.getElementById("myHeading").innerHTML =
-    "<span class='icon-cogs' id='btmParam'></span>Conseils<span class='icon-info' id='btnSrc'></span>";
+  document.getElementById(
+    "myHeading"
+  ).innerHTML = `<span class='icon-cogs' id='btmParam'></span>Conseils<span class='icon-info' id='btnSrc'></span>`;
   document.querySelector("header").style.backgroundColor = "#00B1CA";
   document.getElementById("myHeading").style.color = "white";
   // document.querySelector("main").style.fontFamily = "Oswald, sans-serif";
 
+  const MapPages = [
+    {
+      id: "leNav",
+      page: Navigateur,
+    },
+    {
+      id: "VotreOrdi",
+      page: Ordi,
+    },
+    {
+      id: "indexAppNon",
+      page: AppNon,
+    },
+    {
+      id: "leMDP",
+      page: MDP,
+    },
+    {
+      id: "fiable",
+      page: Fiable,
+    },
+    {
+      id: "reseau",
+      page: unReseau,
+    },
+    {
+      id: "extorsion",
+      page: Extorsion,
+    },
+    {
+      id: "achats",
+      page: Achats,
+    },
+    {
+      id: "achatDeApp",
+      page: achatApp,
+    },
+    {
+      id: "sms",
+      page: SMS,
+    },
+    {
+      id: "politique",
+      page: Politique,
+    },
+    {
+      id: "virus",
+      page: Virus,
+    },
+    {
+      id: "attaques",
+      page: Attaques,
+    },
+    {
+      id: "mobiles",
+      page: Mobiles,
+    },
+  ];
   //On ajoute un écouteur à un élément id s'il est présent, ce qui va exécuter une fonction au clic
-  var BtnNav = document.getElementById("leNav");
-  if (BtnNav) {
-    BtnNav.addEventListener("click", Navigateur);
-  }
-  var BtnOrdi = document.getElementById("VotreOrdi");
-  if (BtnOrdi) {
-    BtnOrdi.addEventListener("click", Ordi);
-  }
-  var BtnAppNon = document.getElementById("indexAppNon");
-  if (BtnAppNon) {
-    BtnAppNon.addEventListener("click", AppNon);
-  }
-  var BtnMDP = document.getElementById("leMDP");
-  if (BtnMDP) {
-    BtnMDP.addEventListener("click", MDP);
-  }
-  var BtnFiable = document.getElementById("fiable");
-  if (BtnFiable) {
-    BtnFiable.addEventListener("click", Fiable);
-  }
-  var BtnReseau = document.getElementById("reseau");
-  if (BtnReseau) {
-    BtnReseau.addEventListener("click", unReseau);
-  }
-  var BtnExto = document.getElementById("extorsion");
-  if (BtnExto) {
-    BtnExto.addEventListener("click", Extorsion);
-  }
-  var BtnAchats = document.getElementById("achats");
-  if (BtnAchats) {
-    BtnAchats.addEventListener("click", Achats);
-  }
-  var BtnAchatsApp = document.getElementById("achatDeApp");
-  if (BtnAchatsApp) {
-    BtnAchatsApp.addEventListener("click", achatApp);
-  }
-  var BtnSMS = document.getElementById("sms");
-  if (BtnSMS) {
-    BtnSMS.addEventListener("click", SMS);
-  }
-  var BtnPolitique = document.getElementById("politique");
-  if (BtnPolitique) {
-    BtnPolitique.addEventListener("click", Politique);
-  }
-  var BtnVirus = document.getElementById("virus");
-  if (BtnVirus) {
-    BtnVirus.addEventListener("click", Virus);
-  }
-  var BtnAttaque = document.getElementById("attaques");
-  if (BtnAttaque) {
-    BtnAttaque.addEventListener("click", Attaques);
-  }
-  var BtnMobile = document.getElementById("mobiles");
-  if (BtnMobile) {
-    BtnMobile.addEventListener("click", Mobiles);
-  }
+
+  MapPages.map((e) => {
+    if (document.getElementById(e.id)) {
+      document.getElementById(e.id).addEventListener("click", e.page);
+    }
+  });
+
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", window.onload);
@@ -109,71 +264,7 @@ window.onload = function startListen() {
     BtnSrc.addEventListener("click", allerSr);
   }
 };
-const LignePr = [
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "<hr>",
-  "",
-];
 
-const AcIcone = [
-  "icon-display",
-  "icon-bin",
-  "icon-earth",
-  "icon-key",
-  "icon-wondering2",
-  "icon-users",
-  "icon-evil2",
-  "icon-mail",
-  "icon-cart",
-  "icon-download2",
-  "icon-file-text",
-  "icon-bug",
-  "icon-target",
-  "icon-mobile",
-];
-const AcId = [
-  "VotreOrdi",
-  "indexAppNon",
-  "leNav",
-  "leMDP",
-  "fiable",
-  "reseau",
-  "extorsion",
-  "sms",
-  "achats",
-  "achatDeApp",
-  "politique",
-  "virus",
-  "attaques",
-  "mobiles",
-];
-const LesCats = [
-  "Votre ordinateur",
-  "Applications à ne pas installer",
-  "Navigateur",
-  "Mot de passe",
-  "Fiabilité d’un site web",
-  "Réseaux sociaux",
-  "Extorsion / Sextorsion / Chantage",
-  "Messagerie",
-  "Achats en ligne",
-  "Achat d’application",
-  "Politique de confidentialité",
-  "Virus",
-  "Attaques",
-  "Téléphones mobiles",
-];
 //Définition des variables
 const indexation = [
   '<p id="VotreOrdi" class="iconeOui"><span class="icon-display"></span>Votre ordinateur<span class="icon-FA-chevron-right"></span></p><hr>',
@@ -219,4 +310,19 @@ function alignHeader() {
   document.getElementById("myHeading").style.display = "grid";
   document.getElementById("myHeading").style.gridTemplateColumns =
     "auto auto auto";
+}
+
+function OpenList(id, openId) {
+  if (document.getElementById(id)) {
+    document.getElementById(id).addEventListener("click", function () {
+      var x = document.getElementById(openId);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        document.getElementById(id).children[1].className = "icon-circle-up";
+      } else {
+        x.style.display = "none";
+        document.getElementById(id).children[1].className = "icon-circle-down";
+      }
+    });
+  }
 }

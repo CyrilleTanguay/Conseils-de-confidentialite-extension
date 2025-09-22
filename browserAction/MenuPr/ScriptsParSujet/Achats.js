@@ -9,29 +9,106 @@
  */
 
 function Achats() {
-  let text = "";
-  const divOuv = ["achatSite", "achatProduit"];
-  const AcId = ["ouvrirAchatSite", "ouvrirAchatProd"];
-  const AcIcone = ["icon-terminal", "icon-gift"];
-  const LesCats = ["Concernant le site", "Concernant le produit"];
-  const LignePr = ["<hr>", ""];
-  const listeInt = [
-    "<ul><li>Vérifiez le nom de domaine avec cet <a href='https://votresite.ca/abonnement/whois'>outil</a>. Si son acquisition est récente, cela est suspect</li><li>Vérifiez l’adresse de la boutique en ligne. Le fait qu’il soit situé dans un bloc-appartement ou au milieu de nulle part est suspicieux.</li><li>Téléphonez à l’entreprise pour vous assurer que le numéro est bel et bien lié à l’entreprise.</li><li>Pour le cas de boutiques québécoises, consultez le <a href='https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises'>registraire des entreprises du Québec</a>. Toutes les compagnies du Québec sont obligées de s’inscrire à ce registraire.</li><li>Vérifiez les conditions générales de vente</li><li>Assurez-vous que le site soit sécurisé. Vous pouvez utiliser un scanner.</li><li>Ne faites pas d’achat sur un ordinateur infecté ou public</li></ul></div>",
-    "<ul><li>Vérifiez les commentaires d’un produit</li><li>Méfiez-vous si quelqu’un nous offre plus que le prix de vente d’un objet que vous vendez, surtout si cette personne offre de payer par PayPal. Vous recevrez un faux courriel de PayPal mentionnant le dépôt d’un montant plus élevé que prévu, puis l’acheteur va vous réécrire pour récupérer l’argent en trop. En vérifiant votre compte PayPal, vous verrez que le supposé transfert de fonds n’a jamais eu lieu.</li><li>Méfiez-vous de la fonction de demande de fonds d’Interac, surtout si l’adresse n’est pas « notify@payments.interac.ca ». Elle n’est accessible que pour Scotia, Royale, CIBC et TD. Les autres peuvent cependant accepter le don.</li><li>Lisez les infos sur les frais de livraison, de douane et de dédouanement pour éviter de payer plus cher inutilement.</li><li>Faire des captures d’écrans de chaque transaction, avec l’heure, le numéro de l’achat et la date et imprimez-les. Cela pourra servir de preuve en cas de litige.</li><li>Achetez local. Si vous avez une plainte à faire à la compagnie, il sera plus facile d’aller directement à une compagnie qui habite près de chez vous.</li></ul></div>",
+  const listAch = [
+    {
+      id: "ouvrirAchatSite",
+      icon: "icon-terminal",
+      title: "Concernant le site",
+      contentId: "achatSite",
+      contentList: [
+        {
+          subContent: [
+            {
+              text: "Vérifiez le nom de domaine avec cet <a href='https://votresite.ca/abonnement/whois'>outil</a>. Si son acquisition est récente, cela est suspect",
+            },
+            {
+              text: "Vérifiez l’adresse de la boutique en ligne. Le fait qu’il soit situé dans un bloc-appartement ou au milieu de nulle part est suspicieux.",
+            },
+            {
+              text: "Téléphonez à l’entreprise pour vous assurer que le numéro est bel et bien lié à l’entreprise.",
+            },
+            {
+              text: "Pour le cas de boutiques québécoises, consultez le <a href='https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises'>registraire des entreprises du Québec</a>. Toutes les compagnies du Québec sont obligées de s’inscrire à ce registraire.",
+            },
+            { text: "Vérifiez les conditions générales de vente." },
+            {
+              text: "Assurez-vous que le site soit sécurisé. Vous pouvez utiliser un scanner",
+            },
+            {
+              text: "Ne faites pas d’achat sur un ordinateur infecté ou public",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "ouvrirAchatProd",
+      icon: "icon-gift",
+      title: "Concernant le produit",
+      contentId: "achatProduit",
+      contentList: [
+        {
+          subContent: [
+            { text: "Vérifiez les commentaires d’un produit" },
+            {
+              text: "Méfiez-vous si quelqu’un nous offre plus que le prix de vente d’un objet que vous vendez, surtout si cette personne offre de payer par PayPal. Vous recevrez un faux courriel de PayPal mentionnant le dépôt d’un montant plus élevé que prévu, puis l’acheteur va vous réécrire pour récupérer l’argent en trop. En vérifiant votre compte PayPal, vous verrez que le supposé transfert de fonds n’a jamais eu lieu.",
+            },
+            {
+              text: "Méfiez-vous de la fonction de demande de fonds d’Interac, surtout si l’adresse n’est pas « notify@payments.interac.ca ». Elle n’est accessible que pour Scotia, Royale, CIBC et TD. Les autres peuvent cependant accepter le don.",
+            },
+            {
+              text: "Lisez les infos sur les frais de livraison, de douane et de dédouanement pour éviter de payer plus cher inutilement.",
+            },
+            {
+              text: "Faites des captures d’écrans de chaque transaction, avec l’heure, le numéro de l’achat et la date et imprimez-les. Cela pourra servir de preuve en cas de litige.",
+            },
+            {
+              text: "Achetez local. Si vous avez une plainte à faire à la compagnie, il sera plus facile d’aller directement à une compagnie qui habite près de chez vous.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "ouvrirAchatClasses",
+      icon: "icon-FA-newspaper-o",
+      title: "Sur les sites d'annonces classées",
+      contentId: "achatClasses",
+      contentList: [
+        {
+          subContent: [
+            {
+              text: "Ne donnez jamais vos informations personnelles et bancaires à une personne inconnue.",
+            },
+            {
+              text: "Faites si possible votre transaction de personne en personne (soit en rencontrant physiquement l'acheteur ou le vendeur).",
+            },
+          ],
+        },
+      ],
+    },
   ];
-  for (let i = 0; i < AcIcone.length; i++) {
-    text += `<p id="${AcId[i]}" class="iconeOui"><span class="${AcIcone[i]}"></span>
-      ${LesCats[i]}<span class="icon-circle-down"></span></p><div id="${divOuv[i]}">
-      ${listeInt[i]}
-     ${LignePr[i]}`;
-  }
 
   //On s'assure que les variables ne soient pas séparées par une virgule
 
   //On remplit la fenêtre avec ces catégories
-  document.getElementById("laListe").innerHTML =
-    "<p id='introP'>Les achats en ligne peuvent faciliter notre vie, mais aussi celle de certains voleurs!</p>" +
-    text;
+  document.getElementById(
+    "laListe"
+  ).innerHTML = `<p id='introP'>Les achats en ligne peuvent faciliter notre vie, mais aussi celle de certains voleurs!</p>${listAch
+    .map((achat, i) =>
+      paragraphListSub(
+        achat.id,
+        achat.icon,
+        achat.title,
+        "icon-circle-down",
+        achat.contentId,
+        null,
+        achat.contentList,
+        listAch,
+        i
+      )
+    )
+    .join("")}`;
   document.querySelector("header").style.backgroundColor = "gold";
   document.getElementById("myHeading").style.color = "black";
   //On s'assure que les listes déroulantes soient fermées et masquées
@@ -47,37 +124,16 @@ function Achats() {
 
   //On définit la grille
   alignHeader();
-  //Fonction pour la liste déroulante des Achats
-  var BtnOuvAchatSite = document.getElementById("ouvrirAchatSite");
-  if (BtnOuvAchatSite) {
-    BtnOuvAchatSite.addEventListener("click", ouvrirAchatSite);
-  }
-  //Fonction pour la liste déroulante des ajustements
-  var BtnOuvAchatProd = document.getElementById("ouvrirAchatProd");
-  if (BtnOuvAchatProd) {
-    BtnOuvAchatProd.addEventListener("click", ouvrirAchatProd);
-  }
+
+  listAch.map((ach) => {
+    {
+      OpenList(ach.id, ach.contentId);
+    }
+  });
+
   //Si on clique sur le bouton de retour, on appelle sa fonction
   var BtnReviens = document.getElementById("caseRetour");
   if (BtnReviens) {
     BtnReviens.addEventListener("click", window.onload);
-  }
-}
-//Si la liste déroulante est masquée, on l'affiche et vice-versa
-function ouvrirAchatSite() {
-  var x = document.getElementById("achatSite");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function ouvrirAchatProd() {
-  var x = document.getElementById("achatProduit");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
   }
 }

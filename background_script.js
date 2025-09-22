@@ -6,7 +6,6 @@
  * Source: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Background_scripts
  *
  */
-console.log(location.href);
 
 //Fonction pour détecter les options pour les notifications de l'extension sur Google
 function onError(error) {
@@ -153,7 +152,7 @@ function logTabsTW(tabs) {
         browser.pageAction.show(tab.id);
         browser.pageAction.setIcon({
           tabId: tab.id,
-          path: "/icons/icone64Twitter.svg",
+          path: "/icons/icone64X.svg",
         });
       } else {
         browser.pageAction.hide(tab.id);
@@ -166,7 +165,7 @@ function logTabsTW(tabs) {
 browser.webNavigation.onCommitted.addListener(() => {
   browser.tabs
     .query({
-      url: "*://*.twitter.com/*",
+      url: "*://x.com/*",
     })
     .then(logTabsTW, onError);
 });
@@ -174,7 +173,6 @@ browser.webNavigation.onCommitted.addListener(() => {
 function logTabsYT(tabs) {
   for (const tab of tabs) {
     function onGot(item) {
-      // console.log(item);
       if (Object.values(item) == "true") {
         browser.pageAction.show(tab.id);
         browser.pageAction.setIcon({
@@ -197,5 +195,34 @@ browser.webNavigation.onCommitted.addListener(() => {
     .then(logTabsYT, onError);
 });
 
-browser.browserSettings.overrideContentColorScheme
-.set({value:"system"})
+browser.browserSettings.overrideContentColorScheme.set({ value: "system" });
+
+//Fonction pour détecter les options pour les notifications de l'extension sur YouTube
+function logTabsZoom(tabs) {
+  for (const tab of tabs) {
+    function onGot(item) {
+      if (Object.values(item) == "true") {
+        browser.pageAction.show(tab.id);
+        browser.pageAction.setIcon({
+          tabId: tab.id,
+          path: "/icons/icone64YouTube.svg",
+        });
+      } else {
+        browser.pageAction.hide(tab.id);
+      }
+    }
+    browser.storage.sync.get("ZoomCheck").then(onGot, onError);
+  }
+}
+//Les options sont appliquées sur tout onglet YouTube
+browser.webNavigation.onCommitted.addListener(() => {
+  browser.tabs
+    .query({
+      url: "*://zoom.us/*",
+    })
+    .then(logTabsZoom, onError);
+});
+
+browser.browserSettings.overrideContentColorScheme.set({ value: "system" });
+
+// https://zoom.us/account/setting

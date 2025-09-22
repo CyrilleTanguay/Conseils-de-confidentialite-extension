@@ -53,7 +53,7 @@ function Fb() {
   indexation[12] = "<p>Faites attention à ces arnaques sur Facebook:</p><ul>";
   indexation[13] = "<li>N’achetez pas de NFT de singes en 3D</li>";
   indexation[14] =
-    "<li>Méfiez-vous des concours faciles. Un conseil: allez voir la date de création de la page qui organise ce concours. </li>";
+    "<li>Méfiez-vous des concours faciles. Un conseil: allez voir la date de création de la page qui organise ce concours.</li>";
   indexation[15] =
     "<li>Il n’existe pas de fonctionnalité qui nous permet de savoir qui a consulté notre page Facebook. Cette « fonctionnalité » ne doit pas être confondue avec celle qui nous permet de savoir qui est CONNECTÉ sur notre compte.</li>";
   indexation[16] =
@@ -330,10 +330,10 @@ function Telegram() {
   indexation[3] =
     "<li>Masquez votre numéro de téléphone pour ne pas que des inconnus le voient.</li>";
   indexation[4] =
-    "<li>Ne pas trop en dire sur sa biographie. Cet élément ne pouvant être masqué par l’utilisateur, n’en dites pas trop.</li>";
-  indexation[5] = "<li>Ne pas échanger avec nimporte qui</li>";
+    "<li>Ne dites pas trop d'informations sur votre biographie, car cet élément ne peut être masqué par l’utilisateur.</li>";
+  indexation[5] = "<li>N'échangez pas avec n'importe qui</li>";
   indexation[6] =
-    "<li>Modifier le numéro de téléphone inscrit dans le compte en cas de changement de numéro pour garder l’accès à votre compte.</li></ul>";
+    "<li>Modifiez le numéro de téléphone inscrit dans le compte en cas de changement de numéro pour garder l’accès à votre compte.</li></ul>";
   for (let i = 7; i < 55; i++) {
     indexation[i] = "";
   }
@@ -379,11 +379,12 @@ function Twitter() {
   document.documentElement.scrollTop = 0;
 
   indexation[0] =
-    "<ul><li>Pour plus de protection, rendez votre page privée</li><li>Décochez la case « Recevoir des messages privés de n’importe qui ».</li></ul><p id='introP'>Quelques moyens de récupération du mot de passe X:</p>";
+    "<ul><li>Pour plus de protection, rendez votre page privée</li><li>Décochez la case « Recevoir des messages privés de n’importe qui ».</li><li>L'IA Grok est activée par défaut et elle collecte vos données. Pour le désactiver, <a href='https://x.com/settings/grok_settings'>cliquez ici</a> et décochez la case.</li></ul><p id='introP'>Quelques moyens de récupération du mot de passe X:</p>";
   indexation[1] =
     "<p>À utiliser:</p><ul><li>La double authentification</li><li>Une application externe (Google)</li><li>Une clé physique</li><li>Un code de récupération</li></ul>";
   indexation[2] =
     "<p>À ne pas utiliser</p><ul><li>Les messages textes</li></ul></ul>";
+    
   for (let i = 3; i < 55; i++) {
     indexation[i] = "";
   }

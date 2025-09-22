@@ -29,11 +29,11 @@ browser.tabs
 
       //On appelle une fonction qui va ouvrir le popup avec la liste de conseils
       lien.addEventListener("click", popupFen);
-    } else if (tab.url.includes("twitter.com")) {
-      lien.setAttribute("href", "https://twitter.com/settings/account");
+    } else if (tab.url.includes("x.com")) {
+      lien.setAttribute("href", "https://x.com/settings/account");
       console.log(lien);
       document.getElementById("messageExt").innerHTML =
-        "Vous pourriez faire des modifications dans les paramètres de Twitter";
+        "Vous pourriez faire des modifications dans les paramètres de X";
     } else if (tab.url.includes("instagram.com/")) {
       lien.setAttribute("href", "https://www.instagram.com/accounts/edit/");
       console.log(lien);
